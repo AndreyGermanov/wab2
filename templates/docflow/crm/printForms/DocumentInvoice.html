@@ -1,0 +1,277 @@
+<!-- block=header -->
+<table width="100%" cellpadding="5" cellspacing="1" align="center">
+	<tr valign="top">
+		<td>
+			<img src='{firmLogo}' />
+		</td>
+		<td>
+			<div align="justify" style="font-face:Arial;font-size:11px">
+				<strong>Внимание!</strong> Оплата данного счета означает согласие с условиями поставки товара. Счет действителен в течении трех 
+				банковских дней. Уведомление об оплате обязательно. В случае невыполнения данных условий наличие товара по указанным в счете ценам 
+				не гарантируется. Товар отпускается по факту прихода денег на р/с Поставщика, самовывозом, при наличии доверенности и паспорта.
+			</div>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<table width="100%" cellpadding="3" cellspacing="1" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+				<tr bgcolor="#FFFFFF" valign="top">
+					<td colspan="2" rowspan="2" style="font-family:Arial;font-size:13px">
+						{firmBank}
+					</td>
+					<td style="font-family:Arial;font-size:13px;font-weight:bold">
+						БИК
+					</td>
+					<td style="font-family:Arial;font-size:13px">
+						{firmBIK}
+					</td>
+				</tr>
+				<tr bgcolor="#FFFFFF" valign="top">
+					<td style="font-family:Arial;font-size:13px;font-weight:bold">
+						Сч. №
+					</td>
+					<td style="font-family:Arial;font-size:13px">
+						{firmKS}
+					</td>
+				</tr>
+				<tr bgcolor="#FFFFFF" valign="top">
+					<td><span style="font-family:Arial;font-size:13px;font-weight:bold">ИНН</span> 
+						<span  style="font-family:Arial;font-size:13px">{firmINN}</span></td>
+					<td><span style="font-family:Arial;font-size:13px;font-weight:bold">КПП</span> 
+						<span  style="font-family:Arial;font-size:13px">{firmKPP}</span></td>
+					<td><span style="font-family:Arial;font-size:13px;font-weight:bold">Сч. №</span></td>
+					<td><span  style="font-family:Arial;font-size:13px">{firmRS}</span></td>
+				</tr>
+				<tr bgcolor="#FFFFFF" valign="top">
+					<td colspan="2">
+						<span  style="font-family:Arial;font-size:13px">{firmName}</span><br/><br/>
+						<span style="font-family:Arial;font-size:13px;font-weight:bold">Получатель</span>
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<div align="center">
+				<span style="font-family:Arial;font-size:19px;font-weight:bold">
+					Счет № {number} от {docDate} г.
+				</span>
+			</div>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<table width="100%" cellpadding="4" cellspacing="1">
+				<tr valign="top">
+					<td>
+						<span style="font-family:Arial;font-size:13px;font-weight:bold">Поставщик:</span>
+					</td>
+					<td width="100%">
+						<span style="font-family:CourierNew;font-size:13px">{firmText}</span>						
+					</td>
+				</tr>
+				<tr valign="top">
+					<td>
+						<span style="font-family:Arial;font-size:13px;font-weight:bold">Покупатель:</span>
+					</td>
+					<td>
+						<span style="font-family:CourierNew;font-size:13px">{contragentText}</span>						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<table width="100%" cellpadding="3" border="1" cellspacing="0" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+				<tr bgcolor="#FFFFFF" valign="top">
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px;font-weight:bold">№ п.п.</span>
+						</div>
+					</td>
+					<td width="60%">
+						<div align="center">						
+							<span style="font-family:Arial;font-size:13px;font-weight:bold">Наименование</span>
+						</div>
+					</td>
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px;font-weight:bold">Кол-во</span>
+						</div>
+					</td>
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px;font-weight:bold">Ед.</span>
+						</div>
+					</td>
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px;font-weight:bold">Цена</span>
+						</div>
+					</td>
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px;font-weight:bold">Сумма</span>
+						</div>
+					</td>
+				</tr>
+<!-- block=row -->				
+				<tr bgcolor="#FFFFFF" valign="top">
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px">{num}</span>
+						</div>
+					</td>
+					<td width="60%">
+						<div align="left">						
+							<span style="font-family:Arial;font-size:13px">{product}</span>
+						</div>
+					</td>
+					<td>
+						<div align="right">
+							<span style="font-family:Arial;font-size:13px">{count}</span>
+						</div>
+					</td>
+					<td>
+						<div align="center">
+							<span style="font-family:Arial;font-size:13px">{ed}</span>
+						</div>
+					</td>
+					<td>
+						<div align="right">
+							<span style="font-family:Arial;font-size:13px">{cost}</span>
+						</div>
+					</td>
+					<td>
+						<div align="right">
+							<span style="font-family:Arial;font-size:13px">{total}</span>
+						</div>
+					</td>
+				</tr>
+<!-- block=footer -->				
+			</table>				
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<table width="100%" cellpadding="1" cellspacing="3">
+				<tr valign="top">
+					<td width="100%">
+						&nbsp;
+					</td>
+					<td nowrap="true">
+						<div align="right" style="font-family:Arial;font-size:13px">							
+							Всего к оплате:
+						</div>
+					</td>
+					<td nowrap="true">
+						<div align="right" style="font-family:Arial;font-size:13px;font-weight:bold">
+							{invoiceSumma}
+						</div>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="100%">
+						&nbsp;
+					</td>
+					<td nowrap="true">
+						<div align="right" style="font-family:Arial;font-size:13px">
+							В т.ч. НДС:
+						</div>
+					</td>
+					<td nowrap="true">
+						<div align="right" style="font-family:Arial;font-size:13px;font-weight:bold">
+							{invoiceNDS}
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<span style="font-family:Arial;font-size:17px">
+				Всего наименований <b>{num}</b>, на сумму <b>{invoiceSumma}</b> руб.<br/>
+				<b><i>{summaStr}</i></b>
+			</span>
+			<hr/>
+		</td>
+	</tr>
+<!-- block=footerText -->
+	<tr valign="top">
+		<td colspan="2">
+			<table width="100%" cellspacing="1" cellpadding="4">
+				<tr valign="top">
+					<td align="left" nowrap="true">
+						<table cellspacing="0" cellpadding="0">
+							<tr valign="top">
+								<td>
+									<span style="font-family:Arial;font-size:13px">
+										Руководитель:
+									</span>
+								</td>
+								<td>
+									<span style="font-family:Arial;font-size:13px">
+										_____________________
+									</span>
+								</td>							
+							</tr>
+							<tr valign="top">
+								<td>&nbsp;</td>
+								<td align="center">
+									<span style="font-family:Arial;font-size:10px">
+									<i>
+									{director}
+									</i>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td align="right" nowrap="true">
+						<table cellspacing="0" cellpadding="0">
+							<tr valign="top">
+								<td>
+									<span style="font-family:Arial;font-size:13px">
+										Главный бухгалтер:
+									</span>
+								</td>
+								<td>
+									<span style="font-family:Arial;font-size:13px">
+										_____________________
+									</span>
+								</td>							
+							</tr>
+							<tr valign="top">
+								<td>&nbsp;</td>
+								<td align="center">
+									<span style="font-family:Arial;font-size:10px">
+									<i>
+									{buhgalter}
+									</i>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<img src="utils/qr/qr.php?text=https://{serverName}/bc.php?i={name}"/>
+		</td>
+	</tr>	
+<!-- block=footerImg -->
+	<tr valign="top">
+		<td colspan="2">
+			<img width="800" src="{skinPath}images/docflow/podpis.jpg" />
+			<br/>
+			<img src="utils/qr/qr.php?text=https://{serverName}/bc.php?i={name}"/>
+		</td>
+	</tr>	
+</table>

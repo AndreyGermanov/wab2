@@ -1,0 +1,1 @@
+var TestWebEntity = Class.create(WebEntity);

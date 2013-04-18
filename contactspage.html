@@ -1,0 +1,219 @@
+	<body class="body"/>
+	{:include WebEntity_6_76,,,templates/hairstar/text.html,,,:}
+	<table border="0" style="width:100%" cellpadding="5" cellspacing="10">
+		<tr valign="top">
+		<td><br/>
+			{:include WebEntity_6_40,,,templates/hairstar/mainmenu.html,,,static:}
+			</td>
+			<td width="100%">
+			<div class="header">{title}</div>	
+			<div class="text">
+				{Text}
+				<font color="#FF0000"><b>{errors}</b></font><br/>
+				<form name="wisart_easycontact"  id="feedback-form" method="post" action="">
+
+				 
+				 <div class="textfeedback">
+					 <input class="inputbox" id="wa_name" onclick="clearname()" onfocus="clearname()" style="font-size:11px; font-family:arial; width:70%" type="text" value="{client_name}" name="{object_id}_client_name" />
+				 </div>
+
+				  <div class="textfeedback">
+				<input class="inputbox" id="wa_city" onclick="clearcity()" onfocus="clearcity()" style="font-size:11px; font-family:arial; width:70%" type="text" value="{client_city}" name="{object_id}_client_city"/>
+				</div>
+
+				 
+				  <div class="textfeedback">
+				<input class="inputbox" id="wa_email" onclick="clearemail()" onfocus="clearemail()" style="font-size:11px; font-family:arial; width:70%" type="text" value="{client_email}" name="{object_id}_client_email"/>
+				</div>
+
+				  <div class="textfeedback">
+				<input class="inputbox" id="wa_phone" onclick="clearphone()" onfocus="clearphone()" style="font-size:11px; font-family:arial; width:70%" type="text" value="{client_phone}" name="{object_id}_client_phone"/>
+				</div>
+
+				 <div class="areaback">
+				<textarea id="wa_message" rows="" cols="" class="inputbox textarea" onclick="clearbody()" onfocus="clearbody()" style="font-size:11px; font-family:arial; overflow:auto;width:70%; height:50px" name="{object_id}_client_message">{client_message}</textarea>
+				</div>
+				 <div class="areaback">
+						<p><img src="tools/kcaptcha/index.phtml?<?php echo session_name()?>=<?php echo session_id()?>"><br><br>
+						<input  id="wa_kaptcha" name="{object_id}_keystring" value="Контрольная фраза..." width="100%" style="font-size:11px; font-family:arial; width:70%" onclick="clearcaptcha()" onfocus="clearcaptcha()" >
+				</div>
+
+
+				 <input id="email_address" type="hidden" value="" name="email_address" />
+						<input type="hidden" name="action" object="{object_id}" id="action" value="submit">
+						<input type="hidden" name="object_id" object="{object_id}" id="object_id" value="{object_id}">
+						<input type="hidden" name="init_string" object="{object_id}" id="init_string" value="">
+				 
+						<input class="button"  onclick="sub(event)" type="submit" value="Отправить" >
+
+
+				</form>
+			</div>
+			</td>
+		</tr>		
+	</table>
+{:include StatWebEntity_6_96,,,templates/hairstar/text.html,,,:}
+
+<script language="javascript" type="text/javascript">
+// <![CDATA[
+
+function clearcaptcha() {
+if (document.getElementById("wa_kaptcha").value == "Контрольная фраза...") {
+document.getElementById("wa_kaptcha").value="";
+}
+if (document.getElementById("wa_name").value.length < 1) {
+document.getElementById("wa_name").value = "Ваше Имя...";
+}
+if (document.getElementById("wa_email").value.length < 1) {
+document.getElementById("wa_email").value = "E-mail...";
+}
+if (document.getElementById("wa_city").value.length < 1) {
+document.getElementById("wa_city").value = "Город...";
+}
+if (document.getElementById("wa_phone").value.length < 1) {
+document.getElementById("wa_phone").value = "Телефон...";
+}
+if (document.getElementById("wa_message").value.length < 1) {
+document.getElementById("wa_message").value = "Вопрос...";
+}
+}
+
+function clearbody() {
+if (document.getElementById("wa_message").value == "Вопрос...") {
+document.getElementById("wa_message").value="";
+}
+if (document.getElementById("wa_name").value.length < 1) {
+document.getElementById("wa_name").value = "Ваше Имя...";
+}
+if (document.getElementById("wa_email").value.length < 1) {
+document.getElementById("wa_email").value = "E-mail...";
+}
+if (document.getElementById("wa_city").value.length < 1) {
+document.getElementById("wa_city").value = "Город...";
+}
+if (document.getElementById("wa_phone").value.length < 1) {
+document.getElementById("wa_phone").value = "Телефон...";
+}
+if (document.getElementById("wa_kaptcha").value.length < 1) {
+document.getElementById("wa_kaptcha").value = "Контрольная фраза...";
+}
+}
+
+function clearname() {
+if (document.getElementById("wa_name").value == "Ваше Имя...") {
+document.getElementById("wa_name").value="";
+}
+if (document.getElementById("wa_message").value.length < 1) {
+document.getElementById("wa_message").value = "Вопрос...";
+}
+if (document.getElementById("wa_email").value.length < 1) {
+document.getElementById("wa_email").value = "E-mail...";
+}
+if (document.getElementById("wa_city").value.length < 1) {
+document.getElementById("wa_city").value = "Город...";
+}
+if (document.getElementById("wa_phone").value.length < 1) {
+document.getElementById("wa_phone").value = "Телефон...";
+}
+if (document.getElementById("wa_kaptcha").value.length < 1) {
+document.getElementById("wa_kaptcha").value = "Контрольная фраза...";
+}
+}
+
+function clearemail() {
+if (document.getElementById("wa_email").value == "E-mail...") {
+document.getElementById("wa_email").value="";
+}
+if (document.getElementById("wa_name").value.length < 1) {
+document.getElementById("wa_name").value = "Ваше Имя...";
+}
+if (document.getElementById("wa_message").value.length < 1) {
+document.getElementById("wa_message").value = "Вопрос...";
+}
+if (document.getElementById("wa_city").value.length < 1) {
+document.getElementById("wa_city").value = "Город...";
+}
+if (document.getElementById("wa_phone").value.length < 1) {
+document.getElementById("wa_phone").value = "Телефон...";
+}
+if (document.getElementById("wa_kaptcha").value.length < 1) {
+document.getElementById("wa_kaptcha").value = "Контрольная фраза...";
+}
+}
+
+function clearphone() {
+if (document.getElementById("wa_phone").value == "Телефон...") {
+document.getElementById("wa_phone").value="";
+}
+if (document.getElementById("wa_name").value.length < 1) {
+document.getElementById("wa_name").value = "Ваше Имя...";
+}
+if (document.getElementById("wa_email").value.length < 1) {
+document.getElementById("wa_email").value = "E-mail...";
+}
+if (document.getElementById("wa_message").value.length < 1) {
+document.getElementById("wa_message").value = "Вопрос...";
+}
+if (document.getElementById("wa_kaptcha").value.length < 1) {
+document.getElementById("wa_kaptcha").value = "Контрольная фраза...";
+}
+if (document.getElementById("wa_city").value.length < 1) {
+document.getElementById("wa_city").value = "Город...";
+}
+}
+
+function clearcity() {
+if (document.getElementById("wa_city").value == "Город...") {
+document.getElementById("wa_city").value="";
+}
+if (document.getElementById("wa_name").value.length < 1) {
+document.getElementById("wa_name").value = "Ваше Имя...";
+}
+if (document.getElementById("wa_email").value.length < 1) {
+document.getElementById("wa_email").value = "E-mail...";
+}
+if (document.getElementById("wa_message").value.length < 1) {
+document.getElementById("wa_message").value = "Вопрос...";
+}
+if (document.getElementById("wa_kaptcha").value.length < 1) {
+document.getElementById("wa_kaptcha").value = "Контрольная фраза...";
+}
+if (document.getElementById("wa_phone").value.length < 1) {
+document.getElementById("wa_phone").value = "Телефон...";
+}
+}
+
+
+function isValidEmail(str_email,event) {
+   if (str_email.indexOf(".") > 2 && str_email.indexOf("@") > 0) {       
+   }
+   else {
+   alert('Такого E-mail не существует');
+    if (event.preventDefault)
+                event.preventDefault();
+             else
+                event.returnValue= false;
+    return false;   
+   }
+}
+
+function sub(event) {
+
+if (document.getElementById("wa_city").value == "Город..." || document.getElementById("wa_phone").value == "Телефон..." || document.getElementById("wa_name").value == "Ваше Имя..." || document.getElementById("wa_email").value == "E-mail..." || document.getElementById("wa_message").value == "Вопрос...") {
+alert('Не заполнены все поля');
+if (event.preventDefault)
+            event.preventDefault();
+         else
+            event.returnValue= false;
+return false;
+}
+
+document.getElementById("email_address").value = "hair-star@rambler.ru";
+var email_str = document.getElementById("wa_email").value;
+isValidEmail(email_str,event);
+}
+clearcaptcha();
+
+// ]]>
+</script>
+

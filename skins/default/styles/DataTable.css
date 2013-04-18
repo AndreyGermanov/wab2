@@ -1,0 +1,42 @@
+/* linked */
+@import "/skins/default/styles/Table.css";
+.deactivated {
+    width: 100%;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.input1 {
+    width: 100%;
+    background-color:#FFFFFF;
+    border-width:0px;
+}
+
+.hidden {
+    display: none;
+}
+
+td.cell:hover {
+    background-color: #e4f5f1;
+    cursor: pointer;
+}
+
+a {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-size: 13px;
+	color: #000000;
+}
+
+a.link {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+	text-decoration:none;
+    font-size: 13px;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0000FF;
+}

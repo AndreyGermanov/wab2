@@ -1,0 +1,27 @@
+<!-- unnamed -->
+<table type="Collection" cellpadding="1" cellspacing="1" style="text-align: left; width: 100%;height:100%" useadapter="true" object="WebEntity_2_4" adapterId="SiteDataAdapter_{module_id}_{siteId}_{name}" cols="{cols}" rows="{rows}" query="SELECT name,sysname,Text,siteId,img,imgsm FROM fields WHERE @isPublic=1 AND @parent.@name={name} AND @classname LIKE '%WebEntity%' ORDER BY sortOrder ASC" >
+    <tbody>    
+	<tr>
+            <td style="text-align: center;font-weight: bold">
+                <div align="center">
+                <table width="100%" style="height:100%;border-width:0px;border-style: hidden" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr style="height:100%" valign="top">
+                            <td>
+                                <a href="{img_child}" rel="shadowbox"><img style="width:96px;height:129px" src="{imgsm_child}" /> </a>                                
+                            </td>                            
+                        </tr>
+                        <tr valign="bottom">
+                            <td>
+                                <div align="center">
+                                {Text_child}
+                                </div>
+                            </td>                            
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </td>
+	</tr>
+    </tbody>
+</table>

@@ -1,0 +1,107 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" style="height:100%">
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Группа:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Адрес Email:
+			        </td>
+			        <td class="inner">
+			            <Control id="email" value="{email}" properties='{email_properties}'></Control>                                
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Описание:
+			        </td>
+			        <td class="inner">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Протокол:
+			        </td>
+			        <td class="inner">
+			            <Control id="protocol" value="{protocol}" properties='{protocol_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Хост:
+			        </td>
+			        <td class="inner">
+			            <Control id="host" value="{host}" properties='{host_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Порт:
+			        </td>
+			        <td class="inner">
+			            <Control id="port" value="{port}" properties='{port_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Имя пользователя:
+			        </td>
+			        <td class="inner">
+			            <Control id="username" value="{username}" properties='{username_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Пароль:
+			        </td>
+			        <td class="inner">
+			            <Control id="password" value="{password}" properties='{password_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Шифрование:
+			        </td>
+			        <td class="inner">
+			            <Control id="cryptType" value="{cryptType}" properties='{cryptType_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top" style="height:100%">
+			        <td class="inner" colspan="2">
+			            <Control id="isAuth" value="{isAuth}" properties='{isAuth_properties}'></Control> Требуется аутентификация                                
+			        </td>        
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="submit" id="OK" value="Сохранить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

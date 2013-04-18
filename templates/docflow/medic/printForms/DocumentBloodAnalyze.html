@@ -1,0 +1,82 @@
+<!-- block=header -->
+<div align="center"><font face="Arial" style="font-size:18px;font-weight:bold">АНАЛИЗ КРОВИ № {number} ОТ {docDate}</font><br/><br/></b></div>
+<table cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td><font face="Arial" style="font-size:15px;"><b>ПАЦИЕНТ: </b></td>
+		<td><font face="Arial" style="font-size:15px;">{patientTitle}</font></td>
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td><font face="Arial" style="font-size:15px;"><b>ТИП АНАЛИЗА: </b></td>
+		<td><font face="Arial" style="font-size:15px;">{analyzeTypeTitle}</font></td>
+	</tr>
+</table>
+<br/><br/>
+<table style="border-width:1px" width="100%" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px" border="1" cellpadding="2" cellspacing="0">
+	<tr bgcolor="#CCCCCC" valign="top">
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>№ п.п.</b></font>
+		</td>
+		<td align="center" width="50%">
+			<font face="Arial" style="font-size:15px"><b>Показатель</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Значение</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Единица</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Мин.</b></font>
+		</td>		
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Макс.</b></font>
+		</td>		
+	</tr>
+<!-- block=str -->
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="center">
+			<font face="Arial" style="font-size:15px">{num}</font>
+		</td>
+		<td align="left">
+			<font face="Arial" style="font-size:15px">{title}</font>
+		</td>
+		<td align="right">
+			<font face="Arial" style="font-size:15px">{value}</font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px">{dimensionTitle}</font>
+		</td>
+		<td align="right">
+			<font face="Arial" style="font-size:15px">{minValue}</font>
+		</td>		
+		<td align="right">
+			<font face="Arial" style="font-size:15px">{maxValue}</font>
+		</td>		
+	</tr>
+<!-- block=selected-str -->
+	<tr bgcolor="#EEEEEE" valign="top">
+		<td align="center">
+			<font face="Arial" style="font-size:15px">{num}</font>
+		</td>
+		<td align="left">
+			<font face="Arial" style="font-size:15px">{title}</font>
+		</td>
+		<td align="right">
+			<font face="Arial" style="font-size:15px">{value}</font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px">{dimensionTitle}</font>
+		</td>
+		<td align="right">
+			<font face="Arial" style="font-size:15px">{minValue}</font>
+		</td>		
+		<td align="right">
+			<font face="Arial" style="font-size:15px">{maxValue}</font>
+		</td>		
+	</tr>
+<!-- block=table-footer -->
+</table>
+<!-- block=results -->
+<br/>
+<font face="Arial" style="font-size:18px;font-weight:bold">РЕЗУЛЬТАТЫ АНАЛИЗА:</font><br/>
+<font face="Arial" style="font-size:15px">{analyzeResults}</font>

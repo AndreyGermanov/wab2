@@ -1,0 +1,39 @@
+#taskbar_table {
+    border-top-style:solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    background-image: url('/skins/default/images/Taskbar/bg.jpg');
+    background-repeat: repeat-x;
+}
+
+td.taskbar {
+        
+    font-weight: normal;
+    border-style:none;
+    border-width:1px;
+    border-color:black;
+    overflow: visible;
+}
+
+td.taskbar_selected {
+    font-weight: normal;
+    border-style:none;
+    border-width:1px;
+    border-color:black;
+    overflow: visible;
+    border-style:inset;
+    background-color: #ffffcc;
+	cursor: pointer;     
+}
+
+td.taskbar1 {
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: black;
+    
+}
+
+td.taskbar:hover {
+    border-style:outset;
+	cursor: pointer;         
+}

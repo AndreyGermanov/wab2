@@ -1,0 +1,20 @@
+<form action="index.php" method="post" target="{object_id}_innerFrame">
+<table>
+	<tbody>
+		<tr valign="middle">
+			<td class="header_text">
+				Добро пожаловать <b>{user}</b> на наш сайт !
+			</td>
+			<td class="header_text">
+				<input type="submit" value="Выход" class="input"/>
+				<input type="hidden" name="action" object="{object_id}" id="action" value="unsubmit">
+				<input type="hidden" name="object_id" object="{object_id}" id="object_id" value="{object_id}">
+				<input type="hidden" name="hook" object="{object_id}" id="hook" value="4">				
+				<input type="hidden" name="ajax" object="{object_id}" id="ajax" value="true">				
+       		 	<iframe src="" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"></iframe>
+			</td>
+	</tr>
+	</tbody>	
+</table>	
+</form>
+

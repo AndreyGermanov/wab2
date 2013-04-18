@@ -1,0 +1,1 @@
+var Report = Class.create(Entity);

@@ -1,0 +1,1 @@
+var DocumentContragentRequest = Class.create(Document);

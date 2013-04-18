@@ -1,0 +1,21 @@
+/* linked */
+.page {
+	font-size:9px;
+        text-decoration:none;
+        color: #000000;
+}
+
+.selected_page {
+	font-size:9px;	
+	font-weight:bold;
+        text-decoration:none;
+        color: #000000;
+}
+
+.page:hover {
+	font-size:9px;
+	font-weight:bold;
+        text-decoration:none;
+        color: #FF0000;
+}
+

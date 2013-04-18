@@ -1,0 +1,17 @@
+/* linked */
+@import "/skins/default/styles/Mailbox.css";
+
+.deactivated {
+    width: 100%;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.input1 {
+    width: 100%;
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    border-width:1px;
+}

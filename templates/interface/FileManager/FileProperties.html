@@ -1,0 +1,192 @@
+<body bgcolor="#FFFFFF" />
+<div id="mailbox_div">
+    <table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;display:" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%">
+                <tr valign="top">
+                    <td rowspan="10" class="inner" nowrap="true"><img src="{img_title}"/></td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" colspan="2" nowrap="true">{title}</td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" class="inner_small" nowrap><span title='{path_title_full}'>{path_title}</span></td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true"><b>Тип:</b></td>
+                    <td class="inner_small" nowrap="true" width="100%">{mimetype}</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true"><b>Размер:</b></td>
+                    <td class="inner_small" nowrap="true">{sizeTitle}</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true"><b>Дата модификации:</b></td>
+                    <td class="inner_small" nowrap="true">{filemtime}</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true"><b>Дата последнего доступа:</b></td>
+                    <td class="inner_small" nowrap="true">{fileatime}</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true"><b>Общий объем папки:</b></td>
+                    <td class="inner_small" nowrap="true">{totalSizeTitle}</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true"><b>Свободный объем:</b></td>
+                    <td class="inner_small" nowrap="true">{freeSizeTitle}</td>
+                </tr>
+                <tr valign="top">
+                	<td class="inner_small" nowrap="true" colspan="2">
+        				{|referenceFileCode}                	                	
+                	</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true" style="height:100%" colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="rights" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%">
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        {:include {rules_tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{rules_tabs_string}';$object->active_tab='{rules_active_tab}'; :}
+                    </td>
+                </tr>
+                <tr valign="top" id="users" style="height:100%;display:" width="100%">
+                    <td class="inner">
+                        {|userRightsTable}
+                    </td>
+                </tr>
+                <tr valign="top" id="groups" style="height:100%;display:none" width="100%">
+                    <td class="inner">
+                        {|groupRightsTable}
+                    </td>
+                </tr>
+                <tr valign="bottom" width="100%">
+                    <td class="inner">
+                        <Control type="boolean" control_type="checkbox" id="reverseRules" value="0"></control> Применить ко всем вложенным каталогам и файлам
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap="true" style="height:100%">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="shares" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <Control type="boolean" control_type="checkbox" id="shareCheckBox" value="{shareCheckBox}"></Control> Включить общий доступ
+            <table cellpadding="0" cellspacing="1" width="100%" id="shareDisplay" style="display:{shareDisplay}">
+                <tr valign='top'>
+                    <td class="inner" nowrap="true">
+                        Имя общего ресурса
+                    </td>
+                    <td width="100%" class="inner">
+                        <Control type="string" id="share" value="{share}"/>
+                        <input type="hidden" id="old_share" value="{share}"/>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true" colspan="2">
+                        {:include {shares_tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{shares_tabs_string}';$object->active_tab='{shares_active_tab}'; :}
+                    </td>
+                </tr>
+                <tr valign="top" id="localShares" style="height:100%;display:" width="100%">
+                    <td class="inner" colspan="2">
+                        <table cellpadding="0" cellspacing="1" width="100%">
+                            <tr valign="top">
+                                <td colspan="2" class="inner">
+                                    {:include {hosts_access_rules_table},,$object->table_rows='{hosts_rows}';$object->opener_item='{object_id}';$object->window_id="{window_id}";$object->parent_object_id='{object_id}'; :}                                                            
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr valign="top" id="internetShares" style="height:100%;display:none" width="100%">
+                    <td class="inner" colspan="2">
+                        <table cellpadding="0" cellspacing="1" width="100%">
+                            <tr valign='top'>
+                                <td class="inner" nowrap="true">
+                                    <Control type="boolean" control_type="checkbox" id="ftpFolder" value="{ftpFolder}" ></Control>
+                                    Опубликовать в Интернет
+                                </td>
+                            </tr>
+			                <tr valign="top">
+			                    <td class="inner_small" nowrap="true" style="height:100%">&nbsp;</td>
+			                </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr valign="top" id="trash" style="height:100%;display:none" width="100%">
+                    <td colspan="2" width="100%" class="inner">&nbsp;
+                        <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                            <tr>
+                                <td class="inner" colspan="2">                       
+                                    <Control id="recycleBin" type="boolean" control_type="checkbox" value="{recycleBin}"></Control>Включить сетевую корзину
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner">
+                                    Путь к корзине
+                                </td>
+                                <td class="inner">                       
+                                    <Control width="100%" id="recyclePath" type="path" control_type="fileManager" value="{recyclePath}"></Control>                    
+                                </td>
+                            </tr>
+                            <tr valign="top" style="height:100%">
+                                <td class="inner">
+                                    Период хранения данных в корзине (дней)
+                                </td>
+                                <td class="inner">                       
+                                    <Control id="recyclePeriod" type="integer" value="{recyclePeriod}"></Control>                
+                                </td>
+                            </tr>
+			                <tr valign="top">
+			                    <td class="inner_small" nowrap="true" style="height:100%">&nbsp;</td>
+			                </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr valign="top" id="audit" style="height:100%;display:none" width="100%">
+                    <td colspan="2" width="100%" class="inner">&nbsp;
+                        <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                            <tr>
+                                <td class="inner" colspan="2">                       
+                                    <Control id="fullAudit" type="boolean" control_type="checkbox" value="{fullAudit}"></Control>Включить события с этой папкой в журнал событий
+                                </td>
+                            </tr>
+			                <tr valign="top">
+			                    <td class="inner_small" nowrap="true" style="height:100%">&nbsp;</td>
+			                </tr>
+                        </table>
+                    </td>
+                </tr>                
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="backup" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+			<iframe src="{backupFrameSrc}" style="width:100%;height:100%"></iframe>
+		</td>
+	</tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+	        <input type="hidden" name="paths" id="paths" value="{dirs}"/>               
+	        <div align="right">
+	        	<input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+	        	<input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+	            <input class="but" type="button" id="help" value=" Помощь ">
+	        </div>
+        </td>
+    </tr>
+</table>
+</div>

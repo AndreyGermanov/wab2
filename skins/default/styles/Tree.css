@@ -1,0 +1,23 @@
+/* linked */
+.tree_item
+{    
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+}
+
+.tree_item_hover
+{
+    cursor: pointer;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    background-color: #FFFFBB;
+}
+
+.tree_item_selected
+{
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    background-color: #ffffcc;
+    cursor: pointer;
+}

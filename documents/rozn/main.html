@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>main.html</title></head><body>
+<h1>&nbsp;<a name="p1"></a>Введение</h1>
+<div style="text-align: justify;">
+Данная программа предназначена для автоматизации розничной торговли
+товарами и услугами с использованием технологий сетевого маркетинга и
+дисконтных карт. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Программа работает через Интернет, с помощью обычного браузера.
+Работать с программой могут только авторизованные пользователи, имеющие
+логин и пароль. Права пользователя определяются его типом. Пользователь
+может быть либо менеджером, либо администратором. Менеджеры могут вести
+базу данных клиентов и оформлять заказы. Администраторы обладают
+дополнительными возможностями: они могут выполнять настройку программы,
+регистрировать в ней новых пользователей и удалять существующих.<br>
+
+</div>
+<h1><a name="p2"></a>Технологии сетевого маркетинга</h1>
+<div style="text-align: justify;">
+Технологии сетевого маркетинга используются для вовлечения клиента в
+бизнес. Клиент становится вашим агентом, который ищет других
+клиентов для вас. За это он получает процент от заказов этих клиентов.
+Этот процент в виде так называемых "бонусных рублей" начисляется на его
+дисконтную карту. Израсходовать деньги, начисленные на дисконтую карту он может только сделав заказ в вашей компании. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+При первом визите каждый клиент получает дисконтную карту и талоны с ее
+номером, которые
+он может раздавать своим знакомым с рекомендацией сделать заказ в вашей
+компании. Если в дальнейшем один из таких
+знакомых сделает заказ и&nbsp; предъявит талон, он получает
+скидку, а человек, который дал ему талон, получает процент от суммы
+заказа на свою дисконтную карту. Клиент, который привел другого клиента
+(выдал ему талон) называется <span style="font-weight: bold;">реферрером</span>, а клиент, который пришел от
+другого клиента (предъявил талон) называется <span style="font-weight: bold;">реферралом</span>. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Клиент, который привел другого клиента называется его прямым реферрером
+или реферрером <span style="font-weight: bold;">первого уровня</span>. Если этого клиента тоже кто-то
+привел, он считается реферрером первого уровня для этого клиента и
+реферрером <span style="font-weight: bold;">второго уровня</span> для первого клиента. Может быть любое
+количество уровней реферреров и каждый получает свой процент от заказа
+данного клиента. Шкала скидок устанавливается в окне настроек программы.<br>
+
+</div>
+<h1><a name="p3"></a>Начало работы</h1>
+<div style="text-align: justify;">
+При запуске программы в первый раз, к ней можно подключиться от имени
+пользователя '<span style="font-weight: bold;">administrator</span>' с паролем '<span style="font-weight: bold;">111111</span>'. Данный пользователь
+имеет полномочия системного администратора. От его имени осуществляется
+настройка программы.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Далее необходимо действовать в следующей последовательности.<br>
+</div>
+
+<br>
+<span style="font-weight: bold;">Администратору</span><br>
+<br>
+Заполнить "Основные сведения о компании". См. "<a onclick='parent.obj.go_to("4",true,event)' href="null">Ввод основных сведений о компании</a>".<br>
+<br>
+<div style="text-align: justify;">
+Зарегистрировать в программе необходимое количество менеджеров и администраторов, а
+также изменить пароль существующего администратора. См. "<a onclick='parent.obj.go_to("5",true,event)' href="null">Работа с
+учетными записями пользователей</a>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Далее можно приступать к ведению <a onclick='parent.obj.go_to("6.1",true,event)' href="null">базы клиентов</a> и к <a onclick='parent.obj.go_to("6.2",true,event)' href="null">оформлению заказов</a>.<br>
+
+</div>
+<h1><a name="p4"></a>Ввод основных сведений о компании</h1>
+<div style="text-align: justify;">
+Перед тем как начать работать с клиентами и заказами, необходимо внести
+основные сведения о предприятии. Это может сделать только пользователь,
+имеющий тип "<span style="font-weight: bold;">Администратор</span>". Для того чтобы отобразить окно основных
+сведений о предприятии нужно выполнить команду "<span style="font-weight: bold;">Система</span>" --&gt;
+"<span style="font-weight: bold;">Основные сведения о компании</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/syssettingsmain.png" alt="syssettingsmain.png"><br>
+</div>
+<h2><a name="p5"></a>Закладка "Основное"</h2>
+<div style="text-align: justify;">
+На закладке "<span style="font-weight: bold;">Основное</span>" указываются параметры, используемые при
+распечатке Приходного Кассового ордера и квитанции об оплате, которая выдается
+клиенту после оплаты заказа.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+При заполнении печатной формы Приходного кассового ордера в нее автоматически подставляются следующие поля из этого окна:<br>
+
+</div>
+<ul style="font-weight: bold;">
+  <li>Организация</li>
+  <li>Код по ОКПО</li>
+  <li>Руководитель</li>
+  <li>Главный бухгалтер</li>
+  <li>Кассир</li>
+  <li>Основание приходного кассового ордера</li>
+</ul>
+<h2><a name="p6"></a>Закладка "Скидки"</h2>
+<div style="text-align: center;"><img style="width: 701px; height: 534px;" src="img/syssettingsdiscounts.png" alt="syssettingsdiscounts.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+На закладке "<span style="font-weight: bold;">Скидки</span>" указываются скидки, которые положены клиентам при оформлении заказов. <br>
+
+</div>
+<ul>
+  <li><span style="font-weight: bold;">Скидка реферрала при первой покупке (руб.) - </span>Если
+клиент пришел в первый раз по рекомендации и предъявил талон с
+реферальным номером, то ему предоставляется скидка в виде фиксированной
+суммы в размере, указанном в поле.</li>
+  <li><span style="font-weight: bold;">Скидки реферреров (%)</span> - Шкала скидок реферреров. В этом поле перечислены проценты скидки для реферреров каждого уровня, начиная с первого. Скидки,
+вычисленные по этим процентам (так называемые "бонусные рубли")
+начисляются на дисконтные карты реферреров в момент проведения заказа,сделанного реферралом. </li>
+</ul>
+<h2><a name="p7"></a>Закладка "Шаблоны"</h2>
+<div style="text-align: justify;">
+В момент начисления скидок на дисконтные карты реферреров, им
+автоматически отправляются оповещения по SMS и по электронной почте. На
+этой странице можно создать и отредактировать шаблоны этих оповещений.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/syssettingstemplates.png" alt="syssettingstemplates.png"><br>
+</div>
+<br>
+<ul>
+  <li><span style="font-weight: bold;">Шаблон SMS-сообщения</span>
+-
+текст SMS-сообщения, которое будет отправляться реферреру в момент
+начисления бонусных рублей на его дисконтную карту. В шаблоне можно
+использовать переменную '{сумма}'. Вместо нее будет подставляться сумма
+начисленных рублей. Для того чтобы SMS гарантировано дошла, пишите ее
+транслитом. Желательно чтобы SMS не превышала 45 символов.<br>
+</li>
+  <li><span style="font-weight: bold;">Адрес E-mail отправителя сообщения</span> - электронный адрес, от имени которого реферреры будут получать оповещения о начисленных бонусных рублях по E-Mail.</li>
+  <li><span style="font-weight: bold;">Тема E-mail-сообщения</span> - тема E-mail-сообщения о бонусных рублях, которое будет отправляться реферрерам в момент начисления на их дисконтные карты.</li>
+  <li><span style="font-weight: bold;">Шаблон E-mail-сообщения</span> - текст E-mail-сообщения о бонусных рублях, которое будет отправляться реферрерам в момент начисления на их дисконтные карты.
+В тексте шаблона сообщения может использоваться переменная '{сумма}',
+которая автоматически заменяется на сумму начисленных бонусных рублей.</li>
+</ul>
+После внесения изменений в настройки, необходимо нажать кнопку "<span style="font-weight: bold;">Сохранить</span>".<br>
+<h1><a name="p8"></a>Работа с учетными записями пользователей</h1>
+<h2><a name="p9"></a>Работа со списком пользователей</h2>
+<div style="text-align: justify;">Для доступа к списку учетных записей нужно выполнить команду "<span style="font-weight: bold;">Справочники</span>" --&gt; "<span style="font-weight: bold;">Пользователи</span>" из меню. Появится список учетных записей пользователей, зарегистрированных в системе.<br>
+</div>
+<div style="text-align: justify;"><br>
+</div>
+<div style="text-align: center;"><img style="width: 700px; height: 557px;" src="img/userslist.png" alt="userslist.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Чтобы открыть карточку пользователя, нужно сделать двойной щелчок мышью по строке с его именем.<br>
+</div>
+<br>
+<div style="text-align: justify;">Для работы с пользователями предназначы кнопки панели инструментов.<br>
+</div>
+
+<div style="text-align: justify;">
+<ul>
+  <li>Чтобы добавить нового пользователя, нужно нажать кнопку <img src="img/add.png" alt="add.png">. Появится карточка, в которой можно ввести его логин, пароль, тип (менеджер или администратор) и другую информацию.</li>
+</ul>
+</div>
+
+<div style="text-align: justify;">
+<ul>
+  <li>Для выполнения операций с существующими пользователем, нужно
+сначала выделить строку с его именем, нажав на ней мышью один раз
+(строка окрасится в синий цвет). Также для некоторых операций можно
+выделить сразу группу пользователей. Для этого нужно включить их флажки
+в первой колонке.</li>
+</ul>
+</div>
+<br>
+<div style="text-align: center;"><img style="width: 700px; height: 558px;" src="img/userslistselected.png" alt="userslistselected.png"></div>
+<br><span style="font-weight: bold;">
+Операции с существующими пользователями:</span><br style="font-weight: bold;">
+<br>
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/copy.png" alt="copy.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать точную копию выбранного
+пользователя. При нажатии на эту кнопку появляется карточка нового
+пользователя, в которой все поля заполнены из карточки текущего
+пользователя<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Установить на выделенных
+пользователях пометку удаления. При нажатии на эту кнопку, пользователи
+помечаются на удаление и их в дальнейшем можно удалить с помощью
+операции "<a onclick='parent.obj.go_to("7.1",true,event)' href="null"><span style="font-weight: bold;">Удаление помеченных объектов</span></a>" (меню "<span style="font-weight: bold;">Система</span>" --&gt; "<span style="font-weight: bold;">Удаление помеченных объектов</span>").<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/undeleteButton.png" alt="undeleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Снять пометку удаления с выделенных пользователей.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div style="text-align: justify;">Если пользователь помечен на
+удаление, это не значит что он не активен и его учетную запись нельзя
+использовать для подключения. Чтобы заблокировать пользователю доступ к
+системе нужно либо полностью удалить его (выполнить процедуру "<span style="font-weight: bold;">Система</span>" --&gt; "<span style="font-weight: bold;">Удаление помеченных объектов</span>"), либо изменить его пароль на никому неизвестное сочетание символов.<br>
+</div>
+<div style="text-align: justify;">
+<h2><a name="p10"></a>Работа с карточкой пользователя</h2>
+</div>
+<div style="text-align: justify;">При создании нового пользователя, при
+открытии существующего пользователя или при создании нового
+пользователя копированием, появляется его карточка.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/newuser.png" alt="newuser.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Все поля, кроме "<span style="font-weight: bold;">Фото</span>" обязательны для заполнения.<br>
+</div>
+<ul>
+  <li><span style="font-weight: bold;">Логин</span> - имя пользователя, которое он будет вводить при подключении к системе</li>
+  <li><span style="font-weight: bold;">Пароль</span> - пароль, который пользователь будет вводить при подключении</li>
+  <li><span style="font-weight: bold;">Пароль еще раз</span> - подверждение введенного пароля пользователя<br>
+  </li>
+  <li><span style="font-weight: bold;">Тип</span> - тип пользователя:
+менеджер или администратор. Тип определяет права, которые пользователь
+будет иметь в системе и интерфейс, который будет отображаться в его
+браузере. Менеджеры имеют ограниченные возможности: они могут вести
+базу клиентов и оформлять их заказы, соответственно и интерфейс
+содержит только функции, необходимые для выполнения этих задач.
+Администраторы имеют полный доступ ко всем функциям программы.</li>
+  <li><span style="font-weight: bold;">Фамилия</span> - фамилия пользователя (справочно)</li>
+  <li><span style="font-weight: bold;">Имя</span> - имя пользователя (справочно)</li>
+  <li><span style="font-weight: bold;">Отчество</span> - отчество пользователя (справочно)</li>
+  <li><span style="font-weight: bold;">Фото</span> - фото пользователя (справочно)</li>
+</ul>
+<div style="text-align: justify;">После заполнения всех полей нужно нажать кнопку "<span style="font-weight: bold;">Сохранить</span>". Новый пользователь появится в списке пользователей. После этого можно подключаться к системе от имени этого пользователя.<br>
+</div>
+<h2><a name="p11"></a>Замечания по подключению пользователя</h2>
+
+<div style="text-align: justify;">Если вы хотите попробовать
+подключиться от имени нового пользователя сразу же с этого компьютера,
+необходимо сначала отключиться от системы. Для этого нужно полностью
+закрыть браузер (все окна браузера), подождать около минуты, снова
+открыть браузер и подключиться к системе.<br>
+</div>
+<br>
+<div style="text-align: justify;">Пользователь может работать от имени
+своей учетной записи только с одного компьютера одновременно и только в
+одном окне браузера. Если пользователь, пытается создавать более одного
+соединения от имени своей учетной записи, будет появляться сообщение:<br>
+</div>
+<br>
+<span style="font-style: italic;">"Пользователь с учетной записью &lt;логин&gt; уже работает в системе. Доступ запрещен". </span><br>
+<br>
+<div style="text-align: justify;">Если это сообщение появляется и точно
+известно, что пользователь создает только одно подключение, значит его
+прошлый сеанс еще не завершился, нужно подождать около минуты и
+попробовать подключиться еще раз.<br>
+</div>
+
+<h1><a name="p12"></a>Работа менеджера в программе</h1>
+<div style="text-align: justify;">
+<div style="text-align: justify;">Интерфейс менеджера показывает список клиентов на закладке "<span style="font-weight: bold;">Контрагенты</span>".<br>
+</div>
+
+&nbsp;<br>
+<div style="text-align: center;"><img src="img/contragentslist.png" alt="contragentslist.png"><br>
+</div>
+<br>
+Задача менеджера заключается в том чтобы принять клиента, определить,
+есть ли он в списке и если нет, завести его карточку. При этом менеджер
+должен выдать новому клиенту дисконтную карту и если клиент предоставил
+талон с реферальным номером, ввести этот номер в его карточку, в поле
+"<span style="font-weight: bold;">Номер реферрера</span>" и предоставить разовую скидку за предъявление этого
+талона.<br>
+</div>
+<br>
+<div style="text-align: justify;">Чтобы создать нового клиента, нужно нажать кнопку <img src="img/add.png" alt="add.png"> и появится карточка нового клиента. Работе с карточкой клиента посвящен следующий раздел.<br>
+</div>
+<br>
+<div style="text-align: justify;">
+Для поиска уже заведенного клиента предназначены различные средства.<br>
+
+</div>
+<ul>
+  <li>Можно упорядочить список в алфавитном порядке по любой колонке
+(по ФИО, по номеру дисконтной карты или по номеру реферрера). Для этого
+нужно нажать по заголовку колонки левой кнопкой мыши.</li>
+  <li>Можно найти клиента по ключевому слову (по части фамилии или
+имени, по номеру дисконтной карты или по значению любой другой
+колонки). Для этого нужно ввести ключевое слово в поле поиска и нажать
+кнопку <img src="img/findButton.png" alt="findButton.png">.
+Строка в которой обнаружится совпадение подсветится. Для того чтобы
+продолжить поиск, нужно снова нажать эту кнопку, подсветится следующая
+строка, в которой будет найдено совпадение.</li>
+</ul>
+<div style="text-align: justify;">Другие операции с существующими клиентами:<br>
+</div>
+<br>
+
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/copy.png" alt="copy.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать
+точную копию выбранного клиента. При нажатии на эту кнопку
+появляется карточка нового клиента, в которой все поля заполнены из
+карточки текущего контрагента.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Установить на выделенных клиентах пометку удаления. При нажатии на эту кнопку клиенты
+помечаются на удаление и их в дальнейшем можно удалить с помощью
+операции "<a onclick='parent.obj.go_to("7.1",true,event)' href="null"><span style="font-weight: bold;">Удаление помеченных объектов</span></a>" (меню "<span style="font-weight: bold;">Система</span>" --&gt; "<span style="font-weight: bold;">Удаление помеченных объектов</span>").<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/undeleteButton.png" alt="undeleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Снять пометку удаления с выделенных клиентов.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<div style="text-align: justify;">
+<h2><a name="p13"></a>Работа с карточкой клиента</h2>
+
+</div>
+
+<div style="text-align: justify;">При создании нового клиента появляется его карточка.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/newcontragent.png" alt="newcontragent.png"><br>
+</div>
+<br>
+<ul>
+  <li><span style="font-weight: bold;">ФИО</span> - Фамилия, Имя и Отчество</li>
+  <li><span style="font-weight: bold;">№ дисконтной карты </span>- при
+создании нового клиента менеджер выдает ему дисконтную карту и заносит
+ее номер в это поле. Для существующих клиентов, у которых на дисконтной
+карте есть остаток или были движения это поле недоступно для
+редактирования.</li>
+  <li><span style="font-weight: bold;">Номер реферрера</span> - если новый клиент пришел от другого клиента и предъявил талон с номером, менеджер вносит номер
+в это поле. Для существующих клиентов, в случае если бонусные рубли от
+них уже начислялись реферрерам, это поле недоступно для редактирования.</li>
+  <li><span style="font-weight: bold;">Номер мобильного телефона</span>
+- по этому номеру будут отправляться SMS-сообщения каждый раз, когда на
+дисконтную карту данного клиента будут начисляться бонусные рубли.
+Номер начинается не с цифры 8, а с цифры 7. Шаблон SMS-сообщения
+администратор может создать или отредактировать в окне "Основные
+сведения о компании".<br>
+  </li>
+  <li><span style="font-weight: bold;">Адрес E-mail</span> - по этому адресу будут отправляться оповещения каждый раз, когда на дисконтную карту
+данного клиента будут начисляться бонусные рубли.&nbsp; Шаблон E-Mail
+сообщения админстратор может создать или отредактировать в окне
+"<a onclick='parent.obj.go_to("4",true,event)' href="null">Основные сведения о компании</a>".</li>
+  <li><span style="font-weight: bold;">Фото</span> - позволяет загрузить фото клиента для визуальной идентификации. Это поле не обязательно.</li>
+  <li><span style="font-weight: bold;">Прочая информация</span> - в поле указывается любая дополнительная информация о клиенте, например его дополнительные телефоны и адреса.<br>
+  </li>
+</ul>
+
+<div style="text-align: justify;">После ввода данных нужно нажать
+кнопку "Сохранить". Программа проверит корректность данных и если ошибок
+не возникнет, клиент будет создан и появится в списке клиентов.<br>
+</div>
+<br>
+<div style="text-align: justify;">После сохранения, в карточке клиента появятся дополнительные закладки "<span style="font-weight: bold;">Заказы</span>" и "<span style="font-weight: bold;">Дисконтная карта</span>",
+с помощью которых менеджер может оформлять для этого клиента заказы и в
+любой момент посмотреть остаток и обороты по счету его дисконтной карты.<br>
+</div>
+<br>
+<div style="text-align: justify;">На закладке "<span style="font-weight: bold;">Заказы</span>" отображается список заказов, которые делал данный клиент.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/contragentorderslist.png" alt="contragentorderslist.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Здесь можно просматривать заказы,
+которые данный клиент делал раньше или оформить новый заказ. Подробнее
+об оформлении заказа можно прочитать далее в разделе "<a onclick='parent.obj.go_to("6.2",true,event)' href="null">Оформление заказа</a>".<br>
+</div>
+<br>
+<div style="text-align: justify;">На закладке "<span style="font-weight: bold;">Дисконтная карта</span>" отображается состояние счета дисконтной карты данного клиента.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/contragentdiscountcard.png" alt="contragentdiscountcard.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">В колонке "<span style="font-weight: bold;">Приход</span>"
+отображаются поступления на счет. Поступление на счет дисконтной карты происходит в
+момент проведения заказа от клиента, которого привел данный клиент. В
+колонке "<span style="font-weight: bold;">Регистратор</span>" отображается информация о заказе, благодаря
+которому произошло данное поступление.<br>
+</div>
+<br>
+<div style="text-align: justify;">В колонке "<span style="font-weight: bold;">Расход</span>"
+отображаются списания с дисконтной карты. Списание происходит в момент
+проведения заказа клиента. В этот момент сумма, накопленная на карте
+списывается как скидка.<br>
+</div>
+<br>
+<div style="text-align: justify;">В поле "<span style="font-weight: bold;">Остаток</span>"
+отображается текущий остаток на дисконтной карте. Менеджер может в
+любой момент увидеть и сообщить клиенту остаток на его дисконтной карте.<br>
+</div>
+
+
+<h2><a name="p14"></a>Оформление заказа</h2>
+<div style="text-align: justify;">Оформить заказ клиента можно двумя способами.<br>
+</div>
+<div style="text-align: justify;"><br>
+Во первых это можно сделать&nbsp; из списка заказов в карточке клиента, перейдя на закладку "<span style="font-weight: bold;">Заказы</span>" и нажав кнопку <img src="img/add.png" alt="add.png"> (Добавить). <br>
+</div>
+<br>
+<div style="text-align: justify;">Также, в программе есть общий список заказов, который можно увидеть либо перейдя на закладку "<span style="font-weight: bold;">Розничные продажи</span>" в рабочей области программы, либо выполнив команду "<span style="font-weight: bold;">Документы</span>" --&gt; "<span style="font-weight: bold;">Розничные продажи</span>". Можно оформить заказ, находясь в этом списке также нажав кнопку <img src="img/add.png" alt="add.png"> и указав клиента, от имени которого создается заказ.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/neworder.png" alt="neworder.png"><br>
+</div>
+<br>
+Документ заполняется сверху вниз.<br>
+<br>
+<div style="text-align: justify;">В поле "<span style="font-weight: bold;">Контрагент</span>"
+указывается клиент. Если заказ оформляется из карточки клиента, это
+поле заполнится автоматически и будет недоступно для редактирования. При
+указании клиента вычисляется доступная на дату документа сумма скидки.
+Она появляется в строке "<span style="font-weight: bold;">Доступная скидка на дату документа</span>".<br>
+</div>
+<br>
+<div style="text-align: justify;">Если клиент пришел в первый раз и
+предъявил талон с номером реферрера, ему предоставляется скидка в виде
+фиксированной суммы. Эта сумма указывается в окне "<a onclick='parent.obj.go_to("4",true,event)' href="null"><span style="font-weight: bold;">Основные сведения о компании</span></a>" на закладке "<span style="font-weight: bold;">Скидки</span>".
+В ином случае, если клиент пришел не в первый раз, в качестве доступной
+скидки появляется сумма, накопившаяся на его дисконтной карте.<br>
+</div>
+<br>
+<div style="text-align: justify;">Далее нужно заполнить таблицу
+товарами и услугами, которые заказывает клиент. По умолчанию в таблице присутствует одна строка с наименованием "<span style="font-weight: bold;">Услуга</span>". Если это не критично для учета, можно вписать всю сумму заказа в эту строку, заполнив поле "<span style="font-weight: bold;">Цена</span>" и "<span style="font-weight: bold;">Количество</span>". Поле "<span style="font-weight: bold;">Сумма</span>" вычисляется автоматически. <br>
+</div>
+<br>
+<div style="text-align: justify;">С помощью кнопок над таблицей, можно
+добавлять и вставлять в таблицу любое количество строк, а также удалять
+строки и перемещать их вверх и вниз.<br>
+</div>
+<br>
+<div style="text-align: justify;">Большинство операций выполняется с выделенной строкой. Чтобы выделить строку, нужно просто нажать на ней левой кнопкой мыши.<br>
+</div>
+<br>
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/add.png" alt="add.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Добавить строку в конец таблицы<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/copy.png" alt="copy.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Добавить точную копию текущей
+строки в конец таблицы. Нужно выделить строку, нажать эту кнопку и в
+таблице появится ее точная копия.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/insert.png" alt="insert.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Вставить строку над текущей. Нужно выделить строку и нажать эту кнопку. Новая строка вставится над текущей.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Удалить текущую строку. Нужно выделить строку и нажать эту кнопку. Строка удалится.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/moveUpButton.png" alt="moveUpButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Переместить текущую строку вверх. Нужно выделить строку и нажать эту кнопку. Строка переместится на одну строку вверх.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/moveDownButton.png" alt="moveDownButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Переместить текущую строку вниз. Нужно выделить строку и нажать эту кнопку. Строка переместится на одну строку вниз.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div style="text-align: justify;">В каждой строке нужно вводить
+наименование, цену и количество. При этом автоматически вычисляется
+сумма по каждой строке и общая сумма заказа.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/filledorder.png" alt="filledorder.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">После того как таблица заполнена, автоматически вычисляется "<span style="font-weight: bold;">Сумма</span>" заказа, от нее отнимается "<span style="font-weight: bold;">Сумма скидки</span>" и остаток вычисляется в строке "<span style="font-weight: bold;">ВСЕГО К ОПЛАТЕ</span>".
+Именно эту сумму должен заплатить клиент. Далее менеджер должен принять
+у клиента деньги и ввести сумму, которую получил от клиента в поле "<span style="font-weight: bold;">ПОЛУЧЕНО ОТ КЛИЕНТА</span>" и выйти из этого поля (щелкнуть в произвольном месте окна). При этом вычислится сдача, которую он должен выдать клиенту.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/filledorder2.png" alt="filledorder2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">После того как клиент полностью определился с заказом, его нужно провести. Для этого предназначена кнопка "<span style="font-weight: bold;">Провести</span>". При проведении документ делает проводки по счетам дисконтных карт. <br>
+</div>
+<ul>
+  <li>Сумма скидки списывается со счета дисконтной карты текущего клиента.</li>
+  <li>Происходит начисление бонусных рублей на счета дисконтных карт всех реферреров данного клиента.
+Для вычисления бонусных рублей используются проценты из шкалы уровней
+реферреров. Эту шкалу может редактировать администратор в окне "<a onclick='parent.obj.go_to("4",true,event)' href="null"><span style="font-weight: bold;">Основные сведения о компании</span></a>" на закладке "<span style="font-weight: bold;">Скидки</span>".&nbsp;</li>
+  <li>При
+начислении бонусных рублей, каждому реферреру отправляется уведомление
+об этом по SMS и по E-Mail. Шаблоны SMS и E-mail сообщений можно
+создать в окне" <a onclick='parent.obj.go_to("4",true,event)' href="null"><span style="font-weight: bold;">Основные сведения о компании</span></a>" на закладке "<span style="font-weight: bold;">Шаблоны</span>". <br>
+</li>
+</ul>
+
+<div style="text-align: justify;">Проведение документа это ответственная
+операция. Менеджер должен быть уверен что сумма заказа окончательная
+прежде чем нажимать кнопку "<span style="font-weight: bold;">Провести</span>".
+В программе предусмотрена защита от случайного нажатия на эту кнопку.
+Менеджер должен подтвердить свое намерение провести документ. Для этого
+после нажатия на эту кнопку появляется окно, в котором он должен ввести
+большими
+буквами слово "<span style="font-weight: bold;">ПРОВЕСТИ</span>". Документ проводится только после этого.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/regconfirm.png" alt="regconfirm.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">После проведения менеджеру запрещено
+редактировать документ и отменять проведение. Это может делать только
+пользователь с правами администратора. Однако не рекомендуется это
+делать даже администратору, особенно если у клиента, указанного в
+заказе есть реферреры. Это отменит начисление бонусных
+рублей после того как оповещения об этом были отправлены.<br>
+</div>
+<br>
+<div style="text-align: justify;">Существует возможность сохранить заказ не проводя его. Для этого используется кнопка "<span style="font-weight: bold;">Сохранить</span>".
+Менеджер может сначала сохранить заказ, а провести его позднее. После проведения заказа
+менеджер может вывести на печать Приходный кассовый ордер и выдать
+клиенту квитанцию об оплате на сумму, которую он оплатил (строка <span style="font-weight: bold;">ВСЕГО К ОПЛАТЕ</span>). Для этого нужно нажать кнопку "<span style="font-weight: bold;">Печать</span>", появится печатная форма Приходного кассового ордера.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/pko.png" alt="pko.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Для заполнения таких полей как "<span style="font-weight: bold;">Организация</span>", "<span style="font-weight: bold;">Код по ОКПО</span>", "<span style="font-weight: bold;">Главный бухгалтер</span>", "<span style="font-weight: bold;">Кассир</span>" и "<span style="font-weight: bold;">Основание</span>" используются значения, указанные в окне "<a onclick='parent.obj.go_to("4",true,event)' href="null">Основные сведения о компании</a>".<br>
+</div>
+<br>
+<div style="text-align: justify;">Для вывода печатной формы документа на принтер нужно нажать кнопку <img src="img/printButton.png" alt="printButton.png">
+и появится стандартное окно печати Web-браузера. В нем можно установить
+различные параметры печати, такие как поля и колонтитулы. В браузере
+Google Chrome наиболее продвинутая и удобная подсистема печати.
+Рекомендуем для печати использовать Google Chrome. <br>
+</div>
+<h2><a name="p15"></a>Работа со списком заказов</h2>
+<div style="text-align: justify;">В программе можно работать либо со списком заказов конкретного клиента, либо со списком всех заказов. <br>
+</div>
+<br>
+<div style="text-align: justify;">Чтобы перейти к списку заказов конкретного клиента нужно <a onclick='parent.obj.go_to("6.1",true,event)' href="null">открыть карточку</a> этого клиента и перейти на закладку "<span style="font-weight: bold;">Заказы</span>". <br>
+</div>
+<br>
+<div style="text-align: justify;">Чтобы перейти к общему списку заказов, нужно перейти на закладку "<span style="font-weight: bold;">Розничные продажи</span>" в рабочей области программы.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/orderslist.png" alt="orderslist.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Список заказов во многом схож со
+списком клиентов и методы работы с ним мало отличаются от работы со списком клиентов. Основное
+отличие в том, что у заказа есть состояние. Заказ может быть либо
+проведен, либо не проведен, либо помечен на удаление. Состояние документа отображено на его пиктограмме во второй колонке:<br>
+</div>
+<br>
+<table style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/document.png" alt="document.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Документ не проведен<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/documentregistered.png" alt="documentregistered.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Документ проведен<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/documentdeleted.png" alt="documentdeleted.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Документ помечен на удаление<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div style="text-align: justify;">Для выполнения операций с заказом нужно
+сначала выделить строку с ним, нажав на ней мышью один раз
+(строка окрасится в синий цвет). Также для некоторых операций можно
+выделить сразу группу документов. Для этого нужно включить их флажки
+в первой колонке.<br>
+</div>
+<br>
+<span style="font-weight: bold;">Операции с заказами</span>:<br>
+<br>
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/add.png" alt="add.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать новый заказ<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/registerButton.png" alt="registerButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Провести выбранный заказ или заказы<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Пометить выбранные заказы на удаление. (см. <a onclick='parent.obj.go_to("7.1",true,event)' href="null">Удаление помеченных объектов</a>)<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/undeleteButton.png" alt="undeleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Снять пометку удаления с выбранных заказов<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/datesButton.png" alt="datesButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Установка периода. При нажатии
+на эту кнопку появляется окно установки даты начала и даты окончания
+периода. При установке периода список будет отображать только
+документы, дата которых попадает в этот период.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/findButton.png" alt="findButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Поиск заказа по любой колонке используя ключевое слово. Ключевое слово вводится в поле перед этой кнопкой.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/filterButton.png" alt="filterButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Фильтрация заказов по значению в текущей колонке. Нужно
+выделить нужное значение и нажать эту кнопку. Таблица отфильтруется
+таким образом, что в ней останутся только такие заказы, у которых такое
+же значение в этой колонке.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteFilterButton.png" alt="deleteFilterButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Отменить фильтрацию<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h1><a name="p16"></a>Работа администратора в программе<br>
+</h1>
+<div style="text-align: justify;">Администратору доступны все такие же функции, как и менеджеру, также он может:<br>
+
+</div>
+<ul>
+  <li>Управлять пользователями, как описано в разделе "<a onclick='parent.obj.go_to("5",true,event)' href="null">Работа с учетными записями пользователей</a>".</li>
+  <li>Вносить основные сведения об организации, как описано в разделе "<a onclick='parent.obj.go_to("4",true,event)' href="null">Ввод основных сведений о компании</a>"</li>
+  <li>Распроводить и удалять документы, удалять клиентов, как описано далее</li>
+  <li>Может пользоваться расширенными возможностями при работе со списками клиентов и заказов (больше кнопок над списками)</li>
+  <li>Формировать сводные отчеты по регистру "<span style="font-weight: bold;">Дисконтные карты</span>"<br>
+  </li>
+</ul>
+<h2><a name="p17"></a>
+Удаление объектов</h2>
+
+<div style="text-align: justify;">Удаление объектов происходит в два этапа. Сначала объекты помечаются на
+удаление, а затем выполняется процедура "<span style="font-weight: bold;">Удаление помеченных объектов"</span>.
+Эта процедура определяет, возможно ли удалить каждый из помеченных
+объектов. Объект можно удалить только в том случае, если его не
+используют никакие другие объекты. Например, если вы пометили на
+удаление <span style="font-weight: bold;">Контрагента</span>, а этот контрагент указан в <span style="font-weight: bold;"></span><span style="font-weight: bold;">Заказах</span>, то
+его нельзя будет удалить, не убрав его из этих заказов или не
+пометив эти заказы на удаление тоже. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Чтобы удалить помеченные объекты, нужно запустить процедуру "<span style="font-weight: bold;">Удаление помеченных объектов</span>", выполнив комаду "<span style="font-weight: bold;">Система</span>" --&gt; "<span style="font-weight: bold;">Удаление помеченных объектов</span>" из главного меню.<br>
+</div>
+
+
+<br>
+<div style="text-align: justify;">
+
+
+Программа выяснит, можно ли удалить каждый помеченный на удаление объект и отобразит результаты в таблице "<span style="font-weight: bold;">Помеченные объекты</span>".<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/delobjects.png" alt="delobjects.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Часть объектов можно удалить, а часть нет. Если объект нельзя удалить,
+значит в базе данных есть другие объекты которые ссылаются на него.
+Чтобы увидеть эти объекты, нужно выделить строку с объектом который
+нельзя удалить. Список объектов, которые на него ссылаются отобразится
+в таблице "<span style="font-weight: bold;">Зависимости</span>".<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/deldeps.png" alt="deldeps.png"><br>
+</div>
+
+
+
+
+<br>
+<div style="text-align: justify;">
+Далее нужно разобраться с зависимостями. Нужно либо пометить их на
+удаление тоже, либо убрать из них ссылки на объект, который необходимо
+удалить. Зависимости можно открывать прямо из таблицы зависимостей.<br>
+</div>
+
+
+<br>
+
+<div style="text-align: justify;">
+После того как все проблемы с зависимостями решены, нужно пометить
+объекты, которые необходимо удалить в таблице "<span style="font-weight: bold;">Помеченные объекты</span>" и
+нажать кнопку <img src="img/deleteButton.png" alt="deleteButton.png">. Объекты будут окончательно удалены из базы данных. Восстановить их после этого невозможно.<br>
+</div>
+<h2><a name="p18"></a>Отчеты по дисконтным картам</h2>
+<div style="text-align: justify;">Администратор может посмотреть отчет по состоянию дисконтных карт сразу всех клиентов. Для этого нужно выполнить команду "<span style="font-weight: bold;">Отчеты</span>" --&gt; "<span style="font-weight: bold;">Дисконтные карты</span>" из меню.<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/discountreport.png" alt="discountreport.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Установите период, выберите форму отчета и нажмите кнопку <img src="img/refreshButton.png" alt="refreshButton.png">.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">По умолчанию отчет выдается в форме "<span style="font-weight: bold;">Остатки</span>". В этом случае появится такая же таблица, как на закладке "<span style="font-weight: bold;">Дисконтные карты</span>" в <a onclick='parent.obj.go_to("6.1",true,event)' href="null">карточке контрагента</a>, но она будет отображать только движения и остатки за указанный период по каждому клиенту.<br>
+<br>
+Также есть форма "<span style="font-weight: bold;">Основной</span>", которая просто выдает список проводок по регистру "<span style="font-weight: bold;">Дисконтные карты</span>". По этому отчету можно увидеть общий остаток на всех дисконтных картах клиентов.<br>
+</div>
+</body></html>

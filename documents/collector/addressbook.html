@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>addressbook</title></head><body>
+<h1>Работа с адресной книгой</h1>
+<br />
+<div style="text-align: justify;">Адресная книга позволяет хранить
+различную справочную информацию об адресах электронной почты. В
+адресной книге могут быть любые адреса: и которые зарегистрированы на
+почтовом сервере и любые другие. По умолчанию у каждой записи адресной
+книги для каждого адреса можно указать три поля: "<span style="font-style: italic;">Фамилия</span>", "<span style="font-style: italic;">Имя</span>" и "<span style="font-style: italic;">Отчество</span>",
+но система управления позволяет изменить состав стандартных полей всех
+записей адресной книги и даже состав полей каждой записи.<br />
+</div>
+<br />
+<div style="text-align: justify;">В дальнейшем, можно использовать
+адресную книгу при <a onclick='parent.obj.go_to("8",true,event)' href="null">рассылке почты по разным адресам</a>, подставляя в
+письма наименования полей, заключенные в фигурные скобки. Например,
+если отправить письмо следующего содержания:<br />
+</div>
+<br />
+<span style="font-style: italic;">Здравствуйте {Имя} {Отчество} ! </span><br />
+<br />
+<div style="text-align: justify;">по адресу, запись с которым есть в адресной книге, то слова "<span style="font-style: italic;">{Имя}</span>" и "<span style="font-style: italic;">{Отчество}</span>" будут заменены на значения соответствующих полей этой записи и получатель получит уже измененное письмо.<br />
+</div>
+<br />
+<h2><a name="p1">Определение стандартных полей адресной книги</a></h2>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Для того чтобы изменить состав стандартных полей адресной книги, нужно нажать левой кнопкой мыши по значку или надписи "<span style="font-weight: bold;">Адресная книга</span>" в дереве. Появится список полей, которые будет иметь каждая запись адресной книги по умолчанию.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/addressbookfields.png" alt="addressbookfields.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Строки таблицы "<span style="font-weight: bold;">Поля адресной книги</span>" редактируются. Редактируя строки этой таблицы вы изменяете состав стандартных полей адресной книги.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Вы можете перемещаться по строкам таблицы сверху вниз с помощью клавиши "<span style="font-weight: bold;">Enter</span>" и в обратном направлении с помощью комбинации "<span style="font-weight: bold;">Alt+Enter</span>"<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Вы можете добавить строку в конец таблицы, перейдя в последнюю строку и нажав "<span style="font-weight: bold;">Enter</span>".<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Вы можете вставить строку перед текущей, нажав комбинацию "<span style="font-weight: bold;">Alt+Insert</span>"<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Вы можете удалить текущую строку, нажав комбинацию "<span style="font-weight: bold;">Alt+Delete</span>"<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Вы можете перемещать текущую строку вверх и вниз по таблице с помощью комбинаций "<span style="font-weight: bold;">Alt+&lt;стрелка вверх&gt;</span>" и "<span style="font-weight: bold;">Alt+&lt;стрелка вниз</span>&gt;". <br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Чтобы отказаться от последней операции, нажмите "<span style="font-weight: bold;">Esc</span>".<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Отредактировав состав полей нужным образом, нажмите клавишу "<span style="font-weight: bold;">OK</span>". Окно адресной книги закроется.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<h2><a name="p2">Добавление записи в адресную книгу</a></h2>
+</div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">1. Нажмите правой кнопкой мыши по значку или надписи "<span style="font-weight: bold;">Адресная книга</span>" и выполните команду "<span style="font-weight: bold;">Новый адрес</span>" из меню.<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">2. Появится окно новой записи адресной книги.<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: center;"><a name="p2"><img src="img/addressbookrecord.png" alt="addressbookrecord.png" /><br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Укажите в поле "<span style="font-weight: bold;">Имя</span>" адрес электронной почты и заполните значения полей адресной книги для него.<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Изначально появляется стандартный
+набор полей, который мы указали ранее для всей адресной книги, однако
+для каждой конкретной записи вы можете определять любые поля,
+редактируя таблицу, с помощью приемов, описанных выше, при определении
+стандартных полей адресной книги.<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">3. После заполнения таблицы нажмите "<span style="font-weight: bold;">OK</span>". <br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Новый адрес появится в дереве и наименования полей можно использовать в качестве переменных типа "<span style="font-style: italic;">{Имя-поля}</span>" в письмах, отправляемых по этому адресу.<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;">
+<h2><a name="p3">Изменение записи адресной книги</a></h2>
+</div>
+<a name="p3"><br />
+</a><div style="text-align: justify;"><a name="p3">В любой момент можно изменить состав
+и значение полей каждой конкретной записи адресной книги, в том числе и
+сам адрес. Для этого нужно нажать левой кнопкой мыши по значку или
+наименованию записи адресной книги в дереве или нажать правой кнопкой
+мыши и выполнить команду "<span style="font-weight: bold;">Изменить</span>" из контекстного меню.<br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: center;"><a name="p3"><img src="img/chaneaddressmenu.png" alt="chaneaddressmenu.png" /><br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: justify;"><a name="p3">Появится окно записи адресной книги, в котором можно изменить значения любых полей, как описано выше и нажать кнопку "<span style="font-weight: bold;">ОК</span>" для сохранения изменений.<br />
+</a></div>
+<a name="p3"><br />
+</a><h2><a name="p4">Удаление записи адресной книги</a></h2>
+<a name="p4"><br />
+</a><div style="text-align: justify;"><a name="p4">Для удаления записи адресной книги нужно нажать правой кнопкой мыши на значке или адресе этой записи и выполнить команду "<span style="font-weight: bold;">Удалить</span>" из контекстного меню.<br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: center;"><a name="p4"><img src="img/deladdressmenu.png" alt="deladdressmenu.png" /><br />
+</a></div>
+<a name="p4"><br /></a>
+<div style="text-align: justify;"><a name="p4">
+После этого потребуется подтвердить намерение удалить эту запись после чего она будет удалена из дерева.</a><br />
+<a name="p4" /></div>
+<a name="p4">
+<br />
+</a><h2><a name="p5">Пример практического использования адресной книги</a></h2>
+<a name="p5"><br />
+</a><div style="text-align: justify;"><a name="p5">Адресная книга может быть полезна для
+проведения массовых рассылок. Например, вы хотите делать периодические
+рассылки по списку с большим количеством адресатов, но при этом, в
+письме здороваться с каждым адресатом персонально. Для этого нужно
+создать список рассылки и завести в нем всех адресатов, которые будут
+ее получать. Затем для каждого адресата нужно создать запись в адресной
+книге, и заполнить для них такие поля как "<span style="font-style: italic;">Фамилия</span>", "<span style="font-style: italic;">Имя</span>" и "<span style="font-style: italic;">Отчество</span>". Все!<br />
+</a></div>
+<a name="p5"><br />
+</a><div style="text-align: justify;"><a name="p5">Теперь поясним как это будет работать
+на примере. Допустим вы создали список рассылки, который называется
+clients@mydomain.ru. В этом списке много адресатов, среди которых есть
+alserg777@mail.ru и vasil180984@rambler.ru . Также вы создали для всех
+адресатов записи в адресной книге, в том числе, для этих двух адресатов
+указали следующее:<br />
+</a></div>
+<a name="p5"><br />
+</a><table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Поле</span><br />
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">alserg777@mail.ru<br />
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">vasil180984@rambler.ru<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Фамилия<br />
+      </td>
+      <td style="vertical-align: top;">Петров<br />
+      </td>
+      <td style="vertical-align: top;">Иванов<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Имя<br />
+      </td>
+      <td style="vertical-align: top;">Алексей<br />
+      </td>
+      <td style="vertical-align: top;">Василий<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Отчество<br />
+      </td>
+      <td style="vertical-align: top;">Сергеевич<br />
+      </td>
+      <td style="vertical-align: top;">Петрович<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a name="p5"><br />
+</a><div style="text-align: justify;"><a name="p5">Теперь, если вы отправите по адресу clients@mydomain.ru письмо следующего содержания:<br />
+</a></div>
+<a name="p5"><br />
+<span style="font-weight: bold;">Здравствуйте <span style="color: rgb(51, 51, 255);">{Имя} {Отчество}</span> !</span><br />
+<br />
+<span style="font-style: italic;">Приглашаем Вас принять участие в розыгрыше призов !</span><br />
+<br />
+</a><div style="text-align: justify;"><a name="p5">это письмо будет разослано всем
+адресатам списка clients@mydomain.ru, при этом по адресу
+alserg777@mail.ru придет письмо следующего содержания:<br />
+</a></div>
+<a name="p5"><br />
+<span style="font-weight: bold;">Здравствуйте <span style="color: rgb(51, 51, 255);">Алексей Сергеевич !</span></span><br />
+<br />
+<span style="font-style: italic;">Приглашаем Вас принять участие в розыгрыше призов !</span><br style="font-style: italic;" />
+<br />
+</a><div style="text-align: justify;"><a name="p5">а по адресу vasil180984@rambler.ru придет письмо следующего содержания:<br />
+</a></div>
+<a name="p5"><br />
+<span style="font-weight: bold;">Здравствуйте <span style="color: rgb(51, 51, 255);">Василий</span> <span style="color: rgb(51, 51, 255);">Петрович</span> !</span><br />
+<br />
+<span style="font-style: italic;">Приглашаем Вас принять участие в розыгрыше призов !</span><br />
+<br />
+</a><div style="text-align: justify;"><a name="p5">При проведении периодических рассылок по большой базе адресов эта возможность может оказаться очень полезной.<br />
+</a></div>
+<a name="p5"><br />
+</a><div style="text-align: justify;"><a name="p5">Имейте в виду что замена происходит
+только в текстовой части письма, при условии что текст создается в
+кодировке UTF-8 (в большинстве почтовых клиентов это настраивается).
+Замена текста во вложениях не производится.<br />
+</a></div>
+<a name="p5"><br />
+</a><div style="text-align: justify;"><a name="p5">Также, не стоит делать такие рассылки
+с подстановками с помощью старых почтовых клиентов, таких как Microsoft
+Outlook Express, которые не работают с кодировкой UTF-8 и отправляют
+текстовую часть письма в формате 'quoted printable'.<br />
+</a></div>
+<a name="p5"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</a></body></html>

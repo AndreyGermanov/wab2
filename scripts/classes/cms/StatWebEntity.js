@@ -1,0 +1,1 @@
+var StatWebEntity = Class.create(WebEntity);

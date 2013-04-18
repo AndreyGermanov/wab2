@@ -1,0 +1,752 @@
+13-02-26 12:21:20  INFO          Queueing sms to +79192805185 with text: "Hi".
+13-02-26 12:21:20  INFO          Attempting to send sms to +79192805185 with text: "Hi".
+13-02-26 12:21:21  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Hi                                                                                                                       ".
+13-02-26 12:21:21  INFO          Contact NOT found
+13-02-26 12:21:21  INFO          Sleeping...
+13-02-26 12:21:30  INFO          Adding contact +79192805185
+13-02-26 12:21:30  INFO          Sending sms
+13-02-26 12:21:38  INFO          Sms sent
+13-02-26 12:34:32  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 12:37:08  INFO          Queueing sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 12:37:08  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 12:37:09  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 12:37:09  INFO          Contact found
+13-02-26 12:37:09  INFO          Sending sms
+13-02-26 12:37:09  INFO          Sending sms
+13-02-26 12:37:17  INFO          Sms sent
+13-02-26 12:38:25  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 12:39:27  INFO          Queueing sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 12:39:27  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 12:39:28  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 12:39:28  INFO          Contact found
+13-02-26 12:39:28  INFO          Sending sms
+13-02-26 12:39:28  INFO          Sending sms
+13-02-26 12:39:36  INFO          Sms sent
+13-02-26 13:18:08  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcc3' in position 0: surrogates not allowed
+
+13-02-26 13:20:26  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcc3' in position 0: surrogates not allowed
+
+13-02-26 13:21:54  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcc3' in position 0: surrogates not allowed
+
+13-02-26 13:22:57  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcc3' in position 0: surrogates not allowed
+
+13-02-26 13:23:36  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 13:24:15  INFO          Queueing sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 13:24:15  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 13:24:16  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 13:24:16  INFO          Contact found
+13-02-26 13:24:16  INFO          Sending sms
+13-02-26 13:24:16  INFO          Sending sms
+13-02-26 13:24:18  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 13:24:18  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:29:11  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:32:03  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 13:33:41  INFO          Contact found
+13-02-26 13:33:41  INFO          Sending sms
+13-02-26 13:33:41  INFO          Sending sms
+13-02-26 13:33:43  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 13:33:44  INFO          Contact found
+13-02-26 13:33:44  INFO          Sending sms
+13-02-26 13:33:44  INFO          Sending sms
+13-02-26 13:33:45  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 13:33:46  INFO          Contact NOT found
+13-02-26 13:33:46  INFO          Sleeping...
+13-02-26 13:33:55  INFO          Adding contact +79192805185
+13-02-26 13:33:55  INFO          Sending sms
+13-02-26 13:33:57  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 13:33:57  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:36:29  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:36:49  INFO          Queueing sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 13:36:49  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 13:36:49  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:37:07  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:37:07  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:37:07  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:39:34  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:39:34  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:39:35  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:41:48  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:41:48  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:41:48  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 13:43:50  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:43:51  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 13:43:51  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:43:06  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:06  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:06  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:43:19  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:19  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:19  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:43:33  INFO          Queueing sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:33  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:33  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:43:49  INFO          Attempting to send sms to +79192805186 with text: "Вам начислено 6 рублей.".
+13-02-26 14:43:49  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:49:08  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 191, in is_utf
+    len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 14:49:54  INFO          Contact found
+13-02-26 14:49:54  INFO          Sending sms
+13-02-26 14:49:54  INFO          Sending sms
+13-02-26 14:49:55  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 14:49:56  INFO          Contact found
+13-02-26 14:49:56  INFO          Sending sms
+13-02-26 14:49:56  INFO          Sending sms
+13-02-26 14:49:57  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 14:49:58  INFO          Contact NOT found
+13-02-26 14:49:58  INFO          Sleeping...
+13-02-26 14:50:07  INFO          Adding contact +79192805185
+13-02-26 14:50:07  INFO          Sending sms
+13-02-26 14:50:09  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 14:50:10  INFO          Contact NOT found
+13-02-26 14:50:10  INFO          Sleeping...
+13-02-26 14:50:19  INFO          Adding contact +79192805185
+13-02-26 14:50:19  INFO          Sending sms
+13-02-26 14:50:21  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 14:50:21  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:53:38  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:54:15  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 14:54:15  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:56:11  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 14:56:11  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 14:56:44  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 14:57:32  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 249, in send_sms
+    time.sleep(0.5)
+KeyboardInterrupt
+
+13-02-26 14:58:18  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 14:59:05  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 249, in send_sms
+    time.sleep(0.5)
+KeyboardInterrupt
+
+13-02-26 15:00:27  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 15:00:27  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:02:10  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 15:02:10  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:02:22  INFO          Attempting to send sms to +79192805186 with text: "HI".
+13-02-26 15:02:49  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 249, in send_sms
+    time.sleep(0.5)
+KeyboardInterrupt
+
+13-02-26 15:02:52  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:03:29  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 249, in send_sms
+    time.sleep(0.5)
+KeyboardInterrupt
+
+13-02-26 15:03:51  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:03:51  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 15:04:00  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:04:00  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:04:21  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:04:21  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:05:00  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:05:01  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:05:17  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:05:17  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:05:42  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:05:42  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:06:07  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:06:07  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+13-02-26 15:06:36  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:06:36  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "HI                                                                                                                      ".
+13-02-26 15:06:36  INFO          Contact found
+13-02-26 15:06:36  INFO          Sending sms
+13-02-26 15:06:36  INFO          Sending sms
+13-02-26 15:06:44  INFO          Sms sent
+13-02-26 15:08:08  INFO          Contact found
+13-02-26 15:08:08  INFO          Sending sms
+13-02-26 15:08:08  INFO          Sending sms
+13-02-26 15:08:10  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 15:08:11  INFO          Contact found
+13-02-26 15:08:11  INFO          Sending sms
+13-02-26 15:08:11  INFO          Sending sms
+13-02-26 15:08:12  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 15:08:13  INFO          Contact found
+13-02-26 15:08:13  INFO          Sending sms
+13-02-26 15:08:13  INFO          Sending sms
+13-02-26 15:08:14  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 15:08:15  INFO          Contact found
+13-02-26 15:08:15  INFO          Sending sms
+13-02-26 15:08:15  INFO          Sending sms
+13-02-26 15:08:16  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 15:08:16  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 15:08:29  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:08:29  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 15:09:09  INFO          Contact found
+13-02-26 15:09:09  INFO          Sending sms
+13-02-26 15:09:09  INFO          Sending sms
+13-02-26 15:09:12  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 15:09:13  INFO          Contact found
+13-02-26 15:09:13  INFO          Sending sms
+13-02-26 15:09:13  INFO          Sending sms
+13-02-26 15:09:14  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 15:09:15  INFO          Contact found
+13-02-26 15:09:15  INFO          Sending sms
+13-02-26 15:09:15  INFO          Sending sms
+13-02-26 15:09:18  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 15:09:19  INFO          Contact found
+13-02-26 15:09:19  INFO          Sending sms
+13-02-26 15:09:19  INFO          Sending sms
+13-02-26 15:09:20  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 15:09:20  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 15:11:14  INFO          Contact found
+13-02-26 15:11:14  INFO          Sending sms
+13-02-26 15:11:14  INFO          Sending sms
+13-02-26 15:11:16  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 15:11:17  INFO          Contact found
+13-02-26 15:11:17  INFO          Sending sms
+13-02-26 15:11:17  INFO          Sending sms
+13-02-26 15:11:19  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 15:11:20  INFO          Contact found
+13-02-26 15:11:20  INFO          Sending sms
+13-02-26 15:11:20  INFO          Sending sms
+13-02-26 15:11:21  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 15:11:22  INFO          Contact found
+13-02-26 15:11:22  INFO          Sending sms
+13-02-26 15:11:22  INFO          Sending sms
+13-02-26 15:11:24  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 15:11:25  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 15:11:52  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:11:52  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 15:11:56  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:11:56  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "HI                                                ".
+13-02-26 15:11:56  INFO          Contact found
+13-02-26 15:11:56  INFO          Sending sms
+13-02-26 15:11:56  INFO          Sending sms
+13-02-26 15:12:04  INFO          Sms sent
+13-02-26 15:12:34  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:12:35  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "HI                                                 ".
+13-02-26 15:12:35  INFO          Contact found
+13-02-26 15:12:35  INFO          Sending sms
+13-02-26 15:12:35  INFO          Sending sms
+13-02-26 15:12:42  INFO          Sms sent
+13-02-26 15:13:17  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей".
+13-02-26 15:13:17  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей                             ".
+13-02-26 15:13:17  INFO          Contact found
+13-02-26 15:13:17  INFO          Sending sms
+13-02-26 15:13:17  INFO          Sending sms
+13-02-26 15:13:25  INFO          Sms sent
+13-02-26 15:15:28  INFO          Contact found
+13-02-26 15:15:28  INFO          Sending sms
+13-02-26 15:15:28  INFO          Sending sms
+13-02-26 15:15:36  INFO          Sms sent
+13-02-26 15:16:43  INFO          Contact found
+13-02-26 15:16:43  INFO          Sending sms
+13-02-26 15:16:43  INFO          Sending sms
+13-02-26 15:16:51  INFO          Sms sent
+13-02-26 15:20:07  INFO          Contact found
+13-02-26 15:20:07  INFO          Sending sms
+13-02-26 15:20:07  INFO          Sending sms
+13-02-26 15:20:15  INFO          Sms sent
+13-02-26 15:21:06  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 216, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 190, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 15:21:44  INFO          Contact found
+13-02-26 15:21:44  INFO          Sending sms
+13-02-26 15:21:44  INFO          Sending sms
+13-02-26 15:21:51  INFO          Sms sent
+13-02-26 15:23:12  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей".
+13-02-26 15:23:12  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей                             ".
+13-02-26 15:23:12  INFO          Contact found
+13-02-26 15:23:12  INFO          Sending sms
+13-02-26 15:23:12  INFO          Sending sms
+13-02-26 15:23:20  INFO          Sms sent
+13-02-26 15:30:58  INFO          Contact found
+13-02-26 15:30:58  INFO          Sending sms
+13-02-26 15:30:58  INFO          Sending sms
+13-02-26 15:31:06  INFO          Sms sent
+13-02-26 15:39:02  INFO          Contact found
+13-02-26 15:39:02  INFO          Sending sms
+13-02-26 15:39:02  INFO          Sending sms
+13-02-26 15:39:10  INFO          Sms sent
+13-02-26 15:40:16  INFO          Queueing sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 15:40:16  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 15:40:16  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 15:40:17  INFO          Contact found
+13-02-26 15:40:17  INFO          Sending sms
+13-02-26 15:40:17  INFO          Sending sms
+13-02-26 15:40:24  INFO          Sms sent
+13-02-26 15:40:36  INFO          Queueing sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 15:40:36  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 15:40:37  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 15:40:37  INFO          Contact found
+13-02-26 15:40:37  INFO          Sending sms
+13-02-26 15:40:37  INFO          Sending sms
+13-02-26 15:40:44  INFO          Sms sent
+13-02-26 15:55:39  INFO          Contact found
+13-02-26 15:55:39  INFO          Sending sms
+13-02-26 15:55:39  INFO          Sending sms
+13-02-26 15:55:47  INFO          Sms sent
+13-02-26 15:56:57  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 15:56:57  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "HI                                                                                                                       ".
+13-02-26 15:56:57  INFO          Contact found
+13-02-26 15:56:57  INFO          Sending sms
+13-02-26 15:56:57  INFO          Sending sms
+13-02-26 15:57:05  INFO          Sms sent
+13-02-26 18:16:59  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 18:17:00  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "HI                                                                                                                       ".
+13-02-26 18:17:00  INFO          Contact found
+13-02-26 18:17:00  INFO          Sending sms
+13-02-26 18:17:00  INFO          Sending sms
+13-02-26 18:17:08  INFO          Sms sent
+13-02-26 18:18:18  CRITICAL      Traceback (most recent call last):
+  File "/opt/WAB2/utils/sms/sender.py", line 217, in send_sms
+    if (len(message) > (int(text_len / (1 + self.is_utf(message))) - login_len)) or (message_num != 1):
+  File "/opt/WAB2/utils/sms/sender.py", line 191, in is_utf
+    return len(t_str) != len(bytes(t_str, 'UTF-8'))
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udcd0' in position 0: surrogates not allowed
+
+13-02-26 18:18:55  INFO          Contact found
+13-02-26 18:18:55  INFO          Sending sms
+13-02-26 18:18:55  INFO          Sending sms
+13-02-26 18:18:56  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 18:18:57  INFO          Contact found
+13-02-26 18:18:57  INFO          Sending sms
+13-02-26 18:18:57  INFO          Sending sms
+13-02-26 18:18:58  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 18:18:59  INFO          Contact found
+13-02-26 18:18:59  INFO          Sending sms
+13-02-26 18:18:59  INFO          Sending sms
+13-02-26 18:19:00  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 18:19:01  INFO          Contact found
+13-02-26 18:19:01  INFO          Sending sms
+13-02-26 18:19:01  INFO          Sending sms
+13-02-26 18:19:02  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 18:19:03  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 18:19:56  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 18:20:42  INFO          Contact found
+13-02-26 18:20:42  INFO          Sending sms
+13-02-26 18:20:42  INFO          Sending sms
+13-02-26 18:20:44  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 18:20:46  INFO          Contact found
+13-02-26 18:20:46  INFO          Sending sms
+13-02-26 18:20:46  INFO          Sending sms
+13-02-26 18:20:46  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 18:20:47  INFO          Contact found
+13-02-26 18:20:47  INFO          Sending sms
+13-02-26 18:20:47  INFO          Sending sms
+13-02-26 18:20:48  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 18:20:49  INFO          Contact found
+13-02-26 18:20:49  INFO          Sending sms
+13-02-26 18:20:49  INFO          Sending sms
+13-02-26 18:20:50  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 18:20:51  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 18:28:36  INFO          Queueing sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:28:36  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:28:36  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                          ".
+13-02-26 18:28:36  INFO          Contact found
+13-02-26 18:28:36  INFO          Sending sms
+13-02-26 18:28:36  INFO          Sending sms
+13-02-26 18:28:44  INFO          Sms sent
+13-02-26 18:29:45  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:29:45  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:29:45  INFO          Contact found
+13-02-26 18:29:45  INFO          Sending sms
+13-02-26 18:29:45  INFO          Sending sms
+13-02-26 18:29:48  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 18:29:48  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:29:49  INFO          Contact found
+13-02-26 18:29:49  INFO          Sending sms
+13-02-26 18:29:49  INFO          Sending sms
+13-02-26 18:29:56  INFO          Sms sent
+13-02-26 18:41:23  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:41:24  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:41:24  INFO          Contact found
+13-02-26 18:41:24  INFO          Sending sms
+13-02-26 18:41:24  INFO          Sending sms
+13-02-26 18:41:31  INFO          Sms sent
+13-02-26 18:42:45  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:42:45  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                          ".
+13-02-26 18:42:46  INFO          Contact found
+13-02-26 18:42:46  INFO          Sending sms
+13-02-26 18:42:46  INFO          Sending sms
+13-02-26 18:42:53  INFO          Sms sent
+13-02-26 18:43:25  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:43:25  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:43:26  INFO          Contact found
+13-02-26 18:43:26  INFO          Sending sms
+13-02-26 18:43:26  INFO          Sending sms
+13-02-26 18:43:33  INFO          Sms sent
+13-02-26 18:43:47  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:43:47  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:43:47  INFO          Contact found
+13-02-26 18:43:47  INFO          Sending sms
+13-02-26 18:43:47  INFO          Sending sms
+13-02-26 18:43:54  INFO          Sms sent
+13-02-26 18:47:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:47:03  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                          ".
+13-02-26 18:47:03  INFO          Contact found
+13-02-26 18:47:03  INFO          Sending sms
+13-02-26 18:47:03  INFO          Sending sms
+13-02-26 18:47:11  INFO          Sms sent
+13-02-26 18:48:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:48:03  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:48:03  INFO          Contact found
+13-02-26 18:48:03  INFO          Sending sms
+13-02-26 18:48:03  INFO          Sending sms
+13-02-26 18:48:11  INFO          Sms sent
+13-02-26 18:49:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 18:49:01  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+                          ".
+13-02-26 18:49:01  INFO          Contact found
+13-02-26 18:49:01  INFO          Sending sms
+13-02-26 18:49:01  INFO          Sending sms
+13-02-26 18:49:09  INFO          Sms sent
+13-02-26 18:50:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:50:02  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                          ".
+13-02-26 18:50:02  INFO          Contact found
+13-02-26 18:50:02  INFO          Sending sms
+13-02-26 18:50:02  INFO          Sending sms
+13-02-26 18:50:04  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 18:50:05  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:50:06  INFO          Contact found
+13-02-26 18:50:06  INFO          Sending sms
+13-02-26 18:50:06  INFO          Sending sms
+13-02-26 18:50:13  INFO          Sms sent
+13-02-26 18:51:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 18:51:02  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 18:51:02  INFO          Contact found
+13-02-26 18:51:02  INFO          Sending sms
+13-02-26 18:51:02  INFO          Sending sms
+13-02-26 18:51:09  INFO          Sms sent
+13-02-26 18:58:02  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 18:58:03  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 18:58:03  INFO          Contact found
+13-02-26 18:58:03  INFO          Sending sms
+13-02-26 18:58:03  INFO          Sending sms
+13-02-26 18:58:07  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 18:58:08  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 18:58:08  INFO          Contact found
+13-02-26 18:58:08  INFO          Sending sms
+13-02-26 18:58:08  INFO          Sending sms
+13-02-26 18:58:13  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 18:58:14  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 18:59:02  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 18:59:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:00:01  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 19:00:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:01:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 19:01:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:02:01  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 19:02:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:03:02  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 19:03:02  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                           ".
+13-02-26 19:03:02  INFO          Contact found
+13-02-26 19:03:02  INFO          Sending sms
+13-02-26 19:03:02  INFO          Sending sms
+13-02-26 19:03:07  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 19:03:08  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 19:03:08  INFO          Contact found
+13-02-26 19:03:08  INFO          Sending sms
+13-02-26 19:03:08  INFO          Sending sms
+13-02-26 19:03:14  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 19:03:14  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 19:03:15  INFO          Contact found
+13-02-26 19:03:15  INFO          Sending sms
+13-02-26 19:03:15  INFO          Sending sms
+13-02-26 19:03:20  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 19:03:21  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 19:03:21  INFO          Contact found
+13-02-26 19:03:21  INFO          Sending sms
+13-02-26 19:03:21  INFO          Sending sms
+13-02-26 19:03:26  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 19:03:27  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 19:03:27  INFO          Contact NOT found
+13-02-26 19:03:27  INFO          Sleeping...
+13-02-26 19:03:36  INFO          Adding contact +79192805185
+13-02-26 19:03:36  INFO          Sending sms
+13-02-26 19:03:44  INFO          Sms sent
+13-02-26 19:04:01  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 19:04:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:05:02  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.".
+13-02-26 19:05:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей.                            ".
+13-02-26 19:05:04  INFO          Contact NOT found
+13-02-26 19:05:04  INFO          Sleeping...
+13-02-26 19:05:13  INFO          Adding contact +79192805185
+13-02-26 19:05:13  INFO          Sending sms
+13-02-26 19:05:21  INFO          Sms sent
+13-02-26 19:07:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 19:07:03  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 19:07:04  INFO          Contact NOT found
+13-02-26 19:07:04  INFO          Sleeping...
+13-02-26 19:07:13  INFO          Adding contact +79192805185
+13-02-26 19:07:13  INFO          Sending sms
+13-02-26 19:07:20  INFO          Sms sent
+13-02-26 19:09:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 19:09:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 19:09:04  INFO          Contact found
+13-02-26 19:09:04  INFO          Sending sms
+13-02-26 19:09:04  INFO          Sending sms
+13-02-26 19:09:12  INFO          Sms sent
+13-02-26 19:18:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 19:18:03  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 19:18:03  INFO          Contact found
+13-02-26 19:18:03  INFO          Sending sms
+13-02-26 19:18:03  INFO          Sending sms
+13-02-26 19:18:11  INFO          Sms sent
+13-02-26 19:18:57  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 19:18:57  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:19:04  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 19:19:04  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 19:19:13  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 19:19:16  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "HI                                                 ".
+13-02-26 19:19:16  INFO          Contact found
+13-02-26 19:19:16  INFO          Sending sms
+13-02-26 19:19:16  INFO          Sending sms
+13-02-26 19:19:23  INFO          Sms sent
+13-02-26 19:22:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 19:22:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 19:22:04  INFO          Contact found
+13-02-26 19:22:04  INFO          Sending sms
+13-02-26 19:22:04  INFO          Sending sms
+13-02-26 19:22:12  INFO          Sms sent
+13-02-26 21:17:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 21:17:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 21:17:04  INFO          Contact found
+13-02-26 21:17:04  INFO          Sending sms
+13-02-26 21:17:04  INFO          Sending sms
+13-02-26 21:17:12  INFO          Sms sent
+13-02-26 21:21:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 21:21:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 21:21:04  INFO          Contact found
+13-02-26 21:21:04  INFO          Sending sms
+13-02-26 21:21:04  INFO          Sending sms
+13-02-26 21:21:12  INFO          Sms sent
+13-02-26 21:24:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 21:24:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 21:24:04  INFO          Contact found
+13-02-26 21:24:04  INFO          Sending sms
+13-02-26 21:24:04  INFO          Sending sms
+13-02-26 21:24:11  INFO          Sms sent
+13-02-26 21:26:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 21:26:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 21:26:04  INFO          Contact found
+13-02-26 21:26:04  INFO          Sending sms
+13-02-26 21:26:04  INFO          Sending sms
+13-02-26 21:26:12  INFO          Sms sent
+13-02-26 21:36:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 21:36:05  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 21:36:05  INFO          Contact found
+13-02-26 21:36:05  INFO          Sending sms
+13-02-26 21:36:05  INFO          Sending sms
+13-02-26 21:36:12  INFO          Sms sent
+13-02-26 21:45:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.".
+13-02-26 21:45:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.                           ".
+13-02-26 21:45:04  INFO          Contact found
+13-02-26 21:45:04  INFO          Sending sms
+13-02-26 21:45:04  INFO          Sending sms
+13-02-26 21:45:07  ERROR         Sms limit exceeded at email hairstar4@mail.ru
+13-02-26 21:45:08  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:46:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:46:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:47:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:47:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:48:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:48:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:49:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:49:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:50:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:50:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:51:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:51:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:52:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:52:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:53:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:53:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:54:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:54:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:55:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:55:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:56:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:56:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:57:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:57:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:58:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:58:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 21:59:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 21:59:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 22:00:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 22:00:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 22:01:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 22:01:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 22:02:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 22:02:01  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 22:03:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 22:03:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 22:04:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 22:04:02  CRITICAL      Sms send error: sms limit exceeded at all emails.
+13-02-26 22:05:01  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+".
+13-02-26 22:05:02  INFO          Email: lvacompany@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+                         ".
+13-02-26 22:05:02  INFO          Contact found
+13-02-26 22:05:02  INFO          Sending sms
+13-02-26 22:05:02  INFO          Sending sms
+13-02-26 22:05:07  ERROR         Sms limit exceeded at email lvacompany@mail.ru
+13-02-26 22:05:07  INFO          Email: hairstar@inbox.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+                          ".
+13-02-26 22:05:08  INFO          Contact found
+13-02-26 22:05:08  INFO          Sending sms
+13-02-26 22:05:08  INFO          Sending sms
+13-02-26 22:05:12  ERROR         Sms limit exceeded at email hairstar@inbox.ru
+13-02-26 22:05:12  INFO          Email: hairstar2@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+                          ".
+13-02-26 22:05:13  INFO          Contact found
+13-02-26 22:05:13  INFO          Sending sms
+13-02-26 22:05:13  INFO          Sending sms
+13-02-26 22:05:18  ERROR         Sms limit exceeded at email hairstar2@mail.ru
+13-02-26 22:05:18  INFO          Email: hairstar3@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+                          ".
+13-02-26 22:05:19  INFO          Contact found
+13-02-26 22:05:19  INFO          Sending sms
+13-02-26 22:05:19  INFO          Sending sms
+13-02-26 22:05:24  ERROR         Sms limit exceeded at email hairstar3@mail.ru
+13-02-26 22:05:24  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley.
+                          ".
+13-02-26 22:05:25  INFO          Contact found
+13-02-26 22:05:25  INFO          Sending sms
+13-02-26 22:05:25  INFO          Sending sms
+13-02-26 22:05:32  INFO          Sms sent
+13-02-26 22:06:02  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей. Магазин Hair-Star.".
+13-02-26 22:06:02  INFO          Email: hairstar5@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей. Магазин Hair-Star.         ".
+13-02-26 22:06:02  INFO          Contact NOT found
+13-02-26 22:06:02  INFO          Sleeping...
+13-02-26 22:06:11  INFO          Adding contact +79192805185
+13-02-26 22:06:11  INFO          Sending sms
+13-02-26 22:06:19  INFO          Sms sent
+13-02-26 22:09:02  INFO          Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей. Магазин Hair-Star.".
+13-02-26 22:09:04  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "Вам начислено 6 рублей. Магазин Hair-Star.         ".
+13-02-26 22:09:04  INFO          Contact found
+13-02-26 22:09:04  INFO          Sending sms
+13-02-26 22:09:04  INFO          Sending sms
+13-02-26 22:09:12  INFO          Sms sent
+13-02-26 22:11:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley. Magazin Hair-Star.".
+13-02-26 22:11:02  INFO          Email: hairstar5@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley. Magazin Hair-Star.        ".
+13-02-26 22:11:02  INFO          Contact NOT found
+13-02-26 22:11:02  INFO          Sleeping...
+13-02-26 22:11:11  INFO          Adding contact +79192805185
+13-02-26 22:11:11  INFO          Sending sms
+13-02-26 22:11:19  INFO          Sms sent
+13-02-26 22:12:37  INFO          Attempting to send sms to +79192805185 with text: "HI".
+13-02-26 22:12:40  INFO          Email: hairstar4@mail.ru. Attempting to send sms to +79192805185 with text: "HI                                                 ".
+13-02-26 22:12:40  INFO          Contact found
+13-02-26 22:12:40  INFO          Sending sms
+13-02-26 22:12:40  INFO          Sending sms
+13-02-26 22:12:48  INFO          Sms sent
+13-02-28 20:04:02  INFO          Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley. Magazin Hair-Star.
+".
+13-02-28 20:04:20  INFO          Email: hairstar5@mail.ru. Attempting to send sms to +79192805185 with text: "Vam nachisleno 6 rubley. Magazin Hair-Star.
+       ".
+13-02-28 20:04:23  INFO          Contact NOT found
+13-02-28 20:04:23  INFO          Sleeping...
+13-02-28 20:04:32  INFO          Adding contact +79192805185
+13-02-28 20:04:32  INFO          Sending sms
+13-02-28 20:04:45  INFO          Sms sent

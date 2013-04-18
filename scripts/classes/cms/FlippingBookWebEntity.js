@@ -1,0 +1,1 @@
+var FlippingBookWebEntity = Class.create(WebEntity);

@@ -1,0 +1,23 @@
+/* linked */
+@import "/skins/default/styles/Table.css";
+
+.deactivated {
+    width: 100%;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.input1 {
+    width: 100%;
+    background-color:#FFFFFF;
+    border-width:0px;
+}
+
+.hidden {
+    display: none;
+}
+
+td.cell:hover {
+    background-color: #e4f5f1;
+    cursor: pointer;
+}

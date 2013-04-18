@@ -1,0 +1,197 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body bgcolor="#FFFFFF"/><table style="border-width:1px" width="100%" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+	<tr bgcolor="#CCCCCC" valign="top">
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Фамилия</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Имя</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Отчество</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>№ дисконтной карты</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Номер реферрера</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Номер мобильного</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>E-Mail</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Штрихкод</b></font>
+		</td>
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Аникина</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Елена</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Юрьевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">13403453343</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">23523525454</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">89145351627</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">anyka@mail.ru</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=387"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петр</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Васильевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">1343434333</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">79192805185</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">hairstar4@mail.ru</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=355"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петр</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Семенович</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">23523525454</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">1343434333</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">79192805185</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=356"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петров</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Федор</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Игнатьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">345345345345</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">23523525454</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=357"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Углова</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Надежда</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Ивановна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">123456789</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">13403453343</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">89192805185</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">andrey@it-port.ru</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=391"/></font>
+		</td>
+
+	</tr>

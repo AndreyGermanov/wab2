@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>mailqueue</title></head><body>
+<div style="text-align: justify;">
+<h1>Работа с почтовой очередью</h1>
+
+</div>
+<br />
+<div style="text-align: justify;">Как было сказано в разделе "<a onclick='parent.obj.go_to("2.1",true,event)' href="null">Основной
+цикл работы сервера</a>", все письма, поступающие на почтовый сервер,
+сначала оказываются в почтовой очереди. Они находятся в ней до тех пор,
+пока подходящий агент доставки не решит, что с ними делать. Письма,
+адресованные локальным получателям, у которых есть почтовые ящики в
+хранилище, будут записаны в эти ящики. Исходящие письма,
+предназначенные для других адресатов, находящихся в Интернет, будут
+передаваться на почтовые сервера в Интернете, которые обслуживают этих
+адресатов.<br />
+</div>
+<br />
+<div style="text-align: justify;">
+<h2><a name="p1">Окно почтовой очереди</a></h2>
+
+</div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Вы можете наблюдать за почтовой
+очередью в режиме онлайн. Для этого разверните раздел "Сервер" и щелкните
+левой кнопкой мыши по значку или наименованию "<span style="font-weight: bold;">Почтовая очередь</span>":<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/mailqueuemenu.png" alt="mailqueuemenu.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">Появится окно почтовой очереди.<br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/mailqueuewindow.png" alt="mailqueuewindow.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">В окне, в таблице, отображаются заголовки писем, которые находятся в
+почтовой очереди в данный момент. Эта таблица автоматически обновляется
+каждые 5 секунд, поэтому вы можете наблюдать за состоянием почтовой
+очереди почти в режиме онлайн.<br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">Новые письма, при попадании в очередь, отображаются в этой таблице
+желтым цветом. Далее они становятся бледно-синими и в таком состоянии
+ждут своей отправки. В момент, когда их считывает соответствующий агент
+доставки, текст становится жирным. После этого письмо должно уходить из
+очереди и исчезать из таблицы.<br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">Весь процесс, от поступления письма в очередь до его отправки должен
+проходить довольно быстро, вам даже не придется вмешиваться в него.
+Однако бывают и проблемы.<br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">Если агенту доставки не удалось доставить письмо, то оно выделяется красным цветом и остается в очереди. <br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/redmailqueue.png" alt="redmailqueue.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">Агент доставки периодически пытается
+доставлять его снова и снова. В этом случае нужно разобраться с
+проблемой, чтобы письма в очереди не накапливались.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<h2><a name="p2">
+Действия с письмами в очереди</a></h2>
+</div>
+
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Вы можете выполнять различные
+действия с письмами, находящимися в очереди. Можно выполнять действия
+сразу со всеми письмами (кнопки "<span style="font-weight: bold;">Отправить все</span>" и "<span style="font-weight: bold;">Удалить все</span>"), или с
+выделенными письмами (кнопки "<span style="font-weight: bold;">Отправить выбранные</span>" и "<span style="font-weight: bold;">Удалить
+выбранные</span>"). Чтобы выделить письма, нужно включить их флажки в самой
+левой колонке таблицы.<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">При нажатии на кнопки "<span style="font-weight: bold;">Отправить</span>
+...", почтовый сервер инициирует доставку всех писем, лежащих в очереди
+не дожидаясь запланированного времени их доставки. При нажатии на
+кнопки "Удалить ..." письма будут удалены из очереди. Это нужно делать
+для "безнадежных писем", которые, например, были отправлены по
+несуществующим адресам. <br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Также существует несколько команд,
+позволяющих работать индивидуально с каждым письмом. Для их выполнения,
+нужно нажать по одному из значков из самой правой колонки таблицы. Эти
+команды доступны только для писем, которые почтовый сервер не может
+доставить (выделены красным).<br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: center;"><a name="p2"><img src="img/mailqueueactions.png" alt="mailqueueactions.png" /><br />
+</a></div>
+<a name="p2"><br />
+</a><table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/viewmail.png" alt="viewmail.png" /></td>
+      <td style="vertical-align: top; text-align: justify;">"<span style="font-weight: bold;">Показать письмо</span>"
+- отображает текст письма, или, правильнее сказать, его "исходник", в
+том виде, в каком оно лежит в очереди, вместе со всеми заголовками.
+Просмотрев заголовки письма, во многих случаях можно понять, почему оно
+не может быть доставлено<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/sendmail.png" alt="sendmail.png" /></td>
+      <td style="vertical-align: top; text-align: justify;">"<span style="font-weight: bold;">Отправить еще раз</span>" - принудительно инициирует повторную доставку письма<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deletemail.png" alt="deletemail.png" /></td>
+      <td style="vertical-align: top; text-align: justify;">"<span style="font-weight: bold;">Удалить письмо</span>" - удаляет письмо из очереди<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deferreason.png" alt="deferreason.png" /></td>
+      <td style="vertical-align: top; text-align: justify;">"<span style="font-weight: bold;">Информация об ошибке</span>"
+- отображает причину, по которой письмо не может быть доставлено.
+Сообщение об ошибке отображается в том виде, в каком его передает
+почтовый сервер.<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Этот набор команд позволяет
+разобраться с любым застрявшим письмом. Если письмо находится в очереди
+и выделено красным, сначала попробуйте выяснить причину, по которой оно
+не было доставлено. Это можно сделать либо нажав на кнопку "<span style="font-weight: bold;">Информация об ошибке</span>", либо на кнопку "<span style="font-weight: bold;">Показать письмо</span>".
+Если ошибку можно исправить (например, если причиной является
+отсутствие соединения с Интернетом, или временный сбой в DNS, или
+сервер получателя временно не принимал почту от нас), исправьте ее и
+повторите отправку письма, нажав кнопку "<span style="font-weight: bold;">Отправить еще раз</span>". Если письмо висит в очереди уже давно и ошибка неисправима, нажмите кнопку "<span style="font-weight: bold;">Удалить письмо</span>".<br />
+</a></div>
+<a name="p2"><br />
+<br />
+<br />
+</a></body></html>

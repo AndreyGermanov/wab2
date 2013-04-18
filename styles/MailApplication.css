@@ -1,0 +1,12 @@
+.app_table {
+    background-color:#FFFFFF;
+    border-style:inset;
+    border-color:#000000;
+    border-width:2px;
+    padding: 1px;
+}
+
+a {
+
+    text-decoration: none;
+}

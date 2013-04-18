@@ -1,0 +1,74 @@
+root { 
+    display: block;
+}
+
+#header {
+    background-image:url('skins/default/images/Window/header_bg.jpg');
+    height:18px;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+#headertext {
+    width: 100%;
+    
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+}
+
+# {
+    width: 350px;
+    height: 230px;
+}
+
+#content {
+    background-color: #FFFFFF;
+}
+
+#tdd {
+    
+    height: 1px;
+    background-color: #a4a7a9;
+}
+
+#toprow {
+    height: 1px;
+    background-color: #a4a7a9;
+    cursor: s-resize;
+}
+
+#windowtable {
+    
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+}
+
+#firstcol {
+    width: 1px;
+    background-color: #a4a7a9;
+    cursor: e-resize;
+}
+
+#lastcol {
+    width: 1px;
+    background-color: #a4a7a9;
+    cursor: e-resize;
+}
+
+#lastrow {
+    height: 1px;
+    background-color: #a4a7a9;
+    cursor: s-resize;
+}
+
+#inner_table {
+    background-color: #ecf0f4;
+}

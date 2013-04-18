@@ -1,0 +1,1 @@
+var RepFilterTable = Class.create(DataTable);

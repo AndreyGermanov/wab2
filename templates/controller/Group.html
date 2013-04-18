@@ -1,0 +1,89 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+<table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top">
+        <td class="inner" nowrap>Системное имя:</td>
+        <td class="inner" width="100%">
+            <input id="name" class="wide" type="text" value="{name}">
+            <input id="old_name" type="hidden" value="{name}">
+        </td>
+    </tr>
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="users" style="height:100%;display:" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                       Пользователи, входящие в группу:
+                    </td>
+                </tr>
+                <tr style="height:100%">
+                    <td>
+                        <iframe id="groups" class="wide" style="height:99%" src="{usersFrameSrc}"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="privileges" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seMachineAccountPrivilege" {seMachineAccountPrivilege_checked}>Может добавлять машины к этому контроллеру домена
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="sePrintOperatorPrivilege" {sePrintOperatorPrivilege_checked}>Может управлять принтерами на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seAddUsersPrivilege" {seAddUsersPrivilege_checked}>Может управлять пользователями на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seRemoteShutdownPrivilege" {seRemoteShutdownPrivilege_checked}>Может удаленно выключать этот сервер
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seDiskOperatorPrivilege" {seDiskOperatorPrivilege_checked}>Может управлять правами доступа к общим папкам этого сервера
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seBackupPrivilege" {seBackupPrivilege_checked}>Может управлять резервным копированием данных на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seRestorePrivilege" {seRestorePrivilege_checked}>Может управлять резервным восстановлением данных на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seTakeOwnershipPrivilege" {seTakeOwnershipPrivilege_checked}>Может изменять владельца файлов и папок на этом сервере
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+        	<div align="right">
+        		{|referenceCode}
+        		<input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+                <input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                <input class="but" type="button" id="help" value=" Помощь ">
+            </div>
+        </td>
+    </tr>
+</table>
+</div>

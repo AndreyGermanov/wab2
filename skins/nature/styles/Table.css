@@ -1,0 +1,66 @@
+.row_lines {
+    height:1px;
+    background-color: #000000;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.header {
+    background-color: maroon;
+    text-align: left;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: maroon;
+    background-image: url(skins/nature/images/Window/bg1.jpg);
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-variant: small-caps;
+}
+
+.cell {
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background-image: url('skins/nature/images/Table/bg.png');
+}
+
+.expandable_cell {
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background-image: url('skins/nature/images/Table/bg1.png');
+    font-weight: bold;
+}
+
+.expandable_cell1 {
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background-image: url('skins/nature/images/Table/bg1.png');
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.red_cell {
+    background-color: #FF0000;
+}
+
+td.col_lines {
+    width:2px;
+    background-color: #000000;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+root { 
+    display: block;
+}

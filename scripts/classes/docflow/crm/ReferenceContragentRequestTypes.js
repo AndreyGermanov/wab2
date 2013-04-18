@@ -1,0 +1,1 @@
+var ReferenceContragentRequestTypes = Class.create(Reference);

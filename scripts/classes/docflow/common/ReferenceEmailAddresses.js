@@ -1,0 +1,1 @@
+var ReferenceEmailAddresses = Class.create(Reference);

@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "" > /var/log/messages
+echo "" > /var/log/syslog
+echo "" > /var/log/mail.log
+echo "" > /var/log/mail.info
+echo "" > /var/log/debug
+rm /var/log/syslog.*
+rm /var/log/messages.*
+rm /var/log/mail.log.*
+rm /var/log/mail.info.*
+rm /var/log/mail.warn.*
+rm /var/log/debug.*

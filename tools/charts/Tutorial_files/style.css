@@ -1,0 +1,26 @@
+/* Effective stylesheet produced by snapshot save */
+body { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; color: rgb(68, 68, 68); background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+a:link { text-decoration: none; color: rgb(51, 51, 51); }
+a:visited { text-decoration: none; color: rgb(51, 51, 51); }
+a:active { text-decoration: none; color: rgb(51, 51, 51); }
+a:hover { text-decoration: underline; color: rgb(34, 68, 136); }
+td { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; color: rgb(68, 68, 68); }
+input { font-size: 12px; }
+input[type="submit"] { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; }
+textarea { font-size: 12px; }
+th { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; color: rgb(68, 68, 68); }
+.comment { color: rgb(136, 136, 136); }
+.title { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 16px; color: rgb(68, 68, 68); font-weight: bold; }
+.small { color: rgb(68, 68, 68); font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 11px; }
+.alert { color: rgb(255, 0, 0); font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; font-weight: bold; }
+.php { color: rgb(0, 0, 0); font-family: "Courier New",Courier,monospace,Monaco; font-size: 12px; background-color: rgb(221, 221, 221); }
+pre { color: rgb(0, 0, 0); font-family: Courier,"Courier New",monospace,Monaco; font-size: 12px; }
+.prev_next { color: rgb(51, 51, 51); font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; background-color: rgb(170, 170, 170); }
+.header { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 15px; font-weight: bold; color: rgb(170, 187, 204); background-color: rgb(68, 68, 68); }
+.menu { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 13px; color: rgb(255, 255, 255); vertical-align: top; background-color: rgb(170, 170, 153); }
+.body { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; color: rgb(51, 51, 51); vertical-align: top; background-color: rgb(255, 255, 255); }
+.cover { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; color: rgb(51, 51, 51); vertical-align: top; background-color: rgb(172, 178, 187); }
+.key { font-family: "Arial","Helvetica","MS Sans Serif","Sans-Serif"; font-size: 12px; color: rgb(51, 51, 51); vertical-align: top; background-color: rgb(255, 204, 136); }
+.link { color: rgb(68, 68, 68); text-decoration: underline; font-weight: bold; }
+.unnamed { font-family: arial; font-size: 20px; font-style: italic; line-height: 25px; font-weight: bold; font-variant: small-caps; text-transform: uppercase; color: rgb(68, 68, 68); text-decoration: blink underline overline line-through; background-color: rgb(0, 0, 0); background-image: url("urn:not-loaded:http:///"); height: 20px; width: 20px; border: 1px none rgb(0, 0, 0); }
+.form { font-size: 10px; }

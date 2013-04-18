@@ -1,0 +1,1 @@
+var RegistryDiscountCards = Class.create(Registry);

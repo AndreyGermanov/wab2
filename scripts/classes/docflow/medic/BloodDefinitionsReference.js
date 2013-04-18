@@ -1,0 +1,1 @@
+var BloodDefinitionsReference = Class.create(Reference);

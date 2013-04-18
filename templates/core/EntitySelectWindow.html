@@ -1,0 +1,19 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+    <tr valign="top" id="childrenTable" style="height:100%;display:" width="100%">
+        <td class="inner" colspan="2">
+                {:include {tableClassName}_{objectid},,$object->module_id='{module_id}';$object->selectGroup='{selectGroup}';$object->condition="{condition}";if ("{adapterId}"!="") $object->adapter=$Objects->get("{adapterId}");$object->entityId="{entityId}";$object->window_id='{window_id}';$object->parent_object_id='{object_id}';$object->persistedFields='{persistedFieldsSafe}';$object->sortOrder='{sortOrder}';$object->className='{className}';$object->defaultClassName='{defaultClassName}';$object->fieldList='{fieldList}';$object->additionalFields='isGroup';$object->itemsPerPage={itemsPerPage};$object->currentPage=1;$object->hierarchy={hierarchy};$object->editorType='none';$object->parentEntity='{entityParentId}'; :}
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+                <div align="right"><input class="but" type="button" id="selectButton" value="Выбрать" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

@@ -1,0 +1,1 @@
+var ModuleModelConfig = Class.create(ModelConfig);

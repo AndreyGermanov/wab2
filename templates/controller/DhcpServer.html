@@ -1,0 +1,72 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+<table id="mailbox_table" cellpadding="0" cellspacing="1" width="100%" height="100%">
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+        <td width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    
+            <tr valign="top" style="display:{displayDomain}">
+                <td nowrap class="inner">Имя домена:</td>
+                <td class="inner" width="100%">
+                	<Control id="ldap_base" value="{ldap_base}" properties='{ldap_base_properties}' />
+                </td>
+            </tr>
+            <tr valign="top">
+                <td nowrap class="inner">Сервер DNS:</td>
+                <td class="inner" width="100%">
+                	<Control id="dns_server" value="{dns_server}" properties='{dns_server_properties}' />
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="2" class="inner">
+                	<Control id="online_monitor" value="{online_monitor}" properties='{online_monitor_properties}'></Control>
+                	Онлайн-мониторинг состояния узлов
+                </td>
+            </tr>
+            <tr valign="top">
+                <td nowrap class="inner">Периодичность опроса сети:</td>
+                <td class="inner" width="100%">
+                	<Control id="online_monitor_update_period" value="{online_monitor_update_period}" properties='{online_monitor_update_period_properties}'/>
+                </td>
+            </tr>
+            <tr valign="top" style="height:100%">
+                <td colspan="2" class="inner">
+                	<Control id="netCenterAutoRestart" value="{netCenterAutoRestart}" properties='{netCenterAutoRestart_properties}'></Control>
+                	Автоматически перезапускать службы Сетевого центра
+                </td>
+            </tr>            
+        </table>
+        </td>
+    </tr>
+    <tr valign="top" id="dns" style="height:100%;display:none;width:100%">
+        <td class="inner" style="height:100%">
+            <table style="width:100%;height:100%" cellspacing="0" cellpadding="0">
+                <tr valign="top">
+                    <td class="inner">
+                        Дополнительные записи в файле зоны DNS
+                    </td>                   
+                </tr>
+                <tr style="height:100%;width:100%" valign="top">
+                    <td class="inner">
+                    	<Control id="manualDNSEntries" properties='{manualDNSEntries_properties}'>{manualDNSEntries}</Control>
+                    </td>                   
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right">
+                	<input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+                	<input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="help" value=" Помощь ">
+                </div>
+        </td>
+    </tr>
+</table>
+</div>

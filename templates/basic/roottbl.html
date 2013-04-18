@@ -1,0 +1,27 @@
+<table border="0" cellpadding="5" cellspacing="5" width="100%">
+<tbody>
+<tr valign="top">
+<td>
+<table rows="5" type="Collection" sort="sortOrder ASC integers" query="SELECT title AS ttlChild,css_file as cssFile FROM fields WHERE @classname='WebTemplate' AND @parent IS NOT EXISTS ORDER BY title" classname="WebEntity" condition="simple|name integers,title strings|#IntegerField@parent=-1 AND #BooleanField@isPublic=1" object="{object_id}" useadapter="true" adapterId="TemplatesDataAdapter_WebServerApplication_Web_1" cols="1">
+<tbody>
+<tr>
+<td>
+<table border="1"><tr><td>{ttlChild}</td><td>{cssFile}</td></tr></table>
+</td>
+</tr>
+<tr type="pagepanel">
+<td>
+	<span type="page">
+		<a href="#link">#text</a>
+	</span>
+	<span type="selected_page">
+		<b>#text</b>
+	</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>

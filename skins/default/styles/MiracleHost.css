@@ -1,0 +1,71 @@
+root { 
+    display: block;
+}
+
+body {
+    background-image: url('skins/default/images/MiracleHost/background.png');
+}
+
+span.header {
+    font-size: 29px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #990000;
+}
+
+hr {
+    color: #007700;
+    height: 1px;
+}
+
+table.inner {
+    background-color: #FFFFFF;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+}
+
+span.serverOn {
+    color: #00DD00;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+td {
+    font-family: Arial;
+}
+
+td.category {
+    font-family: Arial;
+    background-color: #AAAAAA;
+    font-weight: bold;
+}
+
+tr.inner {
+    font-family: Arial;
+    background-color: #DDDDDD;
+}
+
+span.serverLoading {
+    color: #006600;
+    font-weight: bold;
+}
+
+.serverOff {
+    color: #000000;
+    font-family: Arial;
+}
+
+.wide {
+    width:100%;
+}
+
+input:hover {
+    background-color: #FFFFBB;
+}
+
+table.inner {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}

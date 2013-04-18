@@ -1,0 +1,186 @@
+/* linked */
+.row_lines {
+    height:1px;
+    background-color: #000000;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.header {
+    text-align: left;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: #000000;
+    background-image: url(/skins/default/images/Window/bg1.jpg);
+    background-repeat: repeat-x;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+.header_text {
+    text-align: left;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: #000000;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+.cell {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #f1f5f4;
+    font-size: 11px;
+}
+
+td.cell:hover {
+    background-color: #e4f5f1;
+}
+
+.wide {
+    width: 100%;
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    border-width:1px;
+}
+
+.expandable_cell {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #b5d2ff;
+    font-weight: bold;
+}
+
+.expandable_cell1 {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #b5d2ff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.expandable_cell2 {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #b5d2ff;
+    font-size: 11px;
+}
+
+.expandable_cell3 {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #869cbd;
+    font-size: 11px;
+}
+
+.selected_cell {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #b5d2ff;
+    font-weight: bold;
+    font-size: 11px;
+    cursor:pointer;
+}
+
+.cursor_cell {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #ffffdd;
+    font-weight: bold;
+    font-size: 11px;
+    cursor:pointer;
+}
+
+.selected_cell:hover {
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #b5a2ff;;
+    font-weight: bold;
+    font-size: 11px;
+    cursor:pointer;
+    
+}
+
+.red_cell {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    background-color: #FFAAAA;
+    font-size: 11px;
+}
+
+.black_cell {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    background-color: #000000;
+    color:#FFFFFF;
+    font-size: 11px;
+}
+
+.yellow_cell {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    background-color: #FFFF00;
+    color:#000000;
+    font-size: 11px;
+}
+
+td.col_lines {
+    width:2px;
+    background-color: #000000;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+root { 
+    display: block;
+}
+
+.group_expand_image {
+    cursor: pointer;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background-color: #b5d2ff;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+table.window {
+	border-width:0px;
+	border-color:#002222;
+	border-style:solid;
+	height:100%
+}
+
+table.inner {
+	background-color:#CCCCCC;
+}

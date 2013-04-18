@@ -1,0 +1,1 @@
+var RegistryBloodDefinitions = Class.create(Registry);

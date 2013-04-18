@@ -1,0 +1,1 @@
+var MetadataCodeGroup = Class.create(MetadataGroup);

@@ -1,0 +1,26 @@
+<table id="cpanel" cellpadding="1" cellspacing="0" width="100%">
+    <tr valign="top">
+        <td><img width="24" src="{skinPath}images/Buttons/refreshButton.png" alt="Обновить" title="Обновить" id="refreshButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+        <td><img width="24" src="{skinPath}images/Buttons/optionsButton.png" alt="Параметры" title="Параметры" id="optionsButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+        <td><img width="24" src="{skinPath}images/Buttons/saveButton.png" alt="Сохранить настройки" title="Сохранить настройки" id="saveSettingsButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+        <td width="100%"><input type="text" id="findField" style="height:24;width:100%" value="{searchText}"/></td>
+        <td><img width="24" src="{skinPath}images/Buttons/findButton.png" alt="Поиск" title="Поиск" id="findButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+    </tr>
+</table>
+<table id="cpanel" cellpadding="0" cellspacing="0" width="100%" style="display:{parentDisplay}">
+    <tr valign="top">
+        <td colspan="2" class="inner" width="100%">
+            <Control width="100%" type="entity" className="{className}" adapterId="{adapterId}" additionalFields="isGroup" condition="@isGroup=1" treeClassName="{treeClassName}" sortOrder="{sortOrder}" id="entityTree" classTitle="{classTitle}" editorType="entityDataTable" tableId="{object_id}" show_float_div="true" width="100%" windowHeight="150" value="{parentEntity}" buttonImage="{skinPath}images/Buttons/moveDownButton.png"></Control>
+        </td>
+    </tr>
+</table>
+<table id="table" width="{width}" border="0" cellspacing="0" cellpadding="0">
+    
+</table>
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <iframe marginwidth="0" marginheight="0" frameborder="0" id="innerFrame" style="height:35" width="100%" src="">dsf</iframe>
+        </td>
+    </tr>
+</table>

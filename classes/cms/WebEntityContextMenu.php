@@ -1,0 +1,15 @@
+<?
+class WebEntityContextMenu extends ContextMenu {
+    function construct($params) {
+        parent::construct($params);
+        $this->addItem("add", "Новый");
+        $this->addItem("add_by_template", "Скопировать из");
+        $this->addItem("change", "Изменить");
+        $this->addItem("up", "Вверх");
+        $this->addItem("down", "Вниз");
+        $this->addItem("remove","Удалить");
+        $this->clientClass = "WebEntityContextMenu";
+        $this->parentClientClasses = "ContextMenu~Entity";
+    }
+}
+?>

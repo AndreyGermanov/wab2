@@ -1,0 +1,1 @@
+var RegistryOrderConditions = Class.create(Registry);

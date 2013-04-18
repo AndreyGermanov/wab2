@@ -1,0 +1,50 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php">
+<input type="hidden" id="md_name" value='{md_name}' name='md_name'/>
+<input type="hidden" id="name" value='{md_name}' name='md_name'/>
+<input type="hidden" id="collection" value='{collection}' name='md_name'/>
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+<!-- block=tabset -->
+		<tr valign="top">
+			<td class="inner">
+	    	    {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+			</td>		
+		</tr>
+<!-- block=tabHeader -->
+	    <tr valign="top" id="{tabId}" style="height:100%;display:{displayStyle}" width="100%">
+        	<td colspan="2" width="100%" class="inner">
+            	<table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+<!-- block=tabRow -->
+                	<tr valign="top">
+                    	<td class="inner_small" nowrap>{title}</td>
+                    </tr>
+                    <tr valign="top">
+                    	<td class="inner_small" width="100%">
+                        	<Control id="{id}" class="wide" type="{type}" title="{name}" properties='{properties}' value="{value}"></Control>
+                    	</td>
+                	</tr>
+<!-- block=emptyRow -->
+                    <tr valign="top">
+                    	<td class="inner_small" width="100%" style="height:100%" colspan="2">&nbsp;
+                    	</td>
+                	</tr>
+<!-- block=tabFooter -->
+				</table>
+			</td>
+		</tr>
+<!-- block=buttons -->				
+	    <tr valign="bottom">
+    	    <td class="inner" valign="bottom" colspan="4">
+	    	    <div align="right">
+	    	    	<input type="hidden" name="old_title" id="old_title" value="{title}"/>
+	        		<input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+		        	<input class="but" type="button" id="cancel" value=" Отмена ">
+	    	    </div>
+        	</td>
+    	</tr>
+<!-- block=footer -->
+	</tbody>
+</table>
+</form>

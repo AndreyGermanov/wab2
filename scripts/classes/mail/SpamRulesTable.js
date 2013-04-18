@@ -1,0 +1,1 @@
+var SpamRulesTable = Class.create(DataTable);

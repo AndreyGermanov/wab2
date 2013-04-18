@@ -1,0 +1,1 @@
+var DocumentChangeTaskCondition = Class.create(Document);

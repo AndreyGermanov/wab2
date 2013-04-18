@@ -1,0 +1,1 @@
+var RegistryTaskConditions = Class.create(Registry);

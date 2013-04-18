@@ -1,0 +1,440 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+    <tr valign="top">
+        <td class="inner" nowrap="nowrap">Заголовок</td>
+        <td class="inner" width="100%">
+            <input object="{object_id}" type="hidden" id="{object_id}" name="object_id" value="{object_id}"/>
+            <input object="{object_id}" type="hidden" name="hook" value="save"/>
+            <Control id="title" properties='{title_properties}' value="{title}"></Control>
+            <input id="new_object_id" name="new_object_id" class="wide" type="hidden" value="{object_id}" />
+            <input id="old_object_id" name="old_object_id" type="hidden" value="{object_id}" />
+            <input id="old_parent" name="old_parent" type="hidden" value="{parent}" />
+            <input id="old_name" name="old_name" type="hidden" value="{name}" />
+            <input id="name" name="name" type="hidden" value="{name}" />
+            <input id="sortOrder" name="sortOrder" type="hidden" value="{sortOrder}" />
+            <input id="old_title" name="old_title" type="hidden" value="{title}" />
+            <input id="old_class" name="old_class" type="hidden" value="{class}" />
+            <input id="ajax" name="ajax" type="hidden" object="{object_id}" value="true" />
+            <input type="hidden" id="tagsTable" name="tagsTable" value="{tagsTable}" />            
+            <input type="hidden" id="usersRightsTable" name="usersRightsTable" />            
+            <input type="hidden" id="rolesRightsTable" name="rolesRightsTable" />            
+            <input object="{object_id}" id="action" name="action" type="hidden" value="save" />
+        </td>
+    </tr>
+    
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>     
+    <tr valign="top" id="text" style="height:100%;display:none" width="100%">
+        <td style="width:100%;height:100%" colspan="2">            
+            <Control width="100%" height="100%" id="Text" type="text" control_type="tinyMCE" css="{css_file}">[Text]</Control>                                
+        </td>
+    </tr>  
+    <tr valign="top" id="fieldValues" style="height:100%;display:none" width="100%">
+        <td class="inner" colspan="2">
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr valign="top">
+                    <td class="inner" colspan="2">
+                        <table id="fieldsTable" width="100%" height="100%" type="Collection" object="{object_id}" item="+,title,Text,name,sortOrder,persistedFields,htmlTitle,htmlKeywords,htmlEncoding,htmlDescription,htmlMeta,htmlHeader,childClass,adminTemplate,childAdminTemplate,userTemplate,childUserTemplate,sortFields,childSortFields,fieldList,childFieldList,entityImage,groupEntityImage,childEntityImage,childGroupEntityImage,width,height,comment,childPersistedFields,sysname,parent,isPublic,isPage,author,createdTime,modifyTimeAuthors,submitSuccessTemplate,submitErrorTemplate,submitEmailTemplate,submitTitleField,submitSendEmail,submitEmailSubject,submitEmailAddress,submitEmailAddressFrom,cacheDeps,childCacheDeps,siteId,childClass,accessDeniedPage" rows="*" cols="1">
+                            <tbody>
+                            <tr valign="top">
+                                <td>
+                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td nowrap="nowrap" class="inner">{field_title}</td>
+                                            <td class="inner" width="100%">
+                                                <Control width="100%" id="{field_name}" properties="{field_properties}" value="{field_fieldvalue}"></Control>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>                
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Системное имя:
+                    </td>
+                    <td class="inner" width="100%">
+                        <Control width="100%" id="sysname" value="{sysname}" properties='{sysname_properties}'></Control>                                
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Относится к:
+                    </td>
+                    <td class="inner" width="100%">
+                        <Control width="100%" id="parent" value="{parent}" className="*WebEntity*" additionalFields="siteId" defaultClassName="WebEntity" adapterId="SiteDataAdapter_{module_id}_{siteId}_{name}" properties='{parent_properties}'></Control>                                
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" class="inner">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr valign="top">
+                                <td class="inner">
+                                    <Control width="100%" id="isPublic" value="{isPublic}" properties='{isPublic_properties}'></Control>
+                                </td>
+                                <td class="inner">
+                                    Опубликовано
+                                </td>
+                                <td class="inner">
+                                    <Control width="100%" id="isPage" value="{isPage}" properties='{isPage_properties}'></Control>
+                                </td>
+                                <td class="inner">
+                                    Является Web-страницей
+                                </td>
+                            </tr>                            
+                        </table>
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Создатель:
+                    </td>
+                    <td class="inner_small" width="100%">
+                        {author}
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Дата создания:
+                    </td>
+                    <td class="inner_small" width="100%">
+                        {createdTime_full_presentation}
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" colspan="2">
+                        История изменений:
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" colspan="2">
+                        <Control readonly="true" deactivated="true" height="100px" id="modifyTimeAuthors" properties='{modifyTimeAuthors_properties}'>{modifyTimeAuthors}</Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Идентификатор:
+                    </td>
+                    <td class="inner_small" width="100%">
+                        {object_id}
+                    </td>
+                </tr>            
+            </table>
+        </td>
+    </tr>    
+    <tr valign="top" id="seo" style="height:100%;display:none" width="100%">
+        <td colspan="2">
+            <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Заголовок страницы:
+                    </td>
+                    <td class="inner" width="100%">
+                        <Control width="100%" id="htmlTitle" value="{htmlTitle}" properties='{htmlTitle_properties}'></Control>                                
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Ключевые слова:
+                    </td>
+                    <td class="inner">
+                        <Control width="100%" id="htmlKeywords" value="{htmlKeywords}" properties='{htmlKeywords_properties}'></Control>                                
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Описание:
+                    </td>
+                    <td class="inner">
+                        <Control width="100%" id="htmlDescription" value="{htmlDescription}" properties='{htmlDescription_properties}'></Control>                                
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Кодировка:
+                    </td>
+                    <td class="inner">
+                        <Control width="100%" id="htmlEncoding" value="{htmlEncoding}" properties='{htmlEncoding_properties}'></Control>                                
+                    </td>        
+                </tr>
+                <!--
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Мета-тэги:
+                    </td>
+                    <td class="inner">
+                        <Control type="text" width="100%" height="100px" id="htmlMeta" properties="{htmlMeta_properties}">{htmlMeta}</Control>                                
+                    </td>        
+                </tr>
+                <tr valign="top">
+                    <td nowrap="nowrap" class="inner">
+                        Добавить в раздел <HEAD>
+                    </td>
+                    <td class="inner">
+                        <Control type="text" width="100%" height="100px" id="htmlHeader" properties="{htmlHeader_properties}">{htmlHeader}</Control>                                
+                    </td>        
+                </tr>
+                -->
+            </table>
+        </td>
+    </tr>    
+    <tr valign="top" id="system" style="height:100%;display:none" width="100%">
+        <td colspan="2">                 
+            <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                    <td colspan="2" class="inner">
+                        {:include {system_tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{system_tabs_string}';$object->active_tab='{system_active_tab}'; :}
+                    </td>
+                </tr>
+                <tr valign="top" id="main" style="height:100%;display:none" width="100%">
+                    <td>
+                        <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Класс
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control type="string" id="class" class="wide" value="{class}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Шаблон элемента
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="userTemplate" properties='{userTemplate_properties}' adapterId="TemplatesDataAdapter_{module_id}_{name}_user" value="{userTemplate}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Шаблон администрирования элемента
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="adminTemplate" properties='{adminTemplate_properties}' adapterId="TemplatesDataAdapter_{module_id}_{name}_admin" value="{adminTemplate}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Поля для сортировки
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="sortFields" properties='{sortFields_properties}' value="{sortFields}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Список полей таблицы
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="fieldList" properties='{fieldList_properties}' value="{fieldList}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Иконка элемента
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="entityImage" width="100%" properties='{entityImage_properties}' value="{entityImage}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Иконка элемента-группы
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="groupEntityImage" width="100%" properties='{groupEntityImage_properties}' value="{groupEntityImage}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="inner" width="100%" colspan="2">
+                                    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                        <tr valign="top">
+                                            <td nowrap="nowrap" class="inner">
+                                                Ширина
+                                            </td>
+                                            <td width="50%" class="inner">
+                                                <Control id="width" properties='{width_properties}' value="{width}"></Control>
+                                            </td>                                            
+                                            <td nowrap="nowrap" class="inner">
+                                                Высота
+                                            </td>
+                                            <td width="50%" class="inner">
+                                                <Control id="height" properties='{height_properties}' value="{height}"></Control>
+                                            </td>                                            
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>                    
+                </tr>
+                <tr valign="top" id="childs" style="height:100%;display:none" width="100%">
+                    <td>
+                        <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Класс
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control type="string" id="childClass" class="wide" value="{childClass}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Шаблон элемента
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="childUserTemplate" properties='{childUserTemplate_properties}' adapterId="TemplatesDataAdapter_{module_id}_{name}_childUser" value="{childUserTemplate}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Шаблон администрирования элемента
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="childAdminTemplate" properties='{childAdminTemplate_properties}' adapterId="TemplatesDataAdapter_{module_id}_{name}_childAdmin" value="{childAdminTemplate}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Поля для сортировки
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="childSortFields" properties='{childSortFields_properties}' value="{childSortFields}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Список полей таблицы
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="childFieldList" properties='{childFieldList_properties}' value="{childFieldList}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Иконка элемента
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="childEntityImage" width="100%" properties='{childEntityImage_properties}' value="{childEntityImage}"></Control>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td nowrap="nowrap" class="inner">
+                                    Иконка элемента-группы
+                                </td>
+                                <td width="100%" class="inner">
+                                    <Control id="childGroupEntityImage" width="100%" properties='{childGroupEntityImage_properties}' value="{childGroupEntityImage}"></Control>
+                                </td>
+                            </tr>
+                        </table>                        
+                    </td>                    
+                </tr>                
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="tags" style="height:100%;width:100%;display:none">
+	    <td class="inner" colspan="2">
+            {:include {tagsTableId},,{tagsTableCode}:}	
+	    </td>
+	</tr>
+    <tr valign="top" id="rights" style="height:100%;width:100%;display:none">
+	    <td class="inner" colspan="2">
+            {:include {rightsTabset_id}_up,,{rightsTabsetCode} :}	    
+	    	<table width="100%" style="height:100%" cellpadding="0" cellspacing="0">
+	    		<tr valign="top">
+	    			<td class="inner" nowrap="true">
+	    				Страница запрета доступа
+	    			</td>
+	    			<td width="100%" class="inner">
+                        <Control width="100%" id="accessDeniedPage" value="{accessDeniedPage}" className="*WebEntity*" additionalFields="siteId" defaultClassName="WebEntity" adapterId="SiteDataAdapter_{module_id}_{siteId}_{name}2" properties='{accessDeniedPage_properties}'></Control>                                
+	    			</td>
+	    		</tr>	    		
+			    <tr valign="top" id="usersRights" style="height:100%;width:100%;display:none">	    	
+			    	<td class="inner" colspan="2">
+		            	{:include {usersRightsTableId},,{usersRightsTableCode}:}	
+			    	</td>
+			    </tr>
+			    <tr valign="top" id="rolesRights" style="height:100%;width:100%;display:none">	    	
+			    	<td class="inner" colspan="2">
+		            	{:include {rolesRightsTableId},,{rolesRightsTableCode}:}	
+			    	</td>
+			    </tr>
+			</table>
+	    </td>
+	</tr>
+    <tr valign="top" id="descr" style="height:100%;display:none" width="100%">
+        <td style="width:100%;height:100%" colspan="2">
+            <Control width="100%" height="100%" id="comment" type="text" value="{comment}"></Control>                    
+        </td>
+    </tr>    
+    <tr valign="top" id="persistedFieldsTable" style="height:100%;display:none" width="100%">        
+        <td colspan="2" class="inner" width="100%">
+            <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                    <td class="inner">
+                        {:include {fields_tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{fields_tabs_string}';$object->active_tab='{fields_active_tab}'; :}
+                    </td>
+                </tr>
+                <tr valign="top" id="fieldsMain" style="height:100%;display:none" width="100%">        
+                    <td class="inner">
+                        {:include PersistedFieldsTable_{objectid},,$object->parent_object_id='{object_id}';$object->opener_object='{object_id}';$object->window_id='{window_id}';$object->sortOrder='';$object->persistedFields='{persistedFieldsSafe}';$object->itemsPerPage=5;$object->currentPage=1; :}
+                        <input type="hidden" id="persistedFields" name="persistedFields" value="{persistedFieldsSafe}"/>
+                    </td>
+                </tr>
+                <tr valign="top" id="fieldsChilds" style="height:100%;display:none" width="100%">        
+                    <td class="inner">
+                        {:include PersistedFieldsTable_{objectid}Childs,,$object->parent_object_id='{object_id}';$object->opener_object='{object_id}';$object->window_id='{window_id}';$object->sortOrder='';$object->persistedFields='{childPersistedFieldsSafe}';$object->itemsPerPage=5;$object->currentPage=1; :}                        
+                        <input type="hidden" id="childPersistedFields" name="childPersistedFields" value="{childPersistedFieldsSafe}"/>                        
+                    </td>
+                </tr>
+            </table>
+        </td>        
+    </tr>
+    <tr valign="top" id="childrenTable" style="height:100%;display:none" width="100%">
+        <td class="inner" colspan="2">
+            {:include EntityDataTable_{objectid},,if ("{adapterId}"!="") $object->adapter=$Objects->get("{adapterId}");$object->condition="@parent.@name={pname}";$object->parentEntity='{object_id}';$object->window_id='{window_id}';$object->parent_object_id='{object_id}';$object->persistedFields='{persistedFieldsSafe}';$object->sortOrder='';$object->className='*WebEntity*';$object->defaultClassName='WebEntity';$object->fieldList='{fieldList}';$object->additionalFields='name~siteId';$object->itemsPerPage=10;$object->currentPage=1;$object->hierarchy=true;$object->sortOrder='{sortFields}'; :}
+        </td>
+    </tr>    
+    <tr valign="top" id="cacheDepsTable" style="height:100%;display:none" width="100%">        
+        <td colspan="2" class="inner" width="100%">
+            <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                    <td class="inner">
+                        {:include {cachedeps_tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{cachedeps_tabs_string}';$object->active_tab='{cachedeps_active_tab}'; :}
+                    </td>
+                </tr>
+                <tr valign="top" id="cacheDepsMain" style="height:100%;display:none" width="100%">        
+                    <td class="inner">
+                        {:include CacheDepsTable_{objectid},,$object->parent_object_id='{object_id}';$object->window_id='{window_id}';$object->sortOrder='';$object->cacheDepsList='{cacheDeps}';$object->siteId='{siteId}';$object->itemsPerPage=10;$object->currentPage=1; :}
+                        <input type="hidden" id="cacheDeps" name="cacheDeps" value="{cacheDeps}"/>
+                    </td>
+                </tr>
+                <tr valign="top" id="cacheDepsChilds" style="height:100%;display:none" width="100%">        
+                    <td class="inner">
+                        {:include CacheDepsTable_{objectid}Childs,,$object->parent_object_id='{object_id}';$object->window_id='{window_id}';$object->sortOrder='';$object->cacheDepsList='{childCacheDeps}';$object->siteId='{siteId}';$object->itemsPerPage=10;$object->currentPage=1; :}                        
+                        <input type="hidden" id="childCacheDeps" name="childCacheDeps" value="{childCacheDeps}"/>                        
+                    </td>
+                </tr>
+            </table>
+        </td>        
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+                <div align="right"><input class="but" type="submit" id="OK" value="Сохранить" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

@@ -1,0 +1,5 @@
+			var menu = new TableMenu("TableMenu_DocFlowApplication_Docs_Menu","");
+			objects.add(menu);
+			
+			menu.init($("{object_id}_mainmenu"));
+			window.onclick = menu.hideAllMenus;

@@ -1,0 +1,71 @@
+root { 
+    display: block;    
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+td {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-size: 13px;    
+}
+td.inner {
+    font-weight:bold;
+    background-image: url('skins/nature/images/Table/bg.png');
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.inner_middle {
+    font-weight:bold;
+    background-image: url('skins/nature/images/Table/bg.png');
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+td.inner_small {
+    background-image: url('skins/nature/images/Table/bg.png');
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.inner:hover {
+    background-image: url('skins/nature/images/Table/bg.png');
+}
+
+.wide {
+    width: 100%;
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    border-width:1px;
+}
+
+input {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-size: 13px;    
+}
+input:hover {
+    background-color:#ffffcc;
+}
+
+select.inner {
+    width:100%;
+    height:100%;
+}

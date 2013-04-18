@@ -1,0 +1,2 @@
+#!/bin/sh
+gnome-open http://192.168.0.58:81?path=$NAUTILUS_SCRIPT_SELECTED_URIS

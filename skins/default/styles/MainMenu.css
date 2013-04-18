@@ -1,0 +1,23 @@
+.#menu {
+    font-family: Arial; 
+    font-size: 16px; 
+    color: rgb(0, 60, 0);
+    font-weight: bold;
+    cursor: pointer
+}
+
+.#menu_item {
+    font-family: Arial; 
+    font-size: 16px; 
+    color: rgb(0, 60, 0);
+    font-weight: bold;
+    cursor: pointer
+}
+
+.#menu_item:hover {
+    font-family: Arial; 
+    font-size: 16px; 
+    color: rgb(0, 150, 0);
+    font-weight: bold;
+    cursor: pointer
+}

@@ -1,0 +1,1 @@
+var ReferenceDimensions = Class.create(Reference);

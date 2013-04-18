@@ -1,0 +1,1 @@
+var ReferenceAppointments = Class.create(Reference);

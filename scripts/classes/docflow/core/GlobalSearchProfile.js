@@ -1,0 +1,1 @@
+var GlobalSearchProfile = Class.create(EntityProfile);

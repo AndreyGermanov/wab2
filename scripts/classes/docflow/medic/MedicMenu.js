@@ -1,0 +1,1 @@
+var MedicMenu = Class.create(Menu);

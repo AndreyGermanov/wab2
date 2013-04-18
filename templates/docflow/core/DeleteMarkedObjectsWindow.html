@@ -1,0 +1,32 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+	    <tr valign="top" id="childrenTable" width="100%">
+	        <td class="inner" colspan="2" width="100%">
+	        	Помеченные объекты:<br/>
+	            {:include {deletedObjectsTableId},,$object->parent_object_id='{object_id}'; :}
+	        </td>
+	    </tr>    
+	    <tr valign="top" id="childrenTable" width="100%">
+	        <td class="inner" colspan="2" width="100%">
+	        	Зависимости:<br/>
+	            {:include {blockingObjectsTableId},,$object->parent_object_id='{object_id}'; :}
+	        </td>
+	    </tr>    
+	    <tr valign="top">
+	    	<td class="inner" style="height:100%">
+	    		&nbsp;
+	    	</td>
+	    </tr>
+	    <tr valign="bottom">
+	        <td class="inner" valign="bottom" colspan="2">
+                <div align="right">
+               		<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                	<input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+	        </td>
+	    </tr>
+    </tbody>
+</table>
+</form>

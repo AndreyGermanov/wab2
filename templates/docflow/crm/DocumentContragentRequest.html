@@ -1,0 +1,112 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame" id="form">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner" width="100%" style="height:100%">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top" width="100%">
+			    	<td class="inner" width="100%" colspan="2">
+				    	<table width="100%" cellpadding="2" cellspacing="0" width="100%">
+					    	<tr valign="top">
+						        <td nowrap="nowrap" class="inner">
+						            Номер:
+						        </td>
+						        <td nowrap="nowrap" class="inner">
+						            <Control id="number" value="{number}" properties='{number_properties}'></Control>                                
+						        </td>
+						        <td nowrap="nowrap" class="inner">
+						            Дата:
+						        </td>
+						        <td nowrap="nowrap" class="inner">
+						            <Control id="docDate" value="{docDate}" properties='{docDate_properties}'></Control>                                
+						        </td>
+						    </tr>
+						</table>
+					</td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner" id="titleField">
+			            Контрагент:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="contragent" value="{contragent}" properties='{contragent_properties}'></Control>                                
+			            <input type="hidden" id="defaultEmail" name="defaultEmail" value="{defaultEmail}" />
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Контактное лицо:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="contact" value="{contact}" properties='{contact_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Тип обращения:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="requestType" value="{requestType}" properties='{requestType_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Форма обращения:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="requestForm" value="{requestForm}" properties='{requestForm_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Предмет обращения:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner" colspan="2" style="height:100%">
+			            <Control id="requestText" value="{requestText}" properties='{requestText_properties}' height="100%"></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Ответственный менеджер:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="manager" value="{manager}" properties='{manager_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			        	<Control id="sign" value="{sign}" properties='{sign_properties}'></Control>			            
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right">
+					<input class="but" type="button" unchangeable="true" id="Create" value="Создать" style="display:{createDisplayStyle}" />
+					<input class="but" type="button" unchangeable="true" id="Print" value="Печать" style="display:{printDisplayStyle}" />
+	                <input class="but" type="submit" id="OK" value="Сохранить" />
+	               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+    	            <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

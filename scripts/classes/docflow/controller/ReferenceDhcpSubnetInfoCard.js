@@ -1,0 +1,1 @@
+var ReferenceDhcpSubnetInfoCard = Class.create(ReferenceInfoCard);

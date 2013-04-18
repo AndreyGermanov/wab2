@@ -1,0 +1,344 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+<table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top">
+        <td class="inner" nowrap>Системное имя:</td>
+        <td class="inner" width="100%">
+            <input id="name" class="wide" type="text" value="{name}">
+            <input id="old_name" type="hidden" value="{name}">
+        	<input id="authType" type="hidden" value="{authType}"/>            
+        	<input id="oldWabUser" type="hidden" value="{wabUser}"/> 
+        	Уникальный идентификатор: {uid}           
+        </td>
+    </tr>
+    <tr valign="top">
+        <td class="inner" nowrap>Полное имя:</td>
+        <td class="inner" width="100%">
+            <input id="gecos" class="wide" type="text" value="{gecos}">
+            <input id="old_title" type="hidden" value="{title}">
+        </td>
+    </tr>
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;display:" width="100%">
+        <td colspan="2" width="100%" class="inner">&nbsp;
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner" nowrap>Основная группа:</td>
+                    <td class="inner" width="100%">
+                        <select id="gid" class="wide" value="{gid}" collection="{groups_list}"></select>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Фамилия:</td>
+                    <td class="inner" width="100%">
+                        <input id="surname" class="wide" type="text" value="{surname}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Имя Отчество:</td>
+                    <td class="inner" width="100%">
+                        <input id="first_name" class="wide" type="text" value="{first_name}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td rowspan="2" class="inner" nowrap>Пароль:</td>
+                    <td class="inner" width="100%">
+                        <input id="password1" class="wide" type="password" value="{password}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" width="100%">
+                        <input id="password2" class="wide" type="password" value="{password}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Домашний каталог:</td>
+                    <td class="inner" width="100%">
+                        <input id="home_dir" class="wide" type="text" value="{home_dir}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Командная оболочка:</td>
+                    <td class="inner" width="100%">
+                        <input id="shell" class="wide" type="text" value="{shell}">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="advanced" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">&nbsp;
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner" nowrap>Путь к домашнему каталогу:</td>
+                    <td class="inner" width="100%">
+                        <input id="sambaHomePath" class="wide" type="text" value="{sambaHomePath}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Диск домашнего каталога:</td>
+                    <td class="inner" width="100%">
+                        <input id="sambaHomeDrive" class="wide" type="text" value="{sambaHomeDrive}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Скрипт при загрузке:</td>
+                    <td class="inner" width="100%">
+                        <input id="sambaLogonScript" class="wide" type="text" value="{sambaLogonScript}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Путь к профилю пользователя:</td>
+                    <td class="inner" width="100%">
+                        <input id="sambaProfilePath" class="wide" type="text" value="{sambaProfilePath}">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="aliases" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        Псевдонимы пользователя:
+                    </td>
+                </tr>
+                <tr style="height:100%">
+                    <td>
+                        <textarea id="aliases" class="wide" style="height:98%">{aliases}</textarea>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="groups" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        Дополнительные группы пользователя:
+                    </td>
+                </tr>
+                <tr style="height:100%">
+                    <td>
+                        <iframe id="groupsFrame" class="wide" style="height:99%" src=""></iframe>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="access_rules" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        Права доступа:
+                    </td>
+                    <td class="inner">
+                        <input type="button" id="fileManagerButton" style="width:100%" value="Запустить файловый менеджер"/>
+                    </td>
+                </tr>
+                <tr valign="top" style="display:{inetDisplay}">
+                    <td class="inner">
+                        Домашняя папка Интернет:
+                    </td>
+                    <td class="inner">
+                        <Control type="path" id="ftpHome" value="{ftpHome}" width="100%" control_type="fileManager" rootPath="/" />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td nowrap="true" colspan="2" class="inner">
+                        <Control type="boolean" control_type="checkbox" value="{disableSshStr}" id="disableSsh"></Control>
+                        Запретить удаленный доступ к командной строке сервера
+                    </td>
+                </tr>                
+                <tr valign="top">
+                    <td nowrap="true" colspan="2" class="inner">
+                        <Control type="boolean" control_type="checkbox" value="{disableSMB}" id="disableSMB"></Control>
+                        Запретить доступ по протоколу SMB
+                    </td>
+                </tr>                
+                <tr valign="top" style="display:{inetDisplay}">
+                    <td nowrap="true" colspan="2" class="inner">
+                        <Control type="boolean" control_type="checkbox" value="{disableFTP}" id="disableFTP"></Control>
+                        Запретить доступ из Интернет
+                    </td>
+                </tr>                
+                <tr valign="top">
+                    <td nowrap="true" colspan="2" class="inner">
+                        <Control type="boolean" control_type="checkbox" value="{wabUser}" id="wabUser"></Control>
+                        Пользователь платформы ЛВА
+                    </td>
+                </tr>                
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="privileges" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seMachineAccountPrivilege" {seMachineAccountPrivilege_checked} value="true">Может добавлять машины к этому контроллеру домена
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="sePrintOperatorPrivilege" {sePrintOperatorPrivilege_checked} value="true">Может управлять принтерами на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seAddUsersPrivilege" {seAddUsersPrivilege_checked} value="true">Может управлять пользователями на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seRemoteShutdownPrivilege" {seRemoteShutdownPrivilege_checked} value="true">Может удаленно выключать этот сервер
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seDiskOperatorPrivilege" {seDiskOperatorPrivilege_checked} value="true">Может управлять правами доступа к общим папкам этого сервера
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seBackupPrivilege" {seBackupPrivilege_checked} value="true">Может управлять резервным копированием данных на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seRestorePrivilege" {seRestorePrivilege_checked} value="true">Может управлять резервным восстановлением данных на этом сервере
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        <input type="checkbox" value="true" id="seTakeOwnershipPrivilege" {seTakeOwnershipPrivilege_checked} value="true">Может изменять владельца файлов и папок на этом сервере
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="addresses" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        Организация
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="organization" value="{organization}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Отдел
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="departmentNumber" value="{departmentNumber}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Рабочий адрес
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="postalAddress" value="{postalAddress}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Почтовый индекс
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="postalCode" value="{postalCode}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Домашний адрес
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="homePostalAddress" value="{homePostalAddress}"></Control>
+                    </td>
+                </tr>               
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="phones" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        Рабочий телефон
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="telephoneNumber" value="{telephoneNumber}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Факс
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="facsimileTelephoneNumber" value="{facsimileTelephoneNumber}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Домашний телефон
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="homePhone" value="{homePhone}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Мобильный телефон
+                    </td>
+                    <td class="inner" style="width:100%">
+                        <Control type="string" id="mobile" value="{mobile}"></Control>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" style="height:100%;display:none" id="mail">
+        <td colspan="2" style="width:100%;height:100%">
+            <table style="width:100%;height:100%" cellspacing="0" cellpadding="0">
+                <tr valign="top">
+                    <td class="inner">
+                        Почтовый ящик
+                    </td>
+                    <td class="inner">
+                        {mail}
+                    </td>
+                </tr>
+                <tr valign="top" style="height:100%">
+                    <td class="inner">
+                        Размещение
+                    </td>
+                    <td class="inner">
+                        /var/spool/mail/{domain}/{mail}
+                    </td>
+                </tr>                
+            </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+	        <div align="right">
+	        	{|referenceCode}
+	        	<input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+	        	<input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+	            <input class="but" type="button" id="help" value=" Помощь ">
+	        </div>
+        </td>
+    </tr>
+</table>
+</div>

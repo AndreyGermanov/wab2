@@ -1,0 +1,1 @@
+var DeletedObjectsTable = Class.create(EntityDataTable);

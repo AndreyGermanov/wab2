@@ -1,0 +1,178 @@
+attributetype ( 1.1.2.1.2.1 NAME 'comment' 
+			    DESC 'comment' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+	      
+attributetype ( 1.1.2.1.2.4 NAME 'sharePath' 
+			    DESC 'Path to share' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+	      
+attributetype ( 1.1.2.1.2.7 NAME 'shareInode' 
+			    DESC 'Share Inode' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+	      
+attributetype ( 1.1.2.1.2.5 NAME 'idnumber' 
+			    DESC 'unique identifier' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+	      
+attributetype ( 1.1.2.1.2.2 NAME 'hostType' 
+			    DESC 'host type' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+	      
+attributetype ( 1.1.2.1.2.3 NAME 'descr' 
+			    DESC 'host type' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+attributetype ( 1.1.2.1.2.6 NAME 'objectGroup' 
+			    DESC 'group object' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.8 NAME 'inRate' 
+			    DESC 'inRate' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.9 NAME 'inCeil' 
+			    DESC 'inCeil' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.10 NAME 'outRate' 
+			    DESC 'outRate' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.11 NAME 'outCeil' 
+			    DESC 'outCeil' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.12 NAME 'defaultHostInRate' 
+			    DESC 'defaultHostInRate' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.13 NAME 'defaultHostInCeil' 
+			    DESC 'defaultHostInCeil' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.14 NAME 'defaultHostOutRate' 
+			    DESC 'defaultHostOutRate' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.15 NAME 'defaultHostOutCeil' 
+			    DESC 'defaultHostOutCeil' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.16 NAME 'dropInternet' 
+			    DESC 'dropInternet' 
+			    EQUALITY integerMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 
+	      )
+
+attributetype ( 1.1.2.1.2.17 NAME 'openPorts' 
+			    DESC 'openPorts' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.18 NAME 'remoteDesktopProtocol' 
+			    DESC 'remoteDesktopProtocol' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.19 NAME 'remoteDesktopPort' 
+			    DESC 'remoteDesktopPort' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.20 NAME 'remoteDesktopUser' 
+			    DESC 'remoteDesktopUser' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.21 NAME 'remoteDesktopPassword' 
+			    DESC 'remoteDesktopPassword' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.22 NAME 'remoteConsolePort' 
+			    DESC 'remoteConsolePort' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.23 NAME 'webInterfaceProtocol' 
+			    DESC 'webInterfaceProtocol' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.24 NAME 'webInterfacePort' 
+			    DESC 'webInterfacePort' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.25 NAME 'webInterfaceNewWindow' 
+			    DESC 'webInterfaceNewWindow' 
+			    EQUALITY integerMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 
+	      )
+
+attributetype ( 1.1.2.1.2.26 NAME 'defaultUser' 
+			    DESC 'defaultUser' 
+			    EQUALITY caseIgnoreMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+	      )
+
+attributetype ( 1.1.2.1.2.27 NAME 'denyFileAccess' 
+			    DESC 'denyFileAccess' 
+			    EQUALITY integerMatch 
+			    SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 
+	      )
+
+objectclass ( 1.1.2.2.1.2 NAME 'info' 
+			  AUXILIARY DESC 'Hosts additional info' 
+			  MAY ( comment $ hostType $ descr $ objectGroup $ inRate $ outRate $ inCeil $ outCeil $ defaultHostInRate $ 
+                                defaultHostOutRate $ defaultHostInCeil $ defaultHostOutCeil $ dropInternet $ openPorts $ remoteDesktopProtocol $
+				remoteDesktopPort $ remoteDesktopUser $ remoteDesktopPassword $ remoteConsolePort $ webInterfaceProtocol $
+				webInterfacePort $ webInterfaceNewWindow $ defaultUser $ denyFileAccess)
+	    )
+	    
+objectclass ( 1.1.2.2.1.3 NAME 'fileShare' 
+			  STRUCTURAL DESC 'Info about Samba File share' 
+			  MUST ( idnumber ) 
+			  MAY ( cn $ sharePath $ shareInode $ comment )
+	    )
+	    
+objectclass ( 1.1.2.2.1.4 NAME 'objectGroup' 
+			  STRUCTURAL DESC 'Info for group of hosts' 
+			  MUST ( idnumber ) MAY ( comment ))

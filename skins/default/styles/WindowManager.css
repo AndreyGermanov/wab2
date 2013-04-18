@@ -1,0 +1,7 @@
+#window_manager_iframe {
+    width:{width};
+    height:{height};    
+    left:1px;
+    position:absolute;
+}
+

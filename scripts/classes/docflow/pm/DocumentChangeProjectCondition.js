@@ -1,0 +1,1 @@
+var DocumentChangeProjectCondition = Class.create(Document);

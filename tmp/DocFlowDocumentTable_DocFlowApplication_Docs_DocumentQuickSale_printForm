@@ -1,0 +1,474 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body bgcolor="#FFFFFF"/><table style="border-width:1px" width="100%" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+	<tr bgcolor="#CCCCCC" valign="top">
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Дата</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Номер</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Контрагент</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Сумма</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Скидка</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Менеджер</b></font>
+		</td>
+		<td align="center">
+			<font face="Arial" style="font-size:15px"><b>Штрихкод</b></font>
+		</td>
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">17.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">16</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов Петр Семенович</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">662.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">97.40</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=434"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">17.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">15</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Аникина Елена Юрьевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">499.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">0</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=429"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">17.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">14</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Аникина Елена Юрьевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">172.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">0</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=426"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">16.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">13</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Аникина Елена Юрьевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">989.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">36.50</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=422"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">12.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">12</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петров Федор Игнатьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">450.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">0</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=412"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">08.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">11</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петров Федор Игнатьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">1000.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">0</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=399"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">08.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">10</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петров Федор Игнатьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">500.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">199.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=396"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">05.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">9</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Углова Надежда Ивановна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">730.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">199.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Германов Андрей Валерьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=392"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">01.03.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">8</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Аникина Елена Юрьевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">300.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">199.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Петрова Валентина Васильевна</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=388"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">23.02.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">7</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов Петр Семенович</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">125.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">120.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Германов Андрей Валерьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=369"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">23.02.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">6</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов Петр Васильевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">100.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">90.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Германов Андрей Валерьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=367"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">23.02.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">4</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов Петр Васильевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">200.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">200.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Германов Андрей Валерьевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=362"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">22.02.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">3</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов Петр Васильевич</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">468.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">240.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=361"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">22.02.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">2</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Иванов Петр Семенович</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">480.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">199.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=359"/></font>
+		</td>
+
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td align="left">
+			<font face="Arial" style="font-size:15px">22.02.2013</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">1</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">Киктенко Александр Александрович</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px">102.00</font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"></font>
+		</td>
+
+		<td align="left">
+			<font face="Arial" style="font-size:15px"><img src="utils/qr/qr.php?text=https://192.168.0.9/bc.php?i=358"/></font>
+		</td>
+
+	</tr>

@@ -1,0 +1,1 @@
+var ControllerApplicationModuleConfig = Class.create(ModuleModelConfig);

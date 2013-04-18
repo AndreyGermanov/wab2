@@ -1,0 +1,1 @@
+var ReferenceProfile = Class.create(EntityProfile);

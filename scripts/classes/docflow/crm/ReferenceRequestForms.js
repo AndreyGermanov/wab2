@@ -1,0 +1,1 @@
+var ReferenceRequestForms = Class.create(Reference);

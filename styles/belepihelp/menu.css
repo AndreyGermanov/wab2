@@ -1,0 +1,52 @@
+/* linked */
+.mainmenu {
+	border-style:solid;
+    border-color:#FFFFFF;
+	border-width:0px;
+	background-color:#00dcff;
+	font-size:18px;
+	font-weight:bold;
+	font-family:Arial;
+}
+.menuitem {
+	background-color:#0066dd;
+	color:#FFFFFF;   
+	font-weight:bold;
+	cursor:pointer;     		
+}
+
+.mainmenuitem {
+	border-style:solid;
+    border-color:#000099;
+	border-width:2px;
+	background-color:#0066dd;
+	color:#FFFFFF;   
+	font-weight:bold;
+	cursor:pointer;     		
+}
+
+.menuitem:hover {
+	background-color:#FFFFFF;
+	color:#000088;   
+	font-weight:bold;
+	cursor:pointer;     		
+}
+
+.mainmenuitem:hover {
+	background-color:#FFFFFF;
+	color:#000088;   
+	font-weight:bold;
+	cursor:pointer;     		
+}
+
+.submenu {
+	border-style:solid;
+    border-color:#000099;
+	border-width:2px;
+	background-color:#0066dd;
+	font-size:16px;
+	font-weight:bold;
+	font-family:Arial;
+	position:absolute;
+	z-index:2;
+}

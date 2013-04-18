@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>eventlog</title></head><body>
+<h1><a name="p1">Работа с журналом событий</a></h1>
+<div style="text-align: justify;"><a name="p1">В журнале событий могут фиксироваться
+все действия, которые компьютеры пользователей осуществляют с ресурсами файлового
+сервера, а именно, с содержимым его общих папок. По умолчанию журнал
+событий отключен, так как для его работы требуется соединение с внешней
+базой данных MySQL, в которую пишется информация о происходящих
+событиях. Необходимо предварительно создать эту базу данных и указать в
+панели управления параметры соединения с ней. В журнал событий попадает
+огромное количество информации, поэтому по умолчанию он ведется не для
+всех общих папок, а только для таких общих папок, у которых в свойствах
+установлен флажок "<span style="font-weight: bold;">Включить события с этой папкой в журнал событий</span>" (см. раздел "</a><a onclick='parent.obj.go_to("5.3.2.5",true,event)' href="null">Настройка ведения журнала событий для общей папки</a>").<br />
+</div>
+<br />
+<div style="text-align: justify;">После того как вы включили нужные папки в журнал событий, сам журнал можно увидеть, развернув в дереве узел "<span style="font-weight: bold;">Файловый сервер</span>" и запустив подраздел "<span style="font-weight: bold;">Журнал событий</span>".<br />
+</div>
+<br />
+<div style="text-align: center;"><img src="img/eventlogtree.png" alt="eventlogtree.png" /><br />
+</div>
+<br />
+<div style="text-align: center;"><img src="img/eventlogwnd.png" alt="eventlogwnd.png" /><br />
+</div>
+<br />
+<div style="text-align: justify;">Окно журнала состоит из двух закладок: закладка "<span style="font-weight: bold;">Журнал</span>", на которой, собственно расположен журнал и закладка "<span style="font-weight: bold;">Настройка</span>", на которой указываются параметры, необходимые для того, чтобы журнал событий работал.<br />
+</div>
+<h2><a name="p2">Просмотр журнала событий</a></h2>
+<div style="text-align: justify;"><a name="p2">Журнал событий это таблица, состоящая из 5 колонок, разбитая на страницы (на каждой странице показано по 15 событий). <br />
+</a></div>
+<ul>
+<a name="p2">  </a><li><span style="font-weight: bold;"><a name="p2">Дата</a></span><a name="p2"> - дата события</a></li>
+<a name="p2">  </a><li><span style="font-weight: bold;"><a name="p2">IP-адрес </a></span><a name="p2">- IP-адрес
+компьютера, который инициировал это событие. Если компьютер с таким
+IP-адресом зарегистрирован в Сетевом центре, то после IP-адреса в
+скобках будет указано имя этого компьютера</a></li>
+<a name="p2">  </a><li><span style="font-weight: bold;"><a name="p2">Событие</a></span><a name="p2"> - тип события, которое произошло. Журнал фиксирует следующие типы событий:</a></li>
+<a name="p2">  </a><ul>
+<a name="p2">    </a><li><a name="p2">Подключился</a></li>
+<a name="p2">    </a><li><a name="p2">Отключился<br />
+    </a></li>
+<a name="p2">    </a><li><a name="p2">Открыл файл</a></li>
+<a name="p2">    </a><li><a name="p2">Закрыл файл</a></li>
+<a name="p2">    </a><li><a name="p2">Переместил файл</a></li>
+<a name="p2">    </a><li><a name="p2">Удалил файл</a></li>
+<a name="p2">    </a><li><a name="p2">Удалил папку<br />
+    </a></li>
+<a name="p2">    </a><li><a name="p2">Прочитал файл</a></li>
+<a name="p2">    </a><li><a name="p2">Обнулил файл</a></li>
+<a name="p2">    </a><li><a name="p2">Установил блокировку на файл</a></li>
+<a name="p2">    </a><li><a name="p2">Отправил файл<br />
+    </a></li>
+<a name="p2">    </a><li><a name="p2">Записал изменения в файл</a></li>
+<a name="p2">  </a></ul>
+</ul>
+<ul>
+<a name="p2">  </a><li><span style="font-weight: bold;"><a name="p2">Файл/Каталог </a></span><a name="p2">-
+имя и путь к файлу или каталогу, с которым произошло событие. Здесь
+указывается полный путь к файлу на диске (начиная с корневой общей
+папки /data/share).</a></li>
+<a name="p2">  </a><li><span style="font-weight: bold;"><a name="p2">Новое место</a></span><a name="p2"> - это поле заполняется только для типа события "<span style="font-weight: bold;">Переместил файл</span>" и в нем указывается путь и новое имя файла после перемещения.<br />
+  </a></li>
+</ul>
+<div style="text-align: justify;"><a name="p2">События обычно происходят каждую
+секунду и их происходит настолько много, что найти нужное простым
+пролистыванием таблицы будет очень сложно и долго. <br />
+</a></div>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">Для того чтобы упростить эту задачу, журнал содержит ряд инструментов.<br />
+</a></div>
+<h3><span style="font-weight: bold;"><a name="p3">Сортировка</a></span></h3>
+<div style="text-align: justify;"><a name="p3">Изначально журнал отсортирован по колонке "<span style="font-weight: bold;">Дата</span>"
+по убыванию. Таким образом самые новые события находятся в самом верху
+журнала. Вы можете отсортировать журнал по любой колонке, щелкнув по
+ней мышью. При первом щелчке, журнал сортируется по значению в этой
+колонке по возрастанию, при повторном щелчке журнал сортируется по
+убыванию. Например Вы можете отсортировать журнал по колонке "<span style="font-weight: bold;">Событие</span>" по убыванию. Таким образом все события типа "<span style="font-weight: bold;">Удалил файл</span>" окажутся в начале журнала и вы сможете узнать, кто, когда и какие файлы удалял с сервера.<br />
+</a></div>
+<h3><span style="font-weight: bold;"><a name="p4">Поиск</a></span></h3>
+<div style="text-align: justify;"><a name="p4">Самый лучший способ обнаружения
+записей в журнале это поиск. Можно обнаруживать записи по значению
+любой колонки в журнале. Чтобы открыть окно поиска, нужно нажать кнопку
+<img src="img/searcheventlog.png" alt="searcheventlog.png" /> над таблицей и появится окно поиска.<br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: center;"><a name="p4"><img style="width: 500px; height: 201px;" src="img/searchlogwindow.png" alt="searchlogwindow.png" /><br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: justify;"><a name="p4">В этом окне задаются
+критерии отбора
+записей: период, за который будет отображаться журнал, тип события,
+записи которого будут отображаться, IP-адрес компьютера, который эти
+события инициировал, файл или каталог, с которым событие произошло и
+если имело
+место перемещение файла, то "новое место", в которое он был перемещен.<br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: justify;"><a name="p4">Поля "<span style="font-weight: bold;">Тип события</span>" и "<span style="font-weight: bold;">IP-адрес</span>" требуют точного указания типа события и IP-адреса, а поля "<span style="font-weight: bold;">Файл/каталог</span>" и "<span style="font-weight: bold;">Новое место</span>" допускают использовать символ подстановки "<span style="font-weight: bold;">*</span>", который означает "<span style="font-style: italic;">любой символ</span>". Например, если указать в поле "Файл/каталог" выражение<span style="font-style: italic;"> /data/share/files/дог*</span>, то будут отбираться все записи журнала, у которых имя файла или каталога, с которым произошло событие начинается на<span style="font-style: italic;"> /data/share/дог</span>. Или если указать выражение <span style="font-style: italic;">*.txt</span>, то будут отбираться все записи, в которых имя файла заканчивается на <span style="font-style: italic;">.txt,</span> а если указать <span style="font-style: italic;">*оро*</span>, то будут отбираться все записи, у которых имя файла содержит сочетание букв "<span style="font-style: italic;">оро</span>".<br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: justify;"><a name="p4">После нажатия на кнопку "<span style="font-weight: bold;">ОК</span>",
+журнал будет отображать только такие записи, которые соответствуют
+одновременно всем указанным критериям поиска. Например, если заполнить
+окно следующим образом:<br />
+</a></div>
+<a name="p4"><br />
+<br />
+</a><div style="text-align: center;"><a name="p4"><img src="img/searchlogexample.png" alt="searchlogexample.png" /><br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: justify;"><a name="p4">то журнал событий отобразит все файлы с расширением .doc, которые были удалены за май месяц 2012 года.<br />
+</a></div>
+<h3><span style="font-weight: bold;"><a name="p5">Обновление журнала </a></span></h3>
+<div style="text-align: justify;"><a name="p5">Система пишет события в журнал каждые две минуты, однако таблица не обновляется автоматически. Чтобы обновить
+таблицу, нужно нажать кнопку <img src="img/logrefreshbtn.png" alt="logrefreshbtn.png" />.<br />
+</a></div>
+<h2><a name="p6">Параметры журнала событий</a></h2>
+<a name="p6">Параметры журнала событий находятся на закладке "<span style="font-weight: bold;">Настройки</span>" окна "<span style="font-weight: bold;">Журнала событий</span>". <br />
+<br />
+</a><div style="text-align: center;"><a name="p6"><img src="img/eventlogsettings.png" alt="eventlogsettings.png" /><br />
+</a></div>
+<a name="p6"><br />
+</a><ul>
+<a name="p6">  </a><li><span style="font-weight: bold;"><a name="p6">Период хранения журнала событий</a></span><a name="p6">.
+Обычно событий настолько много, что если не удалять устаревшие,
+информация о них может занять все дисковое пространство. Поэтому по
+умолчанию хранятся только события за последние 30 дней. Вы можете
+изменить это число. Каждую ночь в 23:59 на сервере запускается утилита,
+которая удаляет из журнала все события, старше указанного в этом поле
+срока.<br />
+</a></li>
+<a name="p6">  </a><li><span style="font-weight: bold;"><a name="p6">Параметры подключения к базе данных (БД)</a></span><a name="p6">.
+Система хранит журнал событий в базе данных MySQL и каждые 2 минуты
+пишет новые события в эту базу. База данных может храниться как на
+самом сервере, так и на другом хосте. Журнал не создает эту базу данных
+автоматически, поэтому вам нужно предварительно создать ее и указать
+реквизиты доступа к ней в этом окне:</a></li>
+<a name="p6">  </a><ul>
+<a name="p6">    </a><li><span style="font-weight: bold;"><a name="p6">Сервер БД</a></span><a name="p6"> - IP-адрес или имя хоста, на котором находится сервер MySQL с базой данных</a></li>
+<a name="p6">    </a><li><span style="font-weight: bold;"><a name="p6">Порт БД</a></span><a name="p6"> - порт, на котором сервер MySQL слушает соединения</a></li>
+<a name="p6">    </a><li><span style="font-weight: bold;"><a name="p6">Имя БД</a></span><a name="p6"> - имя базы данных, в которой будут храниться события</a></li>
+<a name="p6">    </a><li><span style="font-weight: bold;"><a name="p6">Пользователь БД</a></span><a name="p6"> - имя пользователя, имеющего полный доступ к базе данных</a></li>
+<a name="p6">    </a><li><span style="font-weight: bold;"><a name="p6">Пароль пользователя БД</a></span><a name="p6"> - пароль "пользователя БД"</a></li>
+<a name="p6">  </a></ul>
+</ul>
+<div style="text-align: justify;"><a name="p6">После ввода или изменения параметров нажмите кнопку "<span style="font-weight: bold;">Сохранить</span>"
+и если параметры указаны верно, через непродолжительное время (не более
+2 минут) журнал заработает и в нем появятся записи. Это произойдет
+конечно же при условии, что хотя бы у одной из общих папок установлен
+флажок "<span style="font-weight: bold;">Включить события с этой папкой в журнал событий</span>" (см. раздел "</a><a onclick='parent.obj.go_to("5.3.2.5",true,event)' href="null">Настройка ведения журнала событий для общей папки</a>").<br />
+</div>
+</body></html>

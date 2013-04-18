@@ -1,0 +1,38 @@
+﻿<html>
+  <head>
+
+<!-- UTF-8 is the recommended encoding for your pages -->
+    <meta http-equiv="content-type" content="text/xml; charset=utf-8" />
+    <title>Zapatec DHTML Calendar</title>
+
+<!-- Loading Theme file(s) -->
+    <link rel="stylesheet" href="themes/forest.css" />
+    <link rel="stylesheet" href="themes/layouts/small.css" />
+
+<!-- Loading Calendar JavaScript files -->
+    <script type="text/javascript" src="src/calendar.js"></script>
+<!-- Loading language definition file -->
+    <script type="text/javascript" src="lang/calendar-en.js"></script>
+
+  </head>
+  <body>
+
+    <input type="text" id="calendar" name="calendar" />
+    <button id="trigger">...</button>
+    <script type="text/javascript">//<![CDATA[
+      Zapatec.Calendar.setup({
+        firstDay          : 1,
+        weekNumbers       : false,
+        showOthers        : true,
+        electric          : true,
+        inputField        : "calendar",
+        button            : "trigger",
+        ifFormat          : "%d.%m.%Y",
+        daFormat          : "%d.%m.%Y"
+      });
+    //]]></script>
+<noscript>
+Either enable Javascript in your Browser or upgrade to a newer version.
+</noscript>
+  </body>
+</html>

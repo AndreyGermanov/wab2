@@ -1,0 +1,1 @@
+var WebSitesTree = Class.create(EntityTree);

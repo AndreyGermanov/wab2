@@ -1,0 +1,246 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" style="height:100%" width="100%">
+			    <tr valign="top" id="groupRow">
+			        <td nowrap="nowrap" class="inner">
+			            Группа:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>                                
+{hiddenFields}
+						<input type="hidden" name="defaultEmail" id="defaultEmail" value="{defaultEmail}" />
+			        </td>
+			    </tr>
+<!-- block=simpleAccount -->
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Учетная запись:
+			        </td>
+			        <td class="inner">
+			            <Control id="account" value="{account}" properties='{account_properties}'></Control>                                
+			        </td>        
+			    </tr>
+<!-- block=advancedAccount -->
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Логин:
+			        </td>
+			        <td class="inner">
+			            <Control id="account" value="{account}" type="string" properties='{account_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Пароль:
+			        </td>
+			        <td class="inner">
+			            <Control id="accountPassword" value="{accountPassword}" properties='{accountPassword_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Пароль еще раз:
+			        </td>
+			        <td class="inner">
+			            <Control id="accountPassword2" value="{accountPassword2}" properties='{accountPassword2_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Тип:
+			        </td>
+			        <td class="inner">
+			            <Control id="accountRole" value="{accountRole}" type='list,{accountRolesList}' class='wide'></Control>                                
+			        </td>        
+			    </tr>	
+<!-- block=rest -->			    		    
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Фамилия:
+			        </td>
+			        <td class="inner">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Имя:
+			        </td>
+			        <td class="inner">
+			            <Control id="firstName" value="{firstName}" properties='{firstName_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Отчество:
+			        </td>
+			        <td class="inner">
+			            <Control id="secondName" value="{secondName}" properties='{secondName_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top" style="display:{displayUserEmail}">
+			        <td nowrap="nowrap" class="inner">
+			            E-mail:
+			        </td>
+			    	<td nowrap="nowrap" class="inner">
+			    		<Control id="userEmailAddress" value="{userEmailAddress}" properties="{userEmailAddress_properties}"></Control>
+			    	</td>
+			    </tr>
+			    <tr valign="top" style="display:{displayHasAdminAccess}">
+			    	<td nowrap="nowrap" colspan="2" class="inner">
+			    		<Control id="hasAdminAccess" value="{hasAdminAccess}" properties="{hasAdminAccess_properties}"></Control>
+			    	</td>
+			    </tr>
+			    <tr valign="top" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            Фото:
+			        </td>
+			        <td class="inner">
+			            <Control id="photo" value="{photo}" properties='{photo_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			</table>
+		</td>
+	</tr>
+    <tr valign="top" id="personal" style="height:100%;width:100%;display:none">	
+    	<td class="inner">
+		    <table cellspacing="0" cellpadding="0" style="height:100%" width="100%">    			
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner"">
+			            Дата рождения:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="birthDate" value="{birthDate}" properties='{birthDate_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Место рождения:
+			        </td>
+			        <td class="inner">
+			            <Control id="birthCity" value="{birthCity}" properties='{birthCity_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Тип документа:
+			        </td>
+			        <td class="inner">
+			            <Control id="idDocumentType" value="{idDocumentType}" properties='{idDocumentType_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Серия документа:
+			        </td>
+			        <td class="inner">
+			            <Control id="idDocumentSeries" value="{idDocumentSeries}" properties='{idDocumentSeries_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Дата документа:
+			        </td>
+			        <td class="inner">
+			            <Control id="idDocumentDate" value="{idDocumentDate}" properties='{idDocumentDate_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            Место выдачи документа:
+			        </td>
+			        <td class="inner">
+			            <Control id="idDocumentPlace" value="{idDocumentPlace}" properties='{idDocumentPlace_properties}'></Control>                                
+			        </td>        
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="contacts" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" width="100%">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Адрес:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="postalAddress" value="{postalAddress}" properties='{postalAddress_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Телефоны:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="phones" value="{phones}" properties='{phones_properties}'></Control>                                
+			        </td>
+			    </tr>		    
+		    </table>
+		</td>
+	</tr>	
+    <tr valign="top" id="work" style="height:100%;width:100%;display:none">	
+    	<td class="inner">
+		    <table cellspacing="0" cellpadding="0" style="height:100%" width="100%">    			
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Организация:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="firm" value="{firm}" properties='{firm_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Отдел:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="department" value="{department}" properties='{department_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			    <tr valign="top" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            Должность:
+			        </td>
+			        <td class="inner">
+			            <Control id="appointment" value="{appointment}" properties='{appointment_properties}'></Control>                                
+			        </td>        
+			    </tr>
+			</table>
+		</td>
+	</tr>
+<!-- block=notNew -->	
+    <tr valign="top" id="emails" style="height:100%;width:100%;display:none"">
+	    <td class="inner">
+            {:include {emailsTableId},,{emailsCode}:}	
+            <div align="center">
+            	<input type="button" id="setDefaultEmail" value="Установить основным"/>
+            </div>    
+	    </td>
+	</tr>	
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="submit" id="OK" value="Сохранить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

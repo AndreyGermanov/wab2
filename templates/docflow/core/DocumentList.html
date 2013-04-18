@@ -1,0 +1,12 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+    <tr valign="top" id="childrenTable" style="height:100%;display:" width="100%">
+        <td class="inner" colspan="2" width="100%" style="height:100%">
+            {:include DocFlowDocumentTable_{module_id}_{objectid},,$object->condition="{condition}";$object->itemsPerPage=10;$object->parentEntity='{parentEntity}';$object->window_id='{window_id}';$object->parent_object_id='{object_id}';$object->persistedFields='{persistedFieldsSafe}';$object->className='{className}';$object->defaultClassName='{defaultClassName}';$object->fieldList='{fieldList}';$object->hierarchy={hierarchy};$object->additionalFields='{additionalFields}';$object->sortOrder='{sortOrder}'; :}
+        </td>
+    </tr>    
+    </tbody>
+</table>
+</form>

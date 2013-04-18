@@ -1,0 +1,76 @@
+<!-- block=header -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Просмотр резервных копий</title>
+        <link rel="stylesheet" type="text/css" href="/skins/default/styles/Table.css"/>
+        <link rel="stylesheet" type="text/css" href="/skins/default/styles/Mailbox.css"/>
+        <link rel="stylesheet" type="text/css" href="/skins/default/styles/window.css"/>
+    </head>
+    <body class="cyan">    
+		<table width="92%" align="center" cellpadding="3" cellspacing="0" class="window">
+			<tr class="window_header">
+				<td>
+					<span id="headerText">{viewModeString}</span>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td class="inner">
+					<form method="get" action="index.php">
+						<table width="99%" cellpadding="2" cellspacing="2">
+							<tr valign="top">
+								<td nowrap="true" class="inner">Путь к файлу или папке:</td>
+								<td width="100%"><input style="width:100%" name="path" value="{tplPath}"></td>
+								<td><input type="submit" value="    OK    "></td>
+							</tr>
+						</table>
+					</form>
+				</td>
+			</tr>
+<!-- block=page_nav_start -->
+			<tr valign="top">
+				<td class="inner">
+					<div align="center">
+<!-- block=page_nav_page -->
+						<a class="link" href="?{pageLink}">{pageNumber}</a>
+<!-- block=page_nav_selected_page -->
+						<span class="selected_link">{pageNumber}</span>
+<!-- block=page_nav_end -->
+					</div>
+				</td>
+			</tr>
+<!-- block=table_header -->
+			<tr valign="top">
+				<td class="inner">
+					<table cellspacing="1" width="99%" align="center" class="inner">
+						<tr valign="top">
+							<td class="selected_cell">&nbsp;</td>
+							<td class="selected_cell">Резервная копия файла/каталога</b></td>
+							<td class="selected_cell" style="display:{displayDate}">Дата и время резервной копии</td>
+							<td class="selected_cell">Текущая версия данного файла</td>
+							<td class="selected_cell" style="display:{displayAllBackups}">Все резервные копии данного файла/каталога</td>
+						</tr>
+						<tr valign="top">
+							<td class="inner" colspan="4">
+								{currentPath}
+							</td>
+						</tr>
+<!-- block=row -->
+						<tr valign="top">
+							<td align="center" class="{rowClass}"><img src="{img}"/></td>
+							<td align="left" class="{rowClass}"><a href="{link}">{title}</a></td>
+							<td align="left" class="{rowClass}" style="display:{displayDate}">{backupDate}</td>            
+							<td align="left" class="{rowClass}">{currentVersion}</td>
+							<td align="left" class="{rowClass}" style="display:{displayAllBackups}">{allBackups}</td>
+						</tr>
+<!-- block=table_footer -->
+					</table>
+				</td>
+			</tr>
+<!-- block=footer -->
+		<tr valign="top" class="heavy">
+			<td class="inner">&nbsp;</td>
+		</tr>
+		</table>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0">
+			    <tr valign="top" width="100%">			    	
+			        <td nowrap="nowrap" class="inner" rowspan="4">
+			            Фото:
+			            <Control id="photo" value="{photo}" properties='{photo_properties}'></Control>                                
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            Группа:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">			    	
+			        <td nowrap="nowrap" class="inner">
+			            Код:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="code" value="{code}" properties='{code_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Признак:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="kind" value="{kind}" properties='{kind_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Цена:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="cost" value="{cost}" properties='{cost_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td colspan="3" nowrap="nowrap" class="inner">
+			            Наименование:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td colspan="3" class="inner" width="100%">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Ед. изм.:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            <Control id="dimension" value="{dimension}" properties='{dimension_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            НДС:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            <Control id="NDS" value="{NDS}" properties='{NDS_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top" width="100%">
+			        <td colspan="3" nowrap="nowrap" class="inner" style="height:100%">
+			            &nbsp;                                
+			        </td>
+			    </tr>		    
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="descriptionTab" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" width="100%" height="100%">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Описание:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner" style="height:100%">
+			            <Control id="description" value="{description}" properties='{description_properties}'></Control>                                
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+        	<div align="right">
+				<input class="but" type="button" unchangeable="true" id="Create" value="Создать" style="display:{createDisplayStyle}" />
+                <input class="but" type="submit" id="OK" value="Сохранить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+            </div>
+            <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

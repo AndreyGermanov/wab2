@@ -1,0 +1,1 @@
+AboutWindow = Class.create(Entity);

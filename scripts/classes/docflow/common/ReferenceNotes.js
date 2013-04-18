@@ -1,0 +1,1 @@
+var ReferenceNotes = Class.create(Reference);

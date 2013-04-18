@@ -1,0 +1,33 @@
+<body bgcolor="#FFFFFF"/>
+<div id="mailbox_div" style="width:100%;height:100%">
+<table id="mailbox_table" bgcolor="#000000" cellpadding="0" cellspacing="1" width="100%" height="100%">
+    <tr valign="top">
+        <td nowrap class="inner">Период:</td>
+        <td class="inner" width="100%"><Control type="date" id="eventDateEnd" value="{eventDateEnd}"/><Control type="date" id="eventDateStart" value="{eventDateStart}"/>
+        </td>
+    </tr>
+    <tr valign="top">
+        <td nowrap class="inner">Тип события:</td>
+        <td class="inner" width="100%">
+            <Control type="list,{eventTypes}" value="{eventType}" id="eventType" />
+        </td>
+    </tr>
+    <tr valign="top">
+        <td nowrap class="inner">Пользователь:</td>
+        <td class="inner" width="100%">
+        	<Control  type="list,{userList}" id="eventUser" value="{eventUser}"/>
+        </td>
+    </tr>
+    <tr valign="top">
+        <td nowrap class="inner">Сообщение:</td>
+        <td class="inner" width="100%"><Control  type="string" id="eventMessage" value="{eventMessage}"/>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="cancel" value=" Отмена "></div>
+        </td>
+    </tr>
+</table>
+</div>

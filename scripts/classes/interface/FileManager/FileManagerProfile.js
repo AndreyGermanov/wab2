@@ -1,0 +1,1 @@
+var FileManagerProfile = Class.create(EntityProfile);

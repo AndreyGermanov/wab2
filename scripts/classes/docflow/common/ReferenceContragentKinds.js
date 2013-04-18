@@ -1,0 +1,1 @@
+var ReferenceContragentKinds = Class.create(Reference);

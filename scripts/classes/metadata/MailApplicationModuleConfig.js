@@ -1,0 +1,1 @@
+var MailApplicationModuleConfig = Class.create(ModuleModelConfig);

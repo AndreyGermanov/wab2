@@ -1,0 +1,162 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame" id="form">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner" width="100%" style="height:100%">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner" id="titleField">
+			            Организация:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="firmName" value="{firmName}" properties='{firmName_properties}'></Control>                                
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Код по ОКПО:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="firmOKPO" value="{firmOKPO}" properties='{firmOKPO_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Руководитель:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="directorName" value="{directorName}" properties='{directorName_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Главный бухгалтер:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="buhgalterName" value="{buhgalterName}" properties='{buhgalterName_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Кассир:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="kassirName" value="{kassirName}" properties='{kassirName_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            Основание приходного кассового ордера:
+			        </td>
+			    </tr>
+			    <tr valign="top">			    
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            <Control id="kassaPrihodOsnovanie" value="{kassaPrihodOsnovanie}" properties='{kassaPrihodOsnovanie_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">			    
+			        <td nowrap="nowrap" class="inner" colspan="2" style="height:100%">
+			            &nbsp;                                
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="discounts" style="height:100%;width:100%;display:none">    
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Скидка реферрала при первой покупке (руб.):
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="referralDiscount" value="{referralDiscount}" properties='{referralDiscount_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            Скидки реферреров (%, через запятую для каждого уровня начиная с первого):
+			        </td>
+			    </tr>
+			    <tr valign="top">			    
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            <Control id="referrerDiscounts" value="{referrerDiscounts}" properties='{referrerDiscounts_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top">			    
+			        <td nowrap="nowrap" class="inner" colspan="2" style="height:100%">
+			            &nbsp;                                
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="templates" style="height:100%;width:100%;display:none">    
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            Шаблон SMS-сообщения:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+						<Control id="smsTemplate" properties='{smsTemplate_properties}' value="{smsTemplate}"></Control>
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Адрес E-mail отправителя сообщения:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="emailFrom" value="{emailFrom}" properties='{emailFrom_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Тема E-mail сообщения:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="emailSubject" value="{emailSubject}" properties='{emailSubject_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            Шаблон Email-сообщения:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+						<Control id="emailTemplate" properties='{emailTemplate_properties}'>{emailTemplate}</Control>
+			        </td>
+			    </tr>
+			    <tr valign="top">			    
+			        <td nowrap="nowrap" class="inner" style="height:100%">
+			            &nbsp;                                
+			        </td>
+			    </tr>
+			</table>
+	    </td>
+	</tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right">
+                	<input class="but" type="submit" id="OK" value="Сохранить" />
+               		<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                	<input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

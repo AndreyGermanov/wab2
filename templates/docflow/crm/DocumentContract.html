@@ -1,0 +1,146 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame" id="form">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner" width="100%" style="height:100%">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top" width="100%">
+			    	<td class="inner" width="100%" colspan="2">
+				    	<table width="100%" cellpadding="2" cellspacing="0" width="100%">
+					    	<tr valign="top">
+						        <td nowrap="nowrap" class="inner">
+						            Номер:
+						        </td>
+						        <td nowrap="nowrap" class="inner">
+						            <Control id="number" value="{number}" properties='{number_properties}'></Control>                                
+						        </td>
+						        <td nowrap="nowrap" class="inner">
+						            Дата:
+						        </td>
+						        <td nowrap="nowrap" class="inner">
+						            <Control id="docDate" value="{docDate}" properties='{docDate_properties}'></Control>                                
+						        </td>
+						    </tr>
+						</table>
+					</td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Шаблон договора:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="contractTemplate" value="{contractTemplate}" properties='{contractTemplate_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner" id="titleField">
+			            Организация:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="firm" value="{firm}" properties='{firm_properties}'></Control>                                
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Банковский счет организации:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="firmAccount" value="{firmAccount}" calcAlgo="getDefaultBankAccount" calcProperties="contragent={firm}" properties='{firmAccount_properties}' condition="@contragent.@name={firmName}" fieldAccess='{firmAccountFieldAccess}' fieldDefaults='{firmAccountFieldDefaults}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Контрагент:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="contragent" value="{contragent}" properties='{contragent_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Банковский счет контрагента:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="contragentAccount" calcAlgo="getDefaultBankAccount" calcProperties="contragent={contragent}" value="{contragentAccount}" properties='{contragentAccount_properties}' condition="@contragent.@name={contragentName}"  fieldAccess='{contragentAccountFieldAccess}' fieldDefaults='{contragentAccountFieldDefaults}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Сумма договора:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="summa" value="{summa}" properties='{summa_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Ставка НДС %:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="stavkaNDS" value="{stavkaNDS}" properties='{stavkaNDS_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Сумма НДС:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="NDS" value="{NDS}" readonly="true" properties='{NDS_properties}'></Control>                                
+			        </td>
+			    </tr>			    
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Комментарий:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Ответственный менеджер:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="manager" value="{manager}" properties='{manager_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner">
+			            Группа:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>						
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="contractText" style="height:100%;width:100%;display:none">
+	    <td class="inner" width="100%" style="height:100%">
+            <Control id="contract" value="{contract}" properties='{contract_properties}'></Control>                                
+	    </td>
+	</tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right">
+					<input class="but" type="button" unchangeable="true" id="Create" value="Создать" style="display:{createDisplayStyle}" />
+					<input class="but" type="button" unchangeable="true" id="Print" value="Печать" style="display:{printDisplayStyle}" />
+                	<input class="but" type="submit" id="OK" value="Сохранить" />
+               		<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                	<input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

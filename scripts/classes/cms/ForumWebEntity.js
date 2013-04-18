@@ -1,0 +1,1 @@
+var ForumWebEntity = Class.create(WebEntity);

@@ -1,0 +1,82 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>    
+    <tr valign="top" id="log" style="height:100%;display:" width="100%">
+        <td class="inner" colspan="2">
+            {:include LogDataTable_{objectid},,if ("{adapterId}"!="") $object->adapter=$Objects->get("{adapterId}");$object->condition="";$object->hierarchy=false;$object->parentEntity='{object_id}';$object->window_id='{window_id}';$object->parent_object_id='{object_id}';$object->persistedFields='{persistedFieldsSafe}';$object->sortOrder='eventDate DESC';$object->className='AuditRecord';$object->fieldList='{fieldList}';$object->itemsPerPage=15;$object->currentPage=1;$object->sortOrder='{sortFields}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="settings" style="height:100%;display:none" width="100%">
+        <td class="inner" colspan="2">
+            <table id="fieldsTable" width="100%" height="100%" >
+                <tbody>
+                <tr>
+                    <td nowrap class="inner">Период хранения журнала событий (дней):</td>
+                            <td class="inner" width="100%"><input class="wide" type="text" id="smbAuditPeriod" value="{smbAuditPeriod}"></td>
+                </tr>                    
+                <tr valign="top">
+                    <td class="inner" colspan="2">
+                        Параметры подключения к базе данных (БД)
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Сервер БД:
+                    </td>
+                    <td class="inner">
+                        <Control type="string" id="smbAuditDBHost" value="{smbAuditDBHost}"></Control>                    
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Порт БД:
+                    </td>
+                    <td class="inner">
+                        <Control type="string" id="smbAuditDBPort" value="{smbAuditDBPort}"></Control>                    
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Имя БД:
+                    </td>
+                    <td class="inner">
+                        <Control type="string" id="smbAuditDBName" value="{smbAuditDBName}"></Control>                    
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Пользователь БД:
+                    </td>
+                    <td class="inner">
+                        <Control type="string" id="smbAuditDBUser" value="{smbAuditDBUser}"></Control>                    
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner">
+                        Пароль пользователя БД:
+                    </td>
+                    <td class="inner">
+                        <Control type="string" id="smbAuditDBPassword" value="{smbAuditDBPassword}" password="true"></Control>                    
+                    </td>
+                </tr>                
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+                <div align="right"><input class="but" type="button" id="OK" value="Сохранить" />
+                <input class="but" type="button" id="cancel" value=" Закрыть "/>
+                <input class="but" type="button" id="help" value=" Помощь "> 
+                </div>               
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

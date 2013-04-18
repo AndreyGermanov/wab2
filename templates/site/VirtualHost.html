@@ -1,0 +1,10 @@
+$HTTP["host"] == "{title}" {
+	server.document-root = "{document_root}"
+	server.name = "{title}"
+	dir-listing.activate = "disable"
+ 	setenv.add-environment = ( 
+      "MODULE_ID" => "{webapp_module_id}"
+    )	
+	{auth}
+	{ssl}
+}

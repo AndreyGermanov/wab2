@@ -1,0 +1,260 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0">
+			    <tr valign="top" width="100%" id="groupRow">
+			        <td nowrap="nowrap" class="inner">
+			            Группа:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Тип:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="type" value="{type}" properties='{type_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Признак:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="kind" value="{kind}" properties='{kind_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" id="titleField">
+			            {titleTitle}:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+			            <input type="hidden" id="defaultBankAccount" name="defaultBankAccount" value="{defaultBankAccount}" />
+			            <input type="hidden" id="defaultEmail" name="defaultEmail" value="{defaultEmail}" />
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top" width="100%" style="display:{fizDisplay}" id="fizDocumentRow">
+			        <td nowrap="nowrap" class="inner">
+			            Документ:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="fizDocument" value="{fizDocument}" properties='{fizDocument_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ИНН:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="INN" value="{INN}" properties='{INN_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="display:{urDisplay}" id="KPPRow">
+			        <td nowrap="nowrap" class="inner">
+			            КПП:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="KPP" value="{KPP}" properties='{KPP_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОКПО:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="OKPO" value="{OKPO}" properties='{OKPO_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td colspan="2" nowrap="nowrap" class="inner" style="height:100%">
+			            &nbsp;                                
+			        </td>
+			    </tr>		    
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="contacts" style="height:100%;width:100%;display:none">
+	    <td class="inner" style="height:100%">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Юридический адрес:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="officialAddress" value="{officialAddress}" properties='{officialAddress_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Почтовый адрес:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="postalAddress" value="{postalAddress}" properties='{postalAddress_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Телефоны:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="phones" value="{phones}" properties='{phones_properties}'></Control>                                
+			        </td>
+			    </tr>		    
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner" style="height:100%">
+			            &nbsp;                                
+			        </td>
+			    </tr>		    
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="simpleInfo" style="height:100%;width:100%;display:none">
+	    <td class="inner" width="100%">
+		    <table cellspacing="0" cellpadding="0" width="100%">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ФИО:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="familyName" value="{familyName}" properties='{familyName_properties}'/>                                
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="firstName" value="{firstName}" properties='{firstName_properties}'/>                                
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="secondName" value="{secondName}" properties='{secondName_properties}'/>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td class="inner">
+			            № дисконтной карты:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="3">
+			            <Control id="discountCardNumber" value="{discountCardNumber}" properties='{discountCardNumber_properties}' readonly='{discountCardReadOnly}'/>                                
+			        </td>			        
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td class="inner">
+			            Номер реферера:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="3">
+			            <Control id="referrerNumber" value="{referrerNumber}" properties='{referrerNumber_properties}' readonly='{referrerNumberReadOnly}'/>                                
+			        </td>			        
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td class="inner">
+			            Мобильный телефон:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="3">
+			            <Control id="mobileNumber" value="{mobileNumber}" properties='{mobileNumber_properties}'/>                                
+			        </td>			        
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Адрес E-Mail:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="3">
+			            <Control id="email" value="{email}" properties='{email_properties}'/>                                
+			        </td>			        
+			    </tr>
+			    
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Фото:
+			        </td>
+			        <td nowrap="nowrap" class="inner" colspan="3">
+			            <Control id="photo" value="{photo}" properties='{photo_properties}' show_preview="true"/>                                
+			        </td>	        
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" colspan="4">
+			            Прочая информация:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">			    
+			        <td class="inner" colspan="4" style="height:100%">
+			            <Control id="contactInfo" value="{contactInfo}" properties='{contactInfo_properties}'></Control>                                
+			        </td>			        
+			    </tr>
+			</table>
+		</td>
+	</tr>	
+<!-- block=notNew -->
+    <tr valign="top" id="banks" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {bankAccountsTableId},,{bankAccountsCode}:}	
+            <div align="center">
+            	<input type="button" id="setDefaultAccount" value="Установить основным"/>
+            </div>    
+	    </td>
+	</tr>
+    <tr valign="top" id="emails" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {emailsTableId},,{emailsCode}:}	
+            <div align="center">
+            	<input type="button" id="setDefaultEmail" value="Установить основным"/>
+            </div>    
+	    </td>
+	</tr>
+    <tr valign="top" id="quickSales" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {quickSaleTableId},,{quickSaleTableCode}:}	
+	    </td>
+	</tr>
+    <tr valign="top" id="discountReport" style="height:100%;width:100%;display:none">
+    <td class="inner">
+		<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+	    <tbody>    
+    		<tr valign="top" id="fieldValues">
+        		<td nowrap="nowrap" class="inner">
+					<table id="cpanel" cellpadding="1" cellspacing="0">
+						<tr>
+							<td><img width="24" src="{skinPath}images/Buttons/refreshButton.png" alt="Обновить" title="Обновить" id="refreshButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+							<td><img width="24" src="{skinPath}images/Buttons/printButton.png" alt="Распечатать" title="Распечатать" id="printButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+						</tr>
+					</table>			
+        		</td>
+    		</tr>    
+		    <tr valign="top">
+			    <td class="inner" width="100%" style="height:100%">
+			    	<iframe width="100%" id="discountReportFrame" height="100%" src="?object_id=RegistryDiscountCards_{module_id}_{name}&hook=show&arguments={reportArguments}"></iframe>
+			    </td>
+			</tr>    	
+    	</tbody>
+    	</table>
+    </td>
+    </tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+        	<div align="right">
+				<input class="but" type="button" unchangeable="true" id="Create" value="Создать" style="display:{createDisplayStyle}" />
+                <input class="but" type="submit" id="OK" value="Сохранить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+            </div>
+            <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

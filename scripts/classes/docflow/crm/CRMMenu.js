@@ -1,0 +1,1 @@
+var CRMMenu = Class.create(Menu);

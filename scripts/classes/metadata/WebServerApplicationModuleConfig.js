@@ -1,0 +1,1 @@
+var WebServerApplicationModuleConfig = Class.create(ModuleModelConfig);

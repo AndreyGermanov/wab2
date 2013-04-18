@@ -1,0 +1,80 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>    
+    <tr valign="top">
+    	<td class="inner">
+    		Пациент:
+    	</td>
+    	<td class="inner" width="100%">
+    		<Control id="patient" properties='{patient_properties}' value="" type="{patient_type}"/>
+    	</td>
+    </tr>
+    <tr valign="top" width="100%">
+        <td nowrap="nowrap" class="inner" rowspan="3">
+            <Control id="photo" properties='{photo_properties}' type="{photo_type}" value="" hide_field="true" />
+        </td>
+    </tr>
+    <tr valign="top">
+    	<td class="inner_small" width="100%">
+    		<Control type="{age_type}" id="age" properties="{age_properties}" value="" class="maroon"></Control>    	
+    		<a id="birthDateLink" href="#" style="color:#000088">Подробнее >></a><br/>
+    		<div id="birthDateDiv" style="display:none">
+	    		<Control type="{birthDate_type}" id="birthDate" properties="{birthDate_properties}" value=""/>
+    		</div>
+    	</td>
+    </tr>
+    <tr valign="top">
+    	<td class="inner_small">
+    		<Control type="{city_type}" id="city" properties="{city_properties}" value=""></Control>
+    		<a id="addressLink" href="#" style="color:#000088">Подробнее >></a>
+    		<div id="addressDiv" style="display:none">
+	    		<Control type="{address_type}" id="address" properties="{address_properties}" value=""/>
+    		</div>
+    	</td>
+    </tr>
+    <tr valign="top">
+    	<td class="inner" align="right">
+    		Диагноз ХМЛ:
+    	</td>
+    	<td class="inner_small">
+    		<Control type="{diagnozeYear_type}" id="diagnozeYear" properties="{diagnozeYear_properties}" value=""></Control>
+    		<a id="diagnozeLink" href="#" style="color:#000088">Подробнее >></a>
+    		<div id="diagnozeDiv" style="display:none">
+	    		<Control type="{diagnozeDate_type}" id="diagnozeDate" properties="{diagnozeDate_properties}" value=""/>
+    		</div>
+    	</td>
+    </tr>
+    <tr valign="top">
+    	<td class="inner">
+    		ПЦР:
+    	</td>
+    	<td class="inner_small">
+    		<span class="inner">
+    		<Control type="{pcrResult_type}" id="pcrResult" properties="{pcrResult_properties}" value=""></Control>
+    		</span>
+    		<a id="pcrLink" href="#"' style="color:#000088">Подробнее >></a>
+    		<div style="display:none">    		
+    			<Control id="pcrDocument" type="{pcrDocument_type}" invisible="true" properties="{pcrDocument_properties}" value=""></Control>
+    		</div>
+    	</td>
+    </tr>
+    <tr valign="top">
+    	<td class="inner">
+    		Цитогенетика:
+    	</td>
+    	<td class="inner_small">
+    		<Control type="{phResult_type}" id="phResult" properties="{phResult_properties}" value=""></Control>
+    		<a id="phLink" href="#" style="color:#000088">Подробнее >></a>
+    		<div style="display:none">    		
+	    		<Control id="phDocument" type="{phDocument_type}" invisible="true" properties="{phDocument_properties}" value=""></Control>
+    		</div>
+    	</td>
+    </tr>
+    <tr valign="top">
+    	<td colspan="2" style="height:100%" class="inner">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+</form>

@@ -1,0 +1,49 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>    
+    <tr valign="top" width="100%">
+        <td nowrap="nowrap" class="inner">
+            Наименование:
+        </td>
+        <td class="inner" width="100%">
+            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+            <input object="{object_id}" type="hidden" id="{object_id}" name="object_id" value="{object_id}"/>
+            <input object="{object_id}" type="hidden" name="hook" value="save"/>
+            <input id="new_object_id" name="new_object_id" class="wide" type="hidden" value="{object_id}" />
+            <input id="old_object_id" name="old_object_id" type="hidden" value="{object_id}" />
+            <input id="old_name" name="old_name" type="hidden" value="{name}" />
+            <input id="name" name="name" type="hidden" value="{name}" />
+            <input id="sortOrder" name="sortOrder" type="hidden" value="{sortOrder}" />
+            <input id="old_title" name="old_title" type="hidden" value="{title}" />
+            <input id="old_class" name="old_class" type="hidden" value="{class}" />
+            <input id="ajax" name="ajax" type="hidden" object="{object_id}" value="true" />
+            <input object="{object_id}" id="action" name="action" type="hidden" value="save" />
+            <input type="hidden" id="persistedFields" name="persistedFields" value="{persistedFieldsSafe}"/>			            
+            <input id="links" name="links" type="hidden" value="{linksStr}" />
+            <input id='isGroup' name='isGroup' type='hidden' value='1' />
+        </td>        
+    </tr>
+    <tr valign="top" width="100%">
+        <td nowrap="nowrap" class="inner">
+            Группа:
+        </td>
+        <td class="inner" width="100%">
+            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>                                
+        </td>        
+    </tr>
+    <tr valign="top" style="height:100%">
+    	<td class="inner" colspan="2">&nbsp;</td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="submit" id="OK" value="Сохранить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

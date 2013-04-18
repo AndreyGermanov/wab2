@@ -1,0 +1,5 @@
+on run {input,parameters}
+	repeat with eachItem in input
+		tell application "Safari" to open location "https://192.168.0.58?path=" & eachItem
+	end repeat
+end run

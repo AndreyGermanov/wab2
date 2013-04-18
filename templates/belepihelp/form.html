@@ -1,0 +1,53 @@
+<form action="index.php" method="post" target="{object_id}_innerFrame">
+<table width="100%" cellpadding="3" cellspacing="0">
+	<tbody>
+	<tr valing="top">
+		<td class="header_text_black" nowrap="true">Имя:</td>
+		<td width="100%">
+			<input class="input" type="text" id="humanName" name="humanName" style="width:100%">
+		</td>
+	</tr>
+	<tr valing="top">
+		<td class="header_text_black" nowrap="true">E-mail:</td>
+		<td width="100%">
+			<input class="input" type="text" id="humanEmail" name="humanEmail" style="width:100%">
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2" class="header_text_black" nowrap="true">
+			Сообщение:
+		</td>
+	</tr>		
+	<tr valign="top">
+		<td colspan="2">
+			<textarea class="input" id="humanText" name="humanText" style="width:100%;height:100"></textarea>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2" nowrap="true" class="header_text_black">
+			Контрольное слово:
+		</td>
+	</tr>		
+	<tr valign="top">
+		<td colspan="2">
+			<img id="kaptcha_img" src="tools/kcaptcha/index.php?{session_name}={session_id}"><br></br>
+			<input class="input" id="kaptcha" type="text" name="keystring" style="width:100%">
+			
+		</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2" nowrap="true"">
+			<div align="right">
+				<input type="submit" class="input" id="OK" name="OK" value=" Отправить "/>			
+			<input type="hidden" name="action" object="{object_id}" id="action" value="submit">
+			<input type="hidden" name="object_id" object="{object_id}" id="object_id" value="{object_id}">
+			<input type="hidden" name="hook" object="{object_id}" id="hook" value="3">				
+			<input type="hidden" name="ajax" object="{object_id}" id="ajax" value="true">				
+        <iframe src="" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"></iframe>
+			</div>
+		</td>
+	</tr>	
+	</tbody>	
+</table>	
+</form>
+

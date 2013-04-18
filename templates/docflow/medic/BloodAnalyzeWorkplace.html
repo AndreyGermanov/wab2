@@ -1,0 +1,25 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF">
+<div>
+<table cellpadding="0" cellspacing="1" width="100%" height="100%">
+<!-- block=tabset -->
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+<!-- block=documents -->
+    <tr valign="top" id="docs" style="height:100%;width:100%;display:">
+        <td width="100%" class="inner" style="height:100%">
+        	<iframe frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" src="?object_id=DocumentBloodAnalyze_{module_id}_List&hook=4"></iframe>
+		</td>
+	</tr>
+<!-- block=report -->
+    <tr valign="top" id="report" style="height:100%;width:100%;display:none">
+        <td width="100%" class="inner" style="height:100%">
+        	<iframe frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" src="?object_id=ReportBloodAnalyze_{module_id}_rep&hook=show"></iframe>
+		</td>
+	</tr>
+<!-- block=footer -->
+</table>
+</div>

@@ -1,0 +1,35 @@
+<body bgcolor="#FFFFFF"/>
+<table width="100%" style="height:100%" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+            <td class="inner" width="100%">
+                <table id="cpanel" cellpadding="1" cellspacing="0">
+                    <tr>
+                        <td><img width="24" src="{skinPath}images/Buttons/registerButton.png" alt="Выбрать" title="Выбрать" id="selectButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)" style="display:none"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/moveUpButton.png" alt="На уровень вверх" title="На уровень вверх" id="moveUpButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/refreshButton.png" alt="Обновить список" title="Обновить список" id="refreshButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><div id="uploadButton"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/makeDirButton.png" alt="Новый каталог" title="Новый каталог" id="addButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/renameButton.png" alt="Переименовать" title="Переименовать" id="renameButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/copyButton.png" alt="Копировать" title="Копировать" id="copyButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/cutButton.png" alt="Вырезать" title="Вырезать" id="cutButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/pasteButton.png" alt="Вставить" title="Вставить" id="pasteButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/deleteButton.png" alt="Удалить" title="Удалить" id="deleteButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/propertiesButton.png" alt="Свойства" title="Свойства" id="propertiesButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+                        <td><img width="24" src="{skinPath}images/Buttons/helpButton.png" alt="Помощь" title="Помощь" id="helpButton" onmousedown="$O('{object_id}','').button_onMouseDown(event)"  onmouseup="$O('{object_id}','').button_onMouseUp(event)" onmouseover="$O('{object_id}','').button_onMouseOver(event)" onmouseout="$O('{object_id}','').button_onMouseOut(event)"/></td>
+						<td width="100%" id='progressBarContainer' nowrap="true"><div id="progressBar" style="width:1px;color:#FFFFFF;background-color:#0000AA;display:none" align="center"><strong>0%</strong></div></td>
+                    </tr>
+                </table>
+            </td>
+	</tr>
+	<tr valign="top">
+            <td width="100%" class="inner" style="height:100%">
+                <iframe style="width:100%;height:100%" name="list" src='?object_id={object_id}List&hook=3&arguments={list_arguments}'></iframe>
+            </td>
+	</tr>
+	<tr valign="top">
+            <td width="100%" class="inner_small" id="bottomLine" nowrap="true">
+
+            </td>
+	</tr>
+</table>
+{:include {fileUploadId},,$object->opener_object='{object_id}';$object->buttonId='{object_id}_uploadButton';$object->buttonWidth=24;$object->buttonHeight=24;$object->buttonURL='{skinPath}images/Buttons/uploadButton.png';$object->parent_object_id="{object_id}";$object->show();,,scripts/handlers/interface/FileManager/FileUpload.js  :}

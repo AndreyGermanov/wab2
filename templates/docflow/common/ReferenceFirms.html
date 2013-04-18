@@ -1,0 +1,255 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Группа:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="parent" value="{parent}" properties='{parent_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Наименование:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="title" value="{title}" properties='{title_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner" id="titleField">
+			            Полное наименование:
+			        </td>
+			        <td class="inner" width="100%">
+			            <Control id="fullTitle" value="{fullTitle}" properties='{fullTitle_properties}'></Control>                                
+			            <input type="hidden" id="defaultBankAccount" name="defaultBankAccount" value="{defaultBankAccount}" />
+			            <input type="hidden" id="defaultEmail" name="defaultEmail" value="{defaultEmail}" />
+{hiddenFields}
+			        </td>        
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            Логотип:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="logo" value="{logo}" properties='{logo_properties}'></Control>                                
+			        </td>
+			    </tr>
+			</table>
+		</td>
+	</tr>
+    <tr valign="top" id="contacts" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0" width="100%">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Юридический адрес:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="officialAddress" value="{officialAddress}" properties='{officialAddress_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Почтовый адрес:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="postalAddress" value="{postalAddress}" properties='{postalAddress_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Телефоны:
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="phones" value="{phones}" properties='{phones_properties}'></Control>                                
+			        </td>
+			    </tr>		    
+		    </table>
+		</td>
+	</tr>
+    <tr valign="top" id="codes" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОГРН:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="OGRN" value="{OGRN}" properties='{OGRN_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ИНН:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="INN" value="{INN}" properties='{INN_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="display:{urDisplay}" id="KPPRow">
+			        <td nowrap="nowrap" class="inner">
+			            КПП:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="KPP" value="{KPP}" properties='{KPP_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОКАТО:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="OKATO" value="{OKATO}" properties='{OKATO_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОКПО:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="OKPO" value="{OKPO}" properties='{OKPO_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОКВЭД:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="OKVED" value="{OKVED}" properties='{OKVED_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОКОПФ:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="OKOPF" value="{OKOPF}" properties='{OKOPF_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            ОКФС:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="OKFS" value="{OKFS}" properties='{OKFS_properties}'></Control>                                
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>	
+    <tr valign="top" id="fonds" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            ТФОМС:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="TFOMS" value="{TFOMS}" properties='{TFOMS_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Рег. номер в ПФР:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="regPFR" value="{regPFR}" properties='{regPFR_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Рег. номер в ФСС:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="regFSS" value="{regFSS}" properties='{regFSS_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            Код подчиненности в ФСС:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="kodPodFSS" value="{kodPodFSS}" properties='{kodPodFSS_properties}'></Control>                                
+			        </td>
+			    </tr>
+			</table>
+		</td>
+	</tr>
+    <tr valign="top" id="faces" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+		    <table cellspacing="0" cellpadding="0">
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Генеральный директор:
+			        </td>
+			        <td nowrap="nowrap" class="inner" width="100%">
+			            <Control id="director" value="{director}" properties='{director_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%">
+			        <td nowrap="nowrap" class="inner">
+			            Главный бухгалтер:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="buhgalter" value="{buhgalter}" properties='{buhgalter_properties}'></Control>                                
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner">
+			            Кассир:
+			        </td>
+			        <td nowrap="nowrap" class="inner">
+			            <Control id="kassir" value="{kassir}" properties='{kassir_properties}'></Control>                                
+			        </td>
+			    </tr>
+			</table>
+		</td>
+	</tr>
+<!-- block=notNew -->
+    <tr valign="top" id="banks" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {bankAccountsTableId},,{bankAccountsCode}:}	
+            <div align="center">
+            	<input type="button" id="setDefaultAccount" value="Установить основным"/>
+            </div>    
+	    </td>
+	</tr>
+    <tr valign="top" id="emails" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {emailsTableId},,{emailsCode}:}	
+            <div align="center">
+            	<input type="button" id="setDefaultEmail" value="Установить основным"/>
+            </div>    
+	    </td>
+	</tr>
+<!-- block=footer -->
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="submit" id="OK" value="Сохранить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+                <input class="but" type="button" id="cancel" value=" Закрыть " />
+                </div>
+                <iframe src="blank.htm" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"><div></div></iframe>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

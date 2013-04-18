@@ -1,0 +1,13 @@
+REGEDIT4
+[HKEY_CLASSES_ROOT\*\shell\openurl]
+@="Показать резервные копии"
+
+[HKEY_CLASSES_ROOT\*\shell\openurl\Command]
+@="cscript C:\\openurl\\openurl.js http://data:81 %1"
+
+[HKEY_CLASSES_ROOT\Directory\shell\openurl]
+@="Показать резервные копии"
+
+[HKEY_CLASSES_ROOT\Directory\shell\openurl\Command]
+@="cscript C:\\openurl\\openurl.js http://data:81 %1"
+

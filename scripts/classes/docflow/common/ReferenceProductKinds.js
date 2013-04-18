@@ -1,0 +1,1 @@
+var ReferenceProductKinds = Class.create(Reference);

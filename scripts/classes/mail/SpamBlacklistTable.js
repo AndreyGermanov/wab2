@@ -1,0 +1,1 @@
+var SpamBlacklistTable = Class.create(DataTable);

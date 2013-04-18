@@ -1,0 +1,38 @@
+<!-- block=header -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ЛВА Конструктор Web-приложений 2 (версия <?=trim(file_get_contents('/etc/WAB2/config/version'))?>)</title>
+    </head>
+    <body style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px">
+<!-- block=headerRow -->		
+    	<table align="center" width="90%" cellpadding="5" cellspacing="1" bgcolor="#000000">
+			<tr valign="top" bgcolor="#FFFFFF">
+				<td align="center" width="30%">
+					<strong>Системное имя</strong>
+				</td>
+				<td align="center" width="30%">
+					<strong>Имя поля</strong>
+				</td>
+				<td align="center" width="30%">
+					<strong>Значение</strong>
+				</td>
+			</tr>
+<!-- block=row -->
+			<tr valign="top" bgcolor="#FFFFFF">
+				<td>
+					{name}
+				</td>
+				<td>
+					{title}
+				</td>
+				<td>
+					{value}
+				</td>
+			</tr>
+<!-- block=rowFooter -->
+    	</table>
+    	<br/>
+<!-- block=footer -->		
+    </body>
+</html>

@@ -1,0 +1,9 @@
+auto lo
+auto eth0
+iface lo inet loopback
+iface eth0 inet {bootproto}
+address {ipaddr}
+netmask {netmask}
+gateway {gateway}
+{dns}
+

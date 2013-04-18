@@ -1,0 +1,213 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+    <table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+            <input type="hidden" id="usersTable" name="usersTable" value="{usersTable}" />
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;display:" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner" nowrap>IP-адреса и имена хостов:</td>
+                    <td class="inner" width="100%">
+                        <Control id="ipAddresses" class="wide" type="string" value="{ipAddresses}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Порт сервера:</td>
+                    <td class="inner" width="100%">
+                        <Control id="port" class="wide" type="integer" value="{port}"></Control>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" colspan="2" nowrap>Приветствие:</td>
+                </tr>
+                <tr valign="top" style="height:100%">
+                    <td class="inner" width="100%" style="height:100%" colspan="2">
+                        <Control width="100%" height="100%" id="welcomeMsg" type="text" control_type="editArea" value="{welcomeMsg}"></Control>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="connect_options" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество клиентов:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxClients" class="wide" type="integer" value="{maxClients}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество клиентов с одного хоста:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxClientsPerHost" class="wide" type="integer" value="{maxClientsPerHost}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество клиентов с одним именем пользователя:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxClientsPerUser" class="wide" type="integer" value="{maxClientsPerUser}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество хостов, с которых может подключиться один пользователь:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxHostsPerUser" class="wide" type="integer" value="{maxHostsPerUser}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество неавторизованных подключений с одного хоста:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxConnectionsPerHost" class="wide" type="integer" value="{maxConnectionsPerHost}">
+                    </td>
+                </tr>
+                <tr valign="top" style="height:100%">
+                    <td class="inner_small" nowrap>Максимальное количество неуспешных попыток подключения:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxLoginAttempts" class="wide" type="integer" value="{maxLoginAttempts}">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="limits" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное время сеанса (с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="timeoutSession" class="wide" type="integer" value="{timeoutSession}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное время на попытку подключения (с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="timeoutLogin" class="wide" type="integer" value="{timeoutLogin}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное время неактивности (с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="timeoutIdle" class="wide" type="integer" value="{timeoutIdle}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальная скорость FTP-сервера (Кбит/с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="serverTransferRate" class="wide" type="integer" value="{serverTransferRate}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальная скорость передачи пользователя по умолчанию (Кбит/с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="uploadTransferRate" class="wide" type="integer" value="{uploadTransferRate}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальная скорость приема пользователя по умолчанию (Кбит/с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="downloadTransferRate" class="wide" type="integer" value="{downloadTransferRate}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальный размер передаваемого файла (Мб):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxStoreFileSize" class="wide" type="integer" value="{maxStoreFileSize}">
+                    </td>
+                </tr>
+                <tr valign="top" style="height:100%">
+                    <td class="inner_small" nowrap>Максимальный размер принимаемого файла (Мб):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxRetrieveFileSize" class="wide" type="integer" value="{maxRetrieveFileSize}">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="anonymous" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner" nowrap colspan="2"><Control type="boolean" control_type="checkbox" id="anonymousAccess" value="{anonymousAccess}"></Control>Анонимный FTP-сервер</td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Анонимный пользователь:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="anonymousUser" class="wide" type="list,{usersList}" value="{anonymousUser}">
+                    </td>
+                </tr>				
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество клиентов:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxAnonymousClients" class="wide" type="integer" value="{maxAnonymousClients}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное количество клиентов с одного хоста:</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxAnonymousClientsPerHost" class="wide" type="integer" value="{maxAnonymousClientsPerHost}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальный размер передаваемого файла (Мб):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxAnonymousStoreFileSize" class="wide" type="integer" value="{maxAnonymousStoreFileSize}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальный размер принимаемого файла (Мб):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="maxAnonymousRetrieveFileSize" class="wide" type="integer" value="{maxAnonymousRetrieveFileSize}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Максимальное время сеанса (с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="anonymousTimeoutSession" class="wide" type="integer" value="{anonymousTimeoutSession}">
+                    </td>
+                </tr>
+                <tr valign="top" style="height:100%">
+                    <td class="inner_small" nowrap>Максимальное время неактивности (с):</td>
+                    <td class="inner_small" width="100%">
+                        <Control id="anonymousTimeoutIdle" class="wide" type="integer" value="{anonymousTimeoutIdle}">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="userRights" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner_small" nowrap>Права доступа пользователей:</td>
+					<td class="inner_small" width="100%">
+                        <Control id="userAccess" type="list,allowAll~allowList~denyAll|Доступ разрешен всем~Доступ разрешен списку~Доступ запрещен всем" value="{userAccess}"></Control>
+                    </td>
+                </tr>
+				<tr style="height:100%" colspan="2" valign="top">
+					<td class="inner" colspan="2">
+			            {:include FTPUsersTable_{module_id}_{objectid},,$object->parent_object_id='{object_id}';$object->window_id='{window_id}';$object->sortOrder='';$object->usersList='{usersTable}';:}
+					</td>
+				</tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="monitor" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" style="height:100%" class="inner">
+			{:include FTPActiveUsersTable_{module_id}_{objectid},,$object->parent_object_id='{object_id}';$object->window_id='{window_id}';$object->sortOrder='';$object->ftpHostName='{name}';,templates/ftp/FTPActiveUsersTable.html:}
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+                <div align="right"><input class="but" type="button" id="OK" value="  Сохранить  ">&nbsp;&nbsp;
+                <input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="help" value=" Помощь "></div>
+        </td>
+    </tr>
+</table>
+</div>

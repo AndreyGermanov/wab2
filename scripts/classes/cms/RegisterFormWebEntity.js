@@ -1,0 +1,1 @@
+var RegisterFormWebEntity = Class.create(InputWebEntity);

@@ -1,0 +1,146 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+<title>
+XML/SWF Charts &gt; Tutorial</title>
+<meta name="Keywords" content="chart, charts, graph, graphs, flash, web, tool, dynamic, data, Line, column, 3D, Pie, Stacked, bar, area, Candlestick, Scatter, Mixed, charting, plot, bubble, polar, fullscreen, full screen, stream, streaming, streamed data, scroll, Interactive, Javascript, php, swf, php/swf, xml, xml/swf, shockwave">
+<meta name="description" content="A simple, yet powerful tool to create attractive charts and graphs from dynamic XML data.">
+<link rel="stylesheet" href="Tutorial_files/style.css" type="text/css">
+<link rel="icon" href="Tutorial_files/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="Tutorial_files/favicon.ico" type="image/x-icon">
+
+<script language="javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+<script language="javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+<script src="Tutorial_files/AC_RunActiveContent.js" language="javascript"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+
+
+
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+
+
+<table frame="void" border="0" cellpadding="10" cellspacing="0" height="600" width="100%" align="left">
+<tbody><tr><td colspan="2" class="header" height="30" valign="middle">
+
+<!-- header start ========================================================= -->
+<a href="http://www.maani.us/xml_charts/index.php"><font color="aabbcc">XML/SWF Charts</font></a><img src="Tutorial_files/blank.gif" height="1" width="20"><font color="222222">|</font><img src="Tutorial_files/blank.gif" height="1" width="20">
+<a href="http://www.maani.us/slickboard/"><font color="666666">SlickBoard</font></a><img src="Tutorial_files/blank.gif" height="1" width="20"><font color="222222">|</font><img src="Tutorial_files/blank.gif" height="1" width="20">
+<a href="http://www.maani.us/app_timeline/timeline.html"><font color="666666">Timeline Eons</font></a><img src="Tutorial_files/blank.gif" height="1" width="10"><font color="ff6600">(New)</font>
+
+<!-- header end -->
+
+</td></tr>
+<tr><td class="menu" width="150">
+
+<!-- menu start ========================================================= -->
+<form method="GET" action="http://www.google.com/search">
+<input name="ie" value="UTF-8" type="hidden">
+<input name="oe" value="UTF-8" type="hidden">
+<input name="q" size="10" maxlength="255" class="form" type="text">
+<input name="btnG" value="Search" class="form" type="submit">
+<input name="domains" value="www.maani.us/xml_charts/" type="hidden">
+<input name="sitesearch" value="www.maani.us/xml_charts/" type="hidden">
+</form>
+<hr color="#555555" noshade="noshade" size="1">
+<b><a href="http://www.maani.us/xml_charts/index.php?menu=Introduction">Introduction</a></b><br><b><a href="http://www.maani.us/xml_charts/index.php?menu=Gallery">Gallery</a></b><br><b><a href="http://www.maani.us/xml_charts/index.php?menu=Requirement">Requirement</a></b><br><b><a href="http://www.maani.us/xml_charts/index.php?menu=Download">Download</a></b><br><b><font color="dddddd">Tutorial</font></b><br><small> </small><br><small><b>        Basics</b></small><br><small>        <a href="http://www.maani.us/xml_charts/index.php?menu=Tutorial&amp;submenu=Chart_Data">Chart Data</a></small><br><small>        <a href="http://www.maani.us/xml_charts/index.php?menu=Tutorial&amp;submenu=Chart_Attributes">Chart Attributes</a></small><br><small> </small><br><b><a href="http://www.maani.us/xml_charts/index.php?menu=Reference">Reference</a></b><br><b><a href="http://www.maani.us/xml_charts/index.php?menu=FAQ">FAQ</a></b><br><hr color="#555555" noshade="noshade" size="1"><b><a href="http://www.maani.us/xml_charts/index.php?menu=Buy">Buy</a></b><br><b><a href="http://www.maani.us/xml_charts/index.php?menu=Contact_Us">Contact Us</a></b><br>
+<img src="Tutorial_files/blank.gif" height="150">
+<!-- menu end -->
+
+</td>
+<td class="body">
+<!-- body start ========================================================= -->
+<table border="0" cellpadding="5" cellspacing="0" width="100%" align="left">
+<tbody><tr>
+<td width="40"><img src="Tutorial_files/blank.gif" width="20"></td> <!-- left margin -->
+
+<td valign="top"><p></p><table border="0" cellpadding="2" cellspacing="0" width="100%"><tbody><tr class="prev_next"><td align="left"> </td><td align="right"><a href="http://www.maani.us/xml_charts/index.php?menu=Tutorial&amp;submenu=Chart_Data"><b>next &gt;</b></a> </td></tr></tbody></table><p></p><p> </p><p><img src="Tutorial_files/blank.gif" height="0"></p><!-- top margin --><p><b><big>Basics</big></b></p>
+<p> </p>
+
+
+
+<p><b>1.</b> <u><a class="link" href="http://www.maani.us/xml_charts/index.php?menu=Download">Download</a></u> XML/SWF Charts, decompress the download package, and place the following files in the same directory anywhere on your web server:</p>
+
+<p>
+</p><ul>
+<li><b>charts.swf
+</b></li><li><b>charts_library
+</b></li><li><b>AC_RunActiveContent.js
+</b></li><li><b>sample.html
+</b></li><li><b>sample.xml</b>
+</li></ul>
+<p></p>
+
+<p> </p>
+<font color="999999"><p>All these files are necessary. However, you will only edit and deal with <b>sample.html</b> and <b>sample.xml</b>.</p>
+
+<p><b>charts.swf</b> is the main flash tool. <b>charts_library</b> is a folder of files used by the tool to render different chart types. <b>AC_RunActiveContent.js</b> contains javascript code to detect the flash version installed by end-users and to insert the flash tool into web pages. <b>sample.html</b> is the web page that displays a chart. <b>sample.xml</b> is the XML source file that describes a chart.</p></font>
+
+
+<p> </p>
+<hr color="#888888" noshade="noshade" size="1">
+<p><b>2.</b> Preview the <b>sample.html</b> web page in a browser. Because the XML code in the <b>sample.xml</b> source file does not describe a chart, this example generates a basic, default chart like this:</p>
+<script language="JavaScript" type="text/javascript"><!--
+/* Script removed by snapshot save */
+--></script><embed bgcolor="#777788" src="http://www.maani.us/xml_charts/charts.swf" flashvars="library_path=charts_library&amp;xml_source=xml/Tutorial_Basics_1.xml" wmode="opaque" scale="noScale" name="charts" menu="true" allowfullscreen="true" allowscriptaccess="sameDomain" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" play="true" devicefont="false" salign="TL" type="application/x-shockwave-flash" height="250" width="400" align="middle"> 
+<noscript>
+	<P>This content requires JavaScript.</P>
+</noscript>
+
+<p> </p>
+<hr color="#888888" noshade="noshade" size="1">
+<p><b>3.</b> To edit the chart, open the <b>sample.xml</b> source file in any text editor, add the necessary XML elements, and then reload the web page:</p>
+<!-- code -------------------------------------->
+<p></p><table border="0" cellpadding="10"><tbody><tr><td class="php">
+<font size="3"><pre>
+&lt;chart&gt;
+
+   <font color="888888">&lt;!-- change the chart to a bar chart --&gt;</font>
+   &lt;chart_type&gt;bar&lt;/chart_type&gt;
+
+&lt;/chart&gt;
+
+</pre></font></td></tr></tbody></table><p></p>
+<!-- code -------------------------------------->
+
+<script language="JavaScript" type="text/javascript"><!--
+/* Script removed by snapshot save */
+--></script><embed bgcolor="#777788" src="http://www.maani.us/xml_charts/charts.swf" flashvars="library_path=charts_library&amp;xml_source=xml/Tutorial_Basics_2.xml" wmode="opaque" scale="noScale" name="charts" menu="true" allowfullscreen="true" allowscriptaccess="sameDomain" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" play="true" devicefont="false" salign="TL" type="application/x-shockwave-flash" height="250" width="400" align="middle"> 
+<noscript>
+	<P>This content requires JavaScript.</P>
+</noscript>
+
+<p><font color="999999">If the browser keeps showing the same chart after editing <b>sample.xml</b>, empty the browser's cache or see <u><a class="link" href="http://www.maani.us/xml_charts/index.php?menu=Reference&amp;submenu=Caching">Caching</a></u> for a permanent solution.</font></p>
+<p> </p>
+
+<p> </p><p></p><table border="0" cellpadding="2" cellspacing="0" width="100%"><tbody><tr class="prev_next"><td align="left"> </td><td align="right"><a href="http://www.maani.us/xml_charts/index.php?menu=Tutorial&amp;submenu=Chart_Data"><b>next &gt;</b></a> </td></tr></tbody></table><p></p></td></tr></tbody></table>
+<!-- body end -->
+
+
+</td></tr>
+<tr><td colspan="2" height="10" align="center">
+
+<!-- footer start ========================================================= -->
+<hr color="#000000" noshade="noshade" size="2">
+<small>Copyright © 
+2003-2012, maani.us</small>
+
+
+<!-- footer end -->
+
+</td></tr>
+</tbody></table>
+<p> </p>
+
+
+
+
+
+</body></html>

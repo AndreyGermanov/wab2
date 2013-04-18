@@ -1,0 +1,1 @@
+var BasicCompanyInfo = Class.create(Entity);

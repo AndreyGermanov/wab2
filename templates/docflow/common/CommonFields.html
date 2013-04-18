@@ -1,0 +1,48 @@
+<!-- block=hiddenFields -->
+			            <input object="{object_id}" type="hidden" id="{object_id}" name="object_id" value="{object_id}"/>
+			            <input object="{object_id}" type="hidden" name="hook" value="save"/>
+			            <input id="new_object_id" name="new_object_id" class="wide" type="hidden" value="{object_id}" />
+			            <input id="old_object_id" name="old_object_id" type="hidden" value="{object_id}" />
+			            <input id="old_name" name="old_name" type="hidden" value="{name}" />
+			            <input id="name" name="name" type="hidden" value="{name}" />
+			            <input id="sortOrder" name="sortOrder" type="hidden" value="{sortOrder}" />
+			            <input id="old_title" name="old_title" type="hidden" value="{title}" />
+			            <input id="old_class" name="old_class" type="hidden" value="{class}" />
+			            <input id="ajax" name="ajax" type="hidden" object="{object_id}" value="true" />
+			            <input object="{object_id}" id="action" name="action" type="hidden" value="save" />
+			            <input type="hidden" id="persistedFields" name="persistedFields" value="{persistedFieldsSafe}"/>			            
+            			<input type="hidden" id="registered" name="registered" value="{registered}" />            
+            			<input type="hidden" id="tagsTable" name="tagsTable" value="{tagsTable}" />            
+			            <input id="links" name="links" type="hidden" value="{linksStr}" />
+<!-- block=tabs -->
+    <tr valign="top" id="tags" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {tagsTableId},,{tagsTableCode}:}	
+	    </td>
+	</tr>
+    <tr valign="top" id="files" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {filesTableId},,{filesCode}:}	
+	    </td>
+	</tr>
+    <tr valign="top" id="notes" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            {:include {notesTableId},,{notesCode}:}	
+	    </td>
+	</tr>
+    <tr valign="top" id="links2" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+            <div align="right"><input id="linksTableButton" type="button" value="  Показать связи в виде таблицы  "/></div>
+            <br/>            
+            {:include {linksTreeId},,{linksCode}:}
+	    </td>
+	</tr>	
+<!-- block=profileEditTab -->
+    <tr valign="top" id="profile" style="height:100%;width:100%;display:none">
+    	<td class="inner">
+    		Роль: <Control type="list,{rolesString}" id="currentRole" value=""></Control><br/><br/>
+    		<div align="center">
+	    		<input type="button" id="profileEditBtn" value="  Редактировать профиль объекта  "/>    		
+    		</div>
+    	</td>
+    </tr>

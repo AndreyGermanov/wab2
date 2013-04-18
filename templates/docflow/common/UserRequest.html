@@ -1,0 +1,34 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame" id="form">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody> 
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+	    <td class="inner" width="100%" style="height:100%">
+		    <table cellspacing="0" cellpadding="0" width="100%" style="height:100%">
+			    <tr valign="top">
+			        <td nowrap="nowrap" class="inner" colspan="2">
+			            Здесь Вы можете задать вопрос или высказать пожелание, связанное с работой программы.<br/> 
+			            Специалист ответит Вам по адресу электронной почты, указанному при регистрации.
+			        </td>
+			    </tr>
+			    <tr valign="top" width="100%" style="height:100%">
+			        <td nowrap="nowrap" class="inner" colspan="2" style="height:100%">
+			            <Control id="requestText" value="{requestText}" properties='{requestText_properties}' height="100%"></Control>                                
+			        </td>
+			    </tr>
+		    </table>
+		</td>
+	</tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+               <div align="right">
+                <input class="but" type="button" id="send" value="Отправить" />
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+   	            <input class="but" type="button" id="cancel" value=" Отменить " />
+               </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>

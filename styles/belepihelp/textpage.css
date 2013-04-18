@@ -1,0 +1,136 @@
+/* linked */
+	.frame {
+		border-width:2px;
+		border-style:solid;
+		border-color:#AAAAAA;	
+	}
+	
+	.form {
+		border-width:1px;
+		border-style:solid;
+		border-color:#AAAAAA;
+		background-color:#d5e5ff;	
+	}
+	
+	.menuline {
+		background-color:#0055d4;
+		color:#FFFFFF;
+	}
+	
+	.menuitem {
+		color:#FFFF88;	
+		font-weight:bold;
+		font-variant:small-caps;
+		font-size:24px;
+		font-family: Arial;
+	}
+
+	.menuitem:hover {
+		background-color:#0033a4;
+		color:#ffffff;
+		cursor:pointer;
+	}
+	
+	.header_text {
+		color:#FFFFFF;	
+		font-weight:bold;
+		font-variant:small-caps;
+		font-size:24px;
+		font-family: Arial;
+	}
+
+	.header_text_black {
+		color:#000000;	
+		font-weight:bold;
+		font-size:18px;
+		font-family: Arial;
+	}
+	
+	.header_text_small {
+		color:#FFFFFF;	
+		font-weight:bold;
+		font-size:20px;
+		font-family: Arial;
+	}
+
+	.header_link {
+		color:#FFFFFF;	
+		font-weight:bold;
+		font-variant:small-caps;
+		font-size:16px;
+		font-family: Arial;
+	}
+	
+	.input {
+		border-style:1px;
+		border-color:#666666;
+		border-style:solid;
+	}
+	
+	.input:hover {
+		border-style:1px;
+		border-color:#000000;
+		border-style:solid;
+		background-color:#FFFF88;
+	}			
+	
+	.input:focus {
+		border-style:1px;
+		border-color:#000000;
+		border-style:solid;
+		background-color:#FFFF88;
+	}			
+	
+	.title {
+		font-weight:bold;
+		font-size:24px;
+		font-family:Arial,Sans;
+		font-variant:small-caps;
+		margin-left:5px;
+		margin-top:15px;
+		margin-right:5px;
+	}
+	
+	p {
+		margin-left:5px;
+		font-family:Arial,Sans;
+		font-size:13px;
+		margin-right:15px;	
+		text-align:justify;			
+	}
+	
+	.text {
+		font-family:Arial,Sans;
+		font-size:13px;
+		font-weight:bold;			
+	}
+
+	.purple {
+		color:#aa0088;
+		font-weight:bold;
+	}
+	
+	
+	a {				
+		color:#aa0088;
+		text-decoration:none	
+	}
+	
+	a:hover {
+		text-decoration:underline
+	}
+	
+	hr {
+		color:#003388;
+		background-color:#003388;
+		height:3px;			
+	}
+			
+   	.submenu {
+  		border-style:solid;
+   		border-color:#000000;
+   		border-width:0px;
+		background-color:#0033a4;
+   		position:absolute;
+   		z-index:2;
+   	}        	        						

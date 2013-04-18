@@ -1,0 +1,1591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>basics</title></head><body>
+<h1>Основы работы</h1>
+
+<div style="text-align: justify;">При работе с программой вы в основном будете иметь дело со списками
+объектов (справочников и документов). Большинство из этих списков
+вынесено в окно "<span style="font-weight: bold;">Мои дела</span>", остальные находятся в меню "<span style="font-weight: bold;">Справочники</span>" и
+"<span style="font-weight: bold;">Документы</span>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Вы будете добавлять новые элементы в списки, редактировать их, связывать
+между собой и производить множество других действий. В зависимости
+от своей природы, каждый объект имеет свои параметры. Например у
+элемента справочника "<span style="font-weight: bold;">Контрагент</span>" одни поля, а у документа "<span style="font-weight: bold;">Заказ</span>"
+другие. Однако у всех объектов много общего и именно это общее мы
+рассмотрим в этом разделе. Мы рассмотрим это на примере объектов
+"<span style="font-weight: bold;">Заметка</span>" и "<span style="font-weight: bold;">Файл</span>", которые находятся на соответствующих закладках в
+окне "<span style="font-weight: bold;">Мои дела</span>". В дальнейшем мы увидим что можно связывать заметки и
+файлы с любыми другими объектами (контрагентами, заказами, задачами,
+отчетами о работе). С помощью лишь заметок и файлов можно
+использовать программу как записную книжку и как электронный архив
+документов. Связав файлы и заметки между собой и проявив определенную
+фантазию, можно организовать простейшую систему документооборота.<br>
+</div>
+
+<h2><a name="p1"></a>Работа с отдельными объектами</h2>
+
+
+<div style="text-align: justify;">Чтобы создать новый объект, например, заметку, перейдите на закладку "<span style="font-weight: bold;">Заметки</span>" и нажмите кнопку "<span style="font-weight: bold;">Добавить</span>" на панели инструментов <img src="img/add.png" alt="add.png">. Появится окно редактирования новой заметки.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newnote.png" alt="newnote.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+У любого объекта, создаваемого в программе "<span style="font-weight: bold;">ЛВА Управление</span>" часть полей
+доступно для новых объектов, а остальные только для объектов, которые
+уже сохранены. Для новых заметок доступны поля "<span style="font-weight: bold;">Группа</span>", "<span style="font-weight: bold;">Дата</span>",
+"<span style="font-weight: bold;">Наименование</span>" и "<span style="font-weight: bold;">Описание</span>". Названия полей говорят сами за себя,
+особо&nbsp; стоит пояснить смысл поля "<span style="font-weight: bold;">Группа</span>". Заметки можно разнести
+по группам, если их слишком много. Группы нужно предварительно создать
+в списке заметок, нажав кнопку <img src="img/addGroupButton.png" alt="addGroupButton.png"> . Поле "<span style="font-weight: bold;">Группа</span>" есть у любого объекта программы.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В поле "<span style="font-weight: bold;">Дата</span>" указывается дата и время создания заметки. В поле
+"<span style="font-weight: bold;">Наименование</span>" вносится краткий заголовок заметки, который будет ее
+идентифицировать в списке заметок. В поле "<span style="font-weight: bold;">Описание</span>" вводится сама
+заметка. Вы можете оформить заметку на свой вкус с помощью встроенного
+текстового редактора, вставить в нее при необходимости таблицы и
+картинки. Картинки необходимо предварительно загрузить на сервер. О
+загрузке файлов на сервер подробнее будет написано далее в этом
+руководстве.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+После заполнения всех полей нажмите кнопку "<span style="font-weight: bold;">Сохранить</span>". Новая заметка
+исчезнет с экрана, сохраниться в базе данных и отобразится снова, но
+уже как объект, который сохранен в базе данных. После этого станут
+доступны дополнительные закладки с данными, которые можно
+модифицировать только для сохраненных в базе данных объектов.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/note.png" alt="note.png"><br>
+</div>
+<h3><a name="p2"></a>
+Основные параметры объекта</h3>
+
+
+В окне любого объекта есть четыре закладки: "<span style="font-weight: bold;">Поля</span>", "<span style="font-weight: bold;">Файлы</span>", "<span style="font-weight: bold;">Заметки</span>" и "<span style="font-weight: bold;">Связи</span>". Есть они и у нашей заметки.<br>
+<h4><a name="p3"></a>
+Закладка "Поля"</h4>
+
+<div style="text-align: justify;">
+У любого объекта есть набор стандартных полей, например у заметки это
+"<span style="font-weight: bold;">Наименование</span>", "<span style="font-weight: bold;">Дата</span>" и "<span style="font-weight: bold;">Описание</span>", у контрагента это "<span style="font-weight: bold;">Наименование</span>",
+"<span style="font-weight: bold;">Адрес</span>" и "<span style="font-weight: bold;">Телефон</span>". Однако сложно предусмотреть все. Может
+понадобиться хранить дополнительную информацию об объекте. Для этого
+есть закладка "<span style="font-weight: bold;">Поля</span>", на которой можно добавить данному объекту любые
+дополнительные характеристики.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notefields.png" alt="notefields.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+С помощью панели кнопок над таблицей можно добавлять новые дополнительные поля, редактировать и удалять существующие.<br>
+</div>
+
+<br>
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/refreshButton.png" alt="refreshButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Обновить таблицу<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/add.png" alt="add.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Добавить новую строку в конец таблицы.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/copy.png" alt="copy.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Добавить
+строку в конец таблицы копированием. Нужно сначала выделить
+строку-источник (нажать на любой колонке мышью) и затем нажать эту
+кнопку. В конец таблицы добавится полная копия выделенной строки.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/insert.png" alt="insert.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Вставить строку до выделенной. Нужно сначала выделить строку и затем нажать эту кнопку. Новая строка вставится до выделенной<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Удалить выделенную строку. Нужно сначала выделить строку и затем нажать эту кнопку. Выделенная строка удалится<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/moveUpButton.png" alt="moveUpButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Переместить
+выделенную строку на одну строку вверх. Нужно сначала выделить строку и
+затем нажать эту кнопку. Выделенная строка переместится на одну строку
+вверх.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/moveDownButton.png" alt="moveDownButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Переместить выделенную строку на одну строку вниз. Нужно сначала
+выделить строку и затем нажать эту кнопку. Выделенная строка
+переместится на одну строку вниз.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div style="text-align: justify;">
+Для примера, добавим к заметке поля "<span style="font-weight: bold;">Вид</span>" и "<span style="font-weight: bold;">Важность</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notefields2.png" alt="notefields2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Таким образом с помощью дополнительных полей&nbsp; можно
+классифицировать объекты. В дальнейшем можно делать поиск и отбор
+объектов по значениям их дополнительных полей.<br>
+</div>
+
+<h4><a name="p4"></a>
+Закладка "Заметки"</h4>
+
+<div style="text-align: justify;">К любому объекту можно привязывать заметки. В том числе можно
+привязывать заметки к заметке. На закладке "<span style="font-weight: bold;">Заметки</span>" отображаются все
+заметки, связанные с текущим объектом.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notenotes.png" alt="notenotes.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Это такая же таблица, как и список заметок в окне "<span style="font-weight: bold;">Мои дела</span>", но если в
+окне "<span style="font-weight: bold;">Мои дела</span>" отображаются все заметки, то здесь отображаются только
+заметки, связанные с текущим объектом. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Можно привязывать к данному объекту уже существующие заметки. Для этого нужно нажать кнопку <img src="img/linkButton.png" alt="linkButton.png">,
+появится окно выбора заметок. Нужно найти нужную заметку и сделать
+двойной щелчок по ней. Таким образом заметка будет привязана к данному
+объекту и появится в таблице привязанных заметок. Аналогично можно
+отвязать одну или несколько заметок, выделив их и нажав кнопку <img src="img/unlinkButton.png" alt="unlinkButton.png"> (Удалить ссылки). Не путайте кнопку "<span style="font-weight: bold;">Удалить ссылки</span>" с кнопкой <img src="img/deleteButton.png" alt="deleteButton.png">
+(Пометить на удаление). Последняя помечает заметку на
+удаление, связь с текущим объектом при этом не удаляется, то есть
+заметка остается связанной, но помеченной на удаление.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Можно добавлять новые заметки с помощью кнопки <img src="img/add.png" alt="add.png">.
+В этом случае появится обычное окно создания новой заметки, заметка
+будет одновременно создана и связана с данным объектом. Она появится
+одновременно и в общей таблице заметок в окне "<span style="font-weight: bold;">Мои дела</span>" и в таблице
+заметок, связанных с данным объектом.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Например, в процессе работы с докладом у нас появилось несколько
+интересных мыслей, которые мы оформили в виде заметок, привязанных к
+уже существующей заметке "<span style="font-weight: bold;">Для доклада (по поводу тенденций)</span>":<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notenotes2.png" alt="notenotes2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Таким образом, работая над докладом, мы собираем всю информацию,
+связанную с ним в одном месте. В любой момент можно будет поднять ее и
+увидеть историю того, как мы работали, что и когда делали. К каждой из
+заметок можно также прикреплять заметки. Таким образом можно строить
+структуры взаимосвязанных объектов любого уровня вложенности. У каждого
+объекта могут быть свои дополнительные поля, о чем описано выше.<br>
+</div>
+
+<h4><a name="p5"></a>
+Закладка "Файлы"</h4>
+
+<div style="text-align: justify;">
+В программе можно регистрировать файлы. Это можно делать независимо на
+закладке "<span style="font-weight: bold;">Файлы</span>" в окне "<span style="font-weight: bold;">Мои дела</span>". Для каждого файла заводится
+информационная карточка (как заметка), на которой указывается путь к
+файлу и его описание. Информационные карточки файлов можно привязывать
+к любому объекту, как и заметки.<br>
+</div>
+
+<br>
+Для выполнения этих действий нужно перейти на закладку "<span style="font-weight: bold;">Файлы</span>" нашего объекта.<br>
+<br>
+<div style="text-align: center;"><img style="width: 700px; height: 471px;" src="img/files.png" alt="files.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Работа с этой закладкой практически не отличается от работы с закладкой
+"<span style="font-weight: bold;">Заметки</span>". Можно привязывать файлы, которые уже ранее были
+зарегистрированы в программе, с помощью кнопки <img src="img/linkButton.png" alt="linkButton.png">, или регистрировать в программе новые файлы, создавая их информационные карточки, нажав кнопку <img src="img/add.png" alt="add.png">. В этом случае информационные карточки файлов будут сразу создаваться привязанными к данному объекту.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Для регистрации нового файла необходимо нажать кнопку <img src="img/add.png" alt="add.png">. Появится информационная карточка нового файла.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/file.png" alt="file.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Как и заметки, информационные карточки файлов могут быть разнесены по
+группам. Группа, к которой будет относиться данная информационная
+карточка указывается в поле "<span style="font-weight: bold;">Группа</span>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Путь к файлу указывается в поле "<span style="font-weight: bold;">Файл</span>". <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Также, можно указать краткое описание этого файла и подробное описание
+соответственно в полях "<span style="font-weight: bold;">Наименование</span>" и "<span style="font-weight: bold;">Описание</span>". Эта информация
+может быть полезна для того чтобы в дальнейшем выполнять поиск файлов
+по ключевым словам.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Путь к файлу указывается относительного корневого каталога нашего
+сервера, соответственно файл нужно сначала загрузить на сервер и затем
+выбрать его в поле "<span style="font-weight: bold;">Файл</span>". Это можно сделать с помощью файлового
+менеджера, который откроется при нажатии на кнопку <img src="img/select_folder.png" alt="select_folder.png"> . <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Файловый менеджер позволяет перемещаться по файловой системе сервера
+(вернее по той ее части, которая вам доступна), создавать и удалять
+папки, загружать файлы с вашего компьютера на сервер, а также выполнять
+ряд других действий с помощью панели кнопок, расположенной в верхней
+части окна.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/fm.png" alt="fm.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Большинство операций выполняется с выделенными файлами. Чтобы выделить
+файл нужно щелкнуть по нему левой кнопкой мыши. Чтобы выделить
+несколько файлов, нужно щелкать по ним левой кнопкой мыши, удерживая
+клавишу <span style="font-weight: bold;">Ctrl</span>. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Файловый менеджер позволяет выполнять с файлами следующие операции:<br>
+</div>
+
+<br>
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/registerButton.png" alt="registerButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Выбрать выделенный файл в поле ввода<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/moveUpButton.png" alt="moveUpButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Переместиться в каталог на уровень выше<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/refreshButton.png" alt="refreshButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Обновить список файлов<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/downloadButton.png" alt="downloadButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Загрузить файл на сервер. Нужно
+нажать на эту кнопку, выбрать нужный файл с вашего компьютера, он будет
+загружен на сервер, в текущий каталог и отобразится в файловом менеджере<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/makeDirButton.png" alt="makeDirButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать
+каталог. При нажатии на эту кнопку в появившемся окне нужно ввести имя
+нового каталога. Созданный каталог появится в файловом менеджере.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/renameButton.png" alt="renameButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Переименовать файл или каталог. Нужно выделить файл или каталог, нажать эту кнопку&nbsp; и в появившемся окне ввести новое имя.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/copyButton.png" alt="copyButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Скопировать
+выделенные файлы в буфер обмена для дальнейшей вставки в другой
+каталог. Нужно выделить один или несколько файлов и/или каталогов,
+нажать эту кнопку, перейти в нужный каталог и нажать кнопку "<span style="font-weight: bold;">Вставить</span>" <img src="img/pasteButton.png" alt="pasteButton.png">. Файлы будут скопированы в этот каталог.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/cutButton.png" alt="cutButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Вырезать выделенные файлы в буфер обмена для дальнейшей вставки в другой каталог. Нужно
+выделить один или несколько файлов и/или каталогов, нажать эту кнопку,
+перейти в нужный каталог и нажать кнопку "<span style="font-weight: bold;">Вставить</span>" <img src="img/pasteButton.png" alt="pasteButton.png">. Файлы будут перемещены в этот каталог.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/pasteButton.png" alt="pasteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Вставить в текущее место файлы, которые были ранее скопированы или вырезаны в буфер обмена.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Удалить выделенные файлы. Нужно
+выделить один или несколько файлов и нажать эту кнопку. Файлы будут
+удалены с сервера. Восстановить их после этого невозможно.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/propertiesButton.png" alt="propertiesButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Посмотреть свойства файла или
+каталога. Нужно выделить файл или каталог и нажать эту кнопку. Появится
+окно свойств. Оно показывает размер файла или каталога. (Эта кнопка
+очень часто скрыта от обычных пользователей и доступна только администраторам)<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/helpButton.png" alt="helpButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Отобразить подсказку по работе с файловым менеджером<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+Также можно открыть любой файл в файловом менеджере, сделав по нему двойной щелчок мышью.<br>
+<br>
+<div style="text-align: justify;">
+Для примера создадим папку "<span style="font-weight: bold;">Для доклада</span>" и загрузим в нее файл с
+докладом со своего компьютера. Затем создадим для него информационную
+карточку и привяжем к нашей заметке "<span style="font-weight: bold;">Для доклада (по поводу тенденций)</span>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Нажимаем кнопку <img src="img/makeDirButton.png" alt="makeDirButton.png"> и в появившемся окне вводим название каталога<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img style="width: 247px; height: 192px;" src="img/newfolder.png" alt="newfolder.png"></div>
+<br>
+<div style="text-align: justify;">
+Новый каталог появится в файловом менеджере.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/fm2.png" alt="fm2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Входим в каталог двойным щелчком мыши. Затем нажимаем кнопку <img src="img/downloadButton.png" alt="downloadButton.png">
+(<span style="font-weight: bold;">Загрузить файл</span>) и указываем файл с докладом, который нужно загрузить
+на сервер. Таким образом файл загружается на сервер в каталог "<span style="font-weight: bold;">Для
+доклада</span>". Далее выделяем этот файл, нажав на нем левой кнопкой мыши и
+нажимаем кнопку <img src="img/registerButton.png" alt="registerButton.png"> (<span style="font-weight: bold;">Выбрать</span>).<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/selectfile.png" alt="selectfile.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Файл будет выбран и путь к нему отобразится в поле "<span style="font-weight: bold;">Файл</span>" его
+информационной карточки. Также введем краткое и подробное описание
+файла, чтобы можно было в дальнейшем понять что это за файл, не
+открывая его.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/file2.png" alt="file2.png"><br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Теперь можно сохранить информационную карточку файла, нажав кнопку
+"<span style="font-weight: bold;">Сохранить</span>". Окно исчезнет и появится снова. Как и в окне
+редактирования заметки, появятся закладки "<span style="font-weight: bold;">Поля</span>", "<span style="font-weight: bold;">Заметки</span>", "<span style="font-weight: bold;">Файлы</span>" и
+"<span style="font-weight: bold;">Связи</span>", позволяющие в дальнейшем добавлять к информационной карточке
+дополнительную информацию, делать к этому файлу заметки и связывать с
+другими файлами.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/savedfile.png" alt="savedfile.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Созданная информационная карточка файла появится в общем списке файлов
+в окне "<span style="font-weight: bold;">Мои дела</span>", а также привяжется к заметке, для которой эта
+карточка создавалась.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notefiles.png" alt="notefiles.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+При щелчке мышью по файлу открывается сам файл. При двойном щелчке по
+описанию файла в колонке "<span style="font-weight: bold;">Описание</span>" открывается его информационная
+карточка. Создавая информационные карточки файлов для заметок или для
+других элементов справочников и документов, в программе постепенно
+формируется электронный архив документов, по которому можно в
+дальнейшем делать отборы и запускать поиск.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Подобным образом загрузим на сервер и добавим к заметке еще несколько файлов.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notefiles2.png" alt="notefiles2.png"><br>
+</div>
+<h4><a name="p6"></a>
+Закладка "Связи"</h4>
+
+<div style="text-align: justify;">
+На этой закладке отображаются все объекты, которые связаны с данным
+объектом. Они отображаются в виде дерева. Некоторые связи строятся
+автоматически. Например, когда мы добавляем к объекту заметку, то
+автоматически создается связь между объектом и этой заметкой. Или когда
+мы создаем заказ контрагента, автоматически создается связь между этим
+контрагентом и заказом. Продолжая пример с заметкой "<span style="font-weight: bold;">Для доклада (по
+поводу тенденций)</span>", на закладке "<span style="font-weight: bold;">Связи</span>" мы видим все файлы и заметки,
+которые мы привязали к данному объекту.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/notelinks.png" alt="notelinks.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Можно открыть любой объект, связанный с нашей заметкой. Если развернуть
+узел объекта, можно увидеть с чем связан уже этот объект. Связи это
+один из самых мощных механизмов системы "<span style="font-weight: bold;">ЛВА Управление</span>". Благодаря
+механизму связей, в одном дереве концентрируется всё что каким-либо
+образом связано с данным объектом, прямо или косвенно. В результате
+может получиться так, что вся информация в системе будет взаимосвязана
+и путешествуя по дереву связей можно будет прийти от любого объекта к
+любому другому объекту и изучая этот путь понять, как объекты связаны
+между собой. Например, если привязать файл к объекту "<span style="font-weight: bold;">Отчет о работе</span>",
+а отчет о работе связан с <span style="font-weight: bold;">Задачей</span>, то с помощью дерева связей можно
+прийти к <span style="font-weight: bold;">Контрагенту</span> который сделал <span style="font-weight: bold;">Заказ</span>, связанный с этой задачей, к
+контактной информации этого <span style="font-weight: bold;">Контрагента</span> и даже к его электронной почте.
+Все это можно сделать с помощью дерева связей, например так, как
+показано на следующем скриншоте:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/filelinksfull.png" alt="filelinksfull.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Мы видим что файл связан с отчетом о работе, отчет о работе связан с
+задачей, задача связана с проектом, проект связан с заказом, заказ
+связан с контрагентом, контрагент связан с контактным лицом, контактное
+лицо связано со своим адресом электронной почты. Если открыть адрес
+электронной почты, можно увидеть почту, которая пришла с этого адреса.
+Что интересно, все эти связи формируются автоматически при вводе
+соответствующих документов "<span style="font-weight: bold;">Заказ</span>", "<span style="font-weight: bold;">Задача</span>" и "<span style="font-weight: bold;">Отчет о работе</span>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Вернемся теперь к нашей заметке. Связи этого объекта двусторонние.
+Например, если наша заметка связана с файлом "<span style="font-weight: bold;">Отчет.doc</span>", то файл
+"<span style="font-weight: bold;">Отчет.doc</span>" связан с заметкой. Это значит, что если открыть
+информационную карточку файла "<span style="font-weight: bold;">Отчет.doc</span>" и перейти на закладку "<span style="font-weight: bold;">Связи</span>"
+этого файла, то можно увидеть что он связан с нашей заметкой.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/filelinks1.png" alt="filelinks1.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Развернув узел заметки, можно увидеть все остальное, с чем связана заметка уже с позиции файла "<span style="font-weight: bold;">Отчет.doc</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/filelinks2.png" alt="filelinks2.png"><br>
+</div>
+<br>
+<h5><a name="p7"></a>
+Операции со связями</h5>
+
+<h6><a name="p8"></a>
+Создание связей вручную</h6>
+
+<div style="text-align: justify;">
+Большинство связей строится автоматически, однако система не
+ограничивает нас этим. Пользователь может вручную связывать объекты
+между собой. Это позволяет привязать к объекту любой другой объект,
+даже если это не соответствует логике, по которой работают
+бизнес-процессы. Чтобы создать связь вручную, нужно щелкнуть по объекту
+правой кнопкой мыши и выполнить команду "<span style="font-weight: bold;">Новая связь</span>" из контекстного
+меню.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Например в системе есть справочник "<span style="font-weight: bold;">Огранизации</span>". Свяжем организацию из
+этого справочника с заметкой "<span style="font-weight: bold;">О станкостроении</span>". Для этого нужно нажать
+правой кнопкой мыши по заметке в дереве и выполнить команду "<span style="font-weight: bold;">Новая
+связь</span>" из контекстного меню:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/addlink.png" alt="addlink.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Появится окно выбора объекта для создания связи.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/selectobjectwindow.png" alt="selectobjectwindow.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Из раскрывающегося списка нужно выбрать тип объекта. В нашем случае это будет "<span style="font-weight: bold;">Справочники</span>" --&gt; "<span style="font-weight: bold;">Организации</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/selectobjecttype.png" alt="selectobjecttype.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+После выбора типа объекта, таблица заполнится всеми объектами этого типа.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/selectobject.png" alt="selectobject.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Чтобы выбрать объект для связи, нужно сделать по нему двойной щелчок
+мышью. После этого связь между объектами будет создана и это будет
+отображено в дереве.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newlink.png" alt="newlink.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Таким образом можно вручную связывать объекты, если в этих связях есть какая-то логика.<br>
+</div>
+
+<h6><a name="p9"></a>
+Удаление связей</h6>
+
+<div style="text-align: justify;">
+Чтобы удалить связь, нужно нажать на ней правой кнопкой мыши и выполнить команду "<span style="font-weight: bold;">Удалить связь</span>" из контекстного меню.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/dellink.png" alt="dellink.png"><br>
+</div>
+<h6><a name="p10"></a>
+Работа с таблицей связей</h6>
+
+<div style="text-align: justify;">
+Связи объекта можно смотреть не только в виде дерева, но и в виде
+таблицы. Для этого нужно нажать кнопку "<span style="font-weight: bold;">Показать связи в виде таблицы</span>"
+на закладке "<span style="font-weight: bold;">Связи</span>" объекта. Появится окно, подобное окну "<span style="font-weight: bold;">Мои дела</span>",
+отображающее списки объектов различного типа. Разница в том, что в этом
+окне отображаются только объекты, связанные с объектом, для которого
+эта таблица была открыта.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/linkstable.png" alt="linkstable.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+На этом скриншоте показана таблица связей заметки "<span style="font-weight: bold;">Для доклада (по
+поводу тенденций)</span>". Здесь видно, что с данным объектом связано
+несколько файлов и несколько заметок. Можно добавлять новые объекты в
+таблицу. В этом случае они будут добавляться и сразу же связываться с
+нашей заметкой.<br>
+</div>
+
+<h3><a name="p11"></a>
+Заключение</h3>
+
+<div style="text-align: justify;">
+В этом разделе мы рассмотрели общие принципы создания и редактирования
+объектов в программе "<span style="font-weight: bold;">ЛВА Управление</span>". Объекты в программе бывают разные,
+но у каждого из них могут быть дополнительные поля, к каждому можно
+привязывать заметки и файлы и у любого из них
+можно смотреть связи в виде дерева или таблицы. Специфика конкретных справочников и
+документов будет рассматриваться в соответствующих разделах данного
+руководства, но все общее, применимое при редактировании каждого из них
+было рассмотрено выше и в описании каждого конкретного справочника или
+документа мы всегда будем ссылаться на данный раздел как на источник
+общей информации о работе со справочниками и документами.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Все создаваемые элементы попадают в список объектов своего типа. С
+помощью списка, с объектами можно выполнять различные операции:
+сортировать, отбирать, удалять и т. д. В следующем разделе мы
+рассмотрим общие приемы работы со списками объектов.<br>
+</div>
+
+<h2><a name="p12"></a>Работа со списками объектов</h2>
+
+<div style="text-align: justify;">
+Все объекты, которые Вы создаете, оказываются в списке объектов своего типа. Например так выглядит список заметок в окне "<span style="font-weight: bold;">Мои дела</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/noteslist.png" alt="noteslist.png"><br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В основном вы будете работать со списками объектов двух типов:
+справочники и документы. Работа с ними практически ничем не отличается.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Чтобы отсортировать список по определенной колонке, нужно нажать по ее
+заголовку мышью. Чтобы отсортировать в обратном порядке, нужно нажать
+еще раз.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Для выполнения многих команд, необходимо выделить один или несколько
+объектов из списка. Чтобы выделить один объект, нужно щелкнуть по нему.
+Строка окрасится в синий цвет. Чтобы выделить несколько объектов, нужно
+включить флажки в самой левой колонке.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+На следующем скриншоте показаны результаты выделения одной и нескольких заметок в списке.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/selectednotes.png" alt="selectednotes.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+После выделения одного или нескольких объектов, можно выполнять с ними
+различные операции с помощью кнопок на панели инструментов,
+расположенной над списком. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Краткое описание кнопок и действий, которые они выполняют:<br>
+</div>
+
+<br>
+<table style="text-align: left; width: 90%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/refreshButton.png" alt="refreshButton.png"></td>
+      <td style="vertical-align: top;">Обновить список объектов.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/add.png" alt="add.png"></td>
+      <td style="vertical-align: top;">Создать новый элемент.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/addGroupButton.png" alt="addGroupButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать новую группу. После того
+как в списке появится группа, можно будет создавать новые элементы в
+этой группе и перемещать существующие элементы в эту группу. Подробнее
+"<a onclick='parent.obj.go_to("2.2.2",true,event)' href="null">Работа с группами</a>".<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/createbyButton.png" alt="createbyButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать новый объект на
+основании выделенного. Нужно выделить строку с элементом-основанием и
+нажать на эту кнопку. Появится меню со списком объектов, которые можно
+создать на основании выделенного. Подробнее "<a onclick='parent.obj.go_to("2.2.1",true,event)' href="null">Ввод на основании</a>".<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/copy.png" alt="copy.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать новый объект
+копированием. Нужно выделить строку с элементом и нажать эту кнопку.
+Это создаст новый элемент, являющийся копией выделенного. <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/changeButton.png" alt="changeButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Редактировать выделенный объект. Открывает выделенный объект для редактирования. Равносильно двойному щелчку мыши по объекту.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteButton.png" alt="deleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Пометить выделенные объекты на
+удаление. Нужно выделить один или несколько объектов и нажать эту
+кнопку. В дальнейшем помеченные на удаление объекты можно удалить с
+помощью функции "<span style="font-weight: bold;">Удаление помеченных объектов</span>".Подробнее "<a onclick='parent.obj.go_to("2.2.3",true,event)' href="null">Удаление объектов</a>". <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/undeleteButton.png" alt="undeleteButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Снять пометку удаления с выделенных объектов. Нужно
+выделить один или несколько объектов и нажать эту кнопку. Если на
+выделенных объектах была пометка удаления, она снимется. Подробнее
+"<a onclick='parent.obj.go_to("2.2.3",true,event)' href="null">Удаление объектов</a>".</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/hierarchyButtonOff.png" alt="hierarchyButtonOff.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Режим иерархического просмотра
+списка. По умолчанию он включен и список отображает элементы с
+разбивкой по группам (если есть группы). Чтобы посмотреть элементы
+внутри группы, нужно раскрыть нужную группу. Если отключить этот режим,
+группы не будут отображаться и все элементы будут идти единым списком,
+без учета групп. Подробнее "<a onclick='parent.obj.go_to("2.2.2",true,event)' href="null">Работа с группами</a>".<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/printButton.png" alt="printButton.png"></td>
+      <td style="vertical-align: top;">С помощью этой кнопки можно вывести список элементов справочника или документов на печать.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/optionsButton.png" alt="optionsButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Редактирование свойств списка. С
+помощью этой кнопки можно настроить параметры отображения списка:
+количество элементов на странице, какие колонки отображаются, порядок
+сортировки, а&nbsp; также условия отбора, позволяющие фильтровать
+данные, отображаемые в списке. Подробнее "<a onclick='parent.obj.go_to("2.2.5",true,event)' href="null">Настройка параметров списка</a>".<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/findButton.png" alt="findButton.png"></td>
+      <td style="vertical-align: top;">Простой поиск. Нужно ввести в поле ввода желаемый
+текст и нажать эту кнопку. Запустится поиск введенного текста во всех
+колонках, отображаемых в списке. При обнаружении первого совпадения,
+строка с ним подсветится. При нажатии на эту кнопку еще раз, поиск
+подсветит следующую строку с совпадением и т.д. Подробнее "<a onclick='parent.obj.go_to("2.2.4",true,event)' href="null">Поиск
+элементов</a>".<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/gfindButton.png" alt="gfindButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Глобальный поиск. Позволяет
+искать желаемый текст по всей базе данных: по всем полям всех
+справочников и документов. Подробнее "<a onclick='parent.obj.go_to("2.2.4",true,event)' href="null">Поиск элементов</a>".<br>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/filterButton.png" alt="filterButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Отбор по значению в текущей
+колонке. Нужно щелкнуть в списке по полю с нужным значением, чтобы это
+поле выделилось и нажать на эту кнопку. Список отфильтруется таким
+образом, что в нем останутся только элементы с таким же значением в
+этой колонке. <br>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteFilterButton.png" alt="deleteFilterButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Удалить все условия отбора.
+Отменяет все условия отбора, установленные в окне редактирования
+свойств списка и с помощью прошлой кнопки. Фильтрация отключается, в
+списке отображаются все элементы.<br>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/saveButton.png" alt="saveButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Сохранить настройки списка в
+текущий набор настроек. Если вы настроили параметры списка в окне
+"<span style="font-weight: bold;">Редактирование свойств списка</span>" и хотите чтобы эти настройки
+сохранились при следующем запуске программы, нужно нажать на эту кнопку. Подробнее "<a onclick='parent.obj.go_to("2.2.5",true,event)' href="null">Настройка параметров списка</a>".<br>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/newProfileButton.png" alt="newProfileButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Создать новый набор настроек.
+Изначально для каждого списка создан всего один набор настроек
+"<span style="font-weight: bold;">Основной</span>". Когда вы изменяете настройки списка и сохраняете их, они
+сохраняются в этот набор настроек. Можно создать несколько наборов
+настроек, каждый из которых будет отображать список по-разному. Нужно
+нажать на эту кнопку, ввести название нового набора списка. Затем
+открыть окно настроек списка, изменить настройки нужным образом и затем
+нажать кнопку "<span style="font-weight: bold;">Сохранить настройки</span>". Настройки будут сохранены в этот
+набор. Таким образом можно создать несколько внешних видов списка для
+разных случаем и переключаться между ними, выбирая нужный набор
+настроек из раскрывающегося списка слева от этой кнопки. Подробнее
+"<a onclick='parent.obj.go_to("2.2.5",true,event)' href="null">Настройка параметров списка</a>".<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="img/deleteProfileButton.png" alt="deleteProfileButton.png"></td>
+      <td style="vertical-align: top; text-align: justify;">Удалить набор настроек. Нужно
+выбрать набор настроек из раскрывающегося списка слева и нажать на эту
+кнопку. Выбранный набор настроек будет удален, после чего список
+перейдет к набору настроек "<span style="font-weight: bold;">Основной</span>" и будет отображаться в соответствии с настройками этого набора.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h3><span style="font-weight: bold;"><a name="p13"></a></span>
+Ввод на основании</h3>
+
+<div style="text-align: justify;">
+Механизм ввода на основании позволяет создавать одни объекты на
+основании других. Это упрощает создание новых объектов, так как часть
+полей нового объекта автоматически заполняется из объекта, на основании
+которого он создается. Например, на основании <span style="font-weight: bold;">Контрагента</span> можно создать
+<span style="font-weight: bold;">Обращение</span>. При этом все реквизиты контрагента в обращении уже будут
+заполнены. На основании <span style="font-weight: bold;">Обращения</span> можно создать <span style="font-weight: bold;">Заказ</span>, а на основании
+<span style="font-weight: bold;">Заказа</span> можно создать <span style="font-weight: bold;">Счет на оплату</span>. На основании любого объекта можно
+создать "<span style="font-weight: bold;">Отчет о работе сотрудника</span>". Таким образом, если создать отчет
+о работе на основании обращения, то будет считаться, что это отчет о
+работе по данному обращению. Если создать отчет о работе на основании
+задачи, то будет считаться, что это отчет о работе по данной задаче.
+Это один из примеров использования стандартных механизмов программы,
+предназначенных для выполнения контроля исполнения поручений. При
+создании объектов на основании, создается связь между ними, что можно в
+дальнейшем увидеть на закладке "<span style="font-weight: bold;">Связи</span>" у этих объектов. Это очень
+удобный способ структурирования информации.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Создать объект на основании другого можно двумя способами: из списка объектов и из самого объекта-основания.<br>
+</div>
+
+<h4><a name="p14"></a>
+Ввод на основании из списка</h4>
+
+<div style="text-align: justify;">
+Выделите в списке объект-основание, нажмите кнопку <img src="img/createbyButton.png" alt="createbyButton.png">
+(<span style="font-weight: bold;">Создать на основании</span>) и выберите тип объекта, который вы хотите
+создать. Например, на основании <span style="font-weight: bold;">Контрагента</span> можно создать такие объекты:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newcreateby.png" alt="newcreateby.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Предположим что этот контрагент обратился к нам. В связи с этим
+создадим документ "<span style="font-weight: bold;">Обращение контрагента</span>" на основании этого
+контрагента.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newrequest.png" alt="newrequest.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Как видно из скриншота, механизм ввода на основании автоматически
+заполнил поле "<span style="font-weight: bold;">Контрагент</span>". Также в качестве ответственного менеджера
+автоматически указывается текущий пользователь программы. Можно
+изменить ответственного менеджера на другого человека. Это действие
+будет означать что работа с обращением поручена другому человеку.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Предположим что обратился этот контрагент по телефону (форма обращения
+- "<span style="font-weight: bold;">Звонок</span>"), по поводу закупки сервера (тип обращения -
+"<span style="font-weight: bold;">Предварительный заказ клиента</span>"). После телефонного разговора,
+секретарь может зарегистрировать в программе такое обращение:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newrequest2.png" alt="newrequest2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+После нажатия на кнопку "<span style="font-weight: bold;">Сохранить</span>", обращение будет сохранено и
+появится в общем списке обращений. Также, оно будет связано с
+контрагентом ООО "Директ-софт". Это можно увидеть, если перейти на
+закладку "<span style="font-weight: bold;">Связи</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/requestlinks.png" alt="requestlinks.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Аналогично, если открыть контрагента "Директ Софт" и перейти на
+закладку его связей, можно увидеть что с ним связано это обращение.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/contragentlinks.png" alt="contragentlinks.png"><br>
+</div>
+<h4><a name="p15"></a>
+Ввод на основании из окна объекта</h4>
+
+<div style="text-align: justify;">
+Также, можно создать объект на основании из окна самого
+объекта-основания. В окне любого объекта есть кнопка "<span style="font-weight: bold;">Создать</span>", при
+нажатии на которую появляется список типов объектов, которые можно
+создать на основании данного объекта.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Продолжим пример с обращением. После того как обращение
+зарегистрировано, нужно начинать работать с ним. В зависимости от типа
+обращения можно создавать на его основании различные другие документы.
+Например, если это обращение классифицировано как "<span style="font-weight: bold;">Предварительный
+заказ</span>", то на его основании можно создать документ "<span style="font-weight: bold;">Заказ</span>", или же
+сразу "<span style="font-weight: bold;">Счет на оплату</span>". Если это обращение другого типа, например
+"<span style="font-weight: bold;">Обращение в техподдержку</span>", можно на его основании создать документ
+"<span style="font-weight: bold;">Задача</span>" и таким образом поставить задачу инженеру технической
+поддержки рассмотреть обращение. Далее инженер технической поддержки на
+основании задачи создает "<span style="font-weight: bold;">Отчет о работе</span>" в котором указывает, какие
+работы он выполнил по этой задаче . Этот отчет прикрепляется к Задаче,
+его можно будет увидеть на закладке "<span style="font-weight: bold;">Связи</span>". На основании этого отчета,
+постановщик задачи определяет, насколько задача выполнена и закрывает
+ее или ставит дополнительные задачи этому или другим исполнителям.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В нашем случае обращение было связано с заказом, поэтому создадим на его основании "<span style="font-weight: bold;">Счет на оплату</span>". <br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newinvoice.png" alt="newinvoice.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Появится новый счет, шапка которого почти полностью заполнена данными из обращения, на основании которого он был создан.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newinvoice2.png" alt="newinvoice2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Осталось заполнить табличную часть.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newinvoice3.png" alt="newinvoice3.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+При заполнении таблицы, наименование можно либо вводить вручную, либо
+выбирать из справочника "<span style="font-weight: bold;">Номенклатура</span>". В последнем случае будут
+автоматически заполняться колонки "<span style="font-weight: bold;">Цена</span>", "<span style="font-weight: bold;">Ед.</span>" и "<span style="font-weight: bold;">% НДС</span>" из
+справочника. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Далее счет можно <span style="font-weight: bold;">Распечатать</span>, или <span style="font-weight: bold;">Сохранить</span>. При сохранении будут созданы связи счета с контрагентом и с обращением.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/invoicelinks.png" alt="invoicelinks.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Соответственно, если открыть обращение, можно увидеть на его закладке "<span style="font-weight: bold;">Связи</span>" счет, который был на его основании создан:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/requestlinks2.png" alt="requestlinks2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+По одному обращению может быть несколько счетов или других документов. Также по обращению
+могут быть различные обсуждения, согласования, результаты которых могут
+быть прикреплены к нему в виде заметок, файлов, задач, отчетов о работе или дополнительных
+полей. Вся эта информация будет концентрироваться внутри обращения и ее
+можно будет поднять в будущем при необходимости.<br>
+</div>
+
+
+<br>
+<div style="text-align: justify;">
+Теперь, благодаря применению механизма ввода на основании, открыв
+контрагента можно увидеть всю структуру информации и историю
+взаимодействия с ним на закладке "<span style="font-weight: bold;">Связи</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/contragentlinks2.png" alt="contragentlinks2.png"><br>
+</div>
+<h3><a name="p16"></a>
+Работа с группами</h3>
+
+<div style="text-align: justify;">
+В любом справочнике или журнале документов можно создать группы и
+разнести элементы по группам. Можно создавать вложенные группы, уровней
+вложенности может быть неограниченное количество.<br>
+</div>
+
+<h4><a name="p17"></a>
+Создание группы</h4>
+
+<div style="text-align: justify;">
+Для создания группы нужно нажать кнопку <img src="img/addGroupButton.png" alt="addGroupButton.png">. В появившемся окне ввести имя группы.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/newgroup.png" alt="newgroup.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+После ввода названия и нажатия кнопки "<span style="font-weight: bold;">Сохранить</span>" группа появится в списке<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/listwithgroups.png" alt="listwithgroups.png"><br>
+</div>
+<h4><a name="p18"></a>Добавление элементов в группу</h4>
+<div style="text-align: justify;">
+Чтобы поместить существующий или новый элемент в группу, нужно выбрать нужную группу в поле "<span style="font-weight: bold;">Группа</span>" этого элемента. Например:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img style="width: 569px; height: 443px;" src="img/groupitem.png" alt="groupitem.png"></div>
+
+<br>
+<div style="text-align: justify;">
+Так же точно можно поместить одну группу в другую группу.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/groupgroup.png" alt="groupgroup.png"><br>
+</div>
+<h4><a name="p19"></a>Перемещение по группам</h4>
+<div style="text-align: justify;">Раскрыть группу можно двумя способами. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Можно нажать на значке группы в таблице, под&nbsp; строкой группы откроется вложенная таблица с содержимым группы. <br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/opengrp1.png" alt="opengrp1.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Для работы с элементами группы используются кнопки на панели вложенной
+таблицы. При создании элементов во вложенной таблице группы, они будут
+создаваться внутри этой группы.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Также, можно перейти в любую группу, выбрав ее из раскрывающегося списка над таблицей.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/opengrp2.png" alt="opengrp2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+При выборе группы из списка, таблица будет отображать содержимое этой
+группы. При создании элементов, они будут создаваться внутри этой
+группы. Чтобы вернуться на самый верхний уровень, нужно выбрать
+корневой элемент дерева (на рисунке это "<span style="font-weight: bold;">Номенклатура</span>").<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Группы позволяют правильно и удобно структурировать информацию, однако
+иногда работать с группами не очень удобно. Иногда нужно отобразить все
+элементы по порядку, без учета групп. Например, это нужно чтобы
+запустить поиск по всему справочнику. По умолчанию поиск работает
+только по группе, которая в данный момент открыта и только по одному
+уровню вложенности (не ищет во вложенных группах). Чтобы отключить
+отображение групп, отключите кнопку <img src="img/hierarchyButtonOff.png" alt="hierarchyButtonOff.png">. Чтобы снова включить отображение групп, включите эту кнопку.<br>
+</div>
+
+<h3><a name="p20"></a>
+Удаление объектов</h3>
+
+<div style="text-align: justify;">
+Удаление объектов происходит в два этапа. Сначала объекты помечаются на
+удаление, а затем выполняется процедура "<span style="font-weight: bold;">Удаление помеченных объектов"</span>.
+Эта процедура определяет, возможно ли удалить каждый из помеченных
+объектов. Объект можно удалить только в том случае, если его не
+используют никакие другие объекты. Например, если вы пометили на
+удаление <span style="font-weight: bold;">Контрагента</span>, а этот контрагент указан в <span style="font-weight: bold;">Счетах</span> и <span style="font-weight: bold;">Заказах</span>, то
+его нельзя будет удалить, не убрав его из этих счетов и заказов или не
+пометив эти счета и заказы на удаление тоже. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Чтобы пометить объекты на удаление, нужно выделить их в списке (включить флажки в первой колонке) и нажать кнопку <img src="img/deleteButton.png" alt="deleteButton.png">. <br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/delitems.png" alt="delitems.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Чтобы снять с объектов пометку удаления, нужно выделить их в списке и нажать кнопку <img src="img/undeleteButton.png" alt="undeleteButton.png">.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Чтобы удалить помеченные объекты, нужно запустить процедуру "<span style="font-weight: bold;">Удаление помеченных объектов</span>", выполнив комаду "<span style="font-weight: bold;">Система</span>" --&gt; "<span style="font-weight: bold;">Удаление помеченных объектов</span>" из главного меню.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Программа выяснит, можно ли удалить каждый помеченный на удаление объект и отобразит результаты в таблице "<span style="font-weight: bold;">Помеченные объекты</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/delselected.png" alt="delselected.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Часть объектов можно удалить, а часть нет. Если объект нельзя удалить,
+значит в базе данных есть другие объекты которые ссылаются на него.
+Чтобы увидеть эти объекты, нужно выделить строку с объектом который
+нельзя удалить. Список объектов, которые на него ссылаются отобразится
+в таблице "<span style="font-weight: bold;">Зависимости</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/deldeps.png" alt="deldeps.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Далее нужно разобраться с зависимостями. Нужно либо пометить их на
+удаление тоже, либо убрать из них ссылки на объект, который необходимо
+удалить. Зависимости можно открывать прямо из таблицы зависимостей.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+После того как все проблемы с зависимостями решены, нужно пометить
+объекты, которые необходимо удалить в таблице "Помеченные объекты" и
+нажать кнопку <img src="img/deleteButton.png" alt="deleteButton.png">. Объекты будут окончательно удалены из базы данных. Восстановить их после этого невозможно.<br>
+</div>
+
+<h3><a name="p21"></a>
+Поиск объектов<br>
+</h3>
+
+<div style="text-align: justify;">
+В системе предусмотрено два вида поиска: обычный поиск, который ищет
+элементы по ключевой фразе только в пределах списка и глобальный поиск,
+который ищет элементы по ключевой фразе по всей базе данных.<br>
+</div>
+
+<h4><a name="p22"></a>
+Обычный поиск</h4>
+
+<div style="text-align: justify;">
+Чтобы найти в списке элемент, в котором встречается определенное слово
+или часть слова в любой из колонок списка, нужно ввести фразу в
+поле поиска и нажать кнопку <img src="img/findButton.png" alt="findButton.png">.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/finditem.png" alt="finditem.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Первая строка, в которой найдено совпадение подсветится. Чтобы продолжить поиск, снова нажмите <img src="img/findButton.png" alt="findButton.png">, подсветится следующая строка, в которой встречается ключевая фраза.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В случае если справочник иерархический (содержит группы), поиск не ищет
+внутри вложенных групп. Если нужно запустить поиск по всему
+справочнику, который включает группы, нужно отключить отображение
+групп, нажав кнопку <img src="img/hierarchyButtonOff.png" alt="hierarchyButtonOff.png"> и запускать поиск после этого.<br>
+</div>
+
+<h4><a name="p23"></a>
+Глобальный поиск</h4>
+
+<div style="text-align: justify;">
+Глобальный поиск позволяет получить список объектов, в которых встречается введенная ключевая фраза в любом из полей. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Чтобы открыть окно глобального поиска, нужно нажать кнопку <img src="img/gfindButton.png" alt="gfindButton.png"> в любом списке объектов. Затем нужно ввести ключевую фразу и нажать кнопку <img src="img/findButton.png" alt="findButton.png">. В таблице отобразятся все объекты, в которых содержится ключевая фраза упорядоченные по релевантности.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/gsearch.png" alt="gsearch.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+По умолчанию, процедура глобального поиска ищет среди всех типов
+объектов и по всем их полям. Можно ограничить это правило и искать
+только среди определенных типов объектов и только среди определенных
+полей. Для этого используется окно настройки глобального поиска,
+которое можно открыть нажав кнопку <img src="img/optionsButton.png" alt="optionsButton.png">.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/gfindopts.png" alt="gfindopts.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+На закладке "<span style="font-weight: bold;">Объекты</span>" перечислены все типы справочников и документов, а на закладке "<span style="font-weight: bold;">Поля</span>" перечислены все поля, которые в них встречаются. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Можно ограничить диапазон поиска, включив флажки только напротив
+определенных типов объектов и только напротив определенных полей. Если
+отключить все флажки, поиск будет осуществляться по всем объектам и по
+всем их полям.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Чтобы применить настройки глобального поиска, нужно нажать кнопку "<span style="font-weight: bold;">Сохранить</span>".
+Настройки будут работать до закрытия окна глобального поиска. Чтобы
+сохранить сделанные настройки навсегда, нужно нажать кнопку <img src="img/saveButton.png" alt="saveButton.png"> в окне глобального поиска.<br>
+</div>
+
+
+<div style="text-align: justify;">
+<h3><a name="p24"></a>Настройка параметров списка</h3>
+
+</div>
+
+<div style="text-align: justify;">Программа позволяет управлять внешним
+видом списка любых объектов. Для этой цели для списка создается набор
+настроек, включающий:<br>
+</div>
+<ul style="text-align: justify;">
+  <li>Порядок сортировки списка</li>
+  <li>Количество элементов на одной странице</li>
+  <li>Колонки таблицы и их порядок</li>
+  <li>Колонки таблицы и их порядок для печати списка</li>
+  <li>Условия отбора элементов в списке (фильтры)</li>
+</ul>
+<div style="text-align: justify;">У списка существует предопределенный
+набор настроек "Основной" и если вносить изменения в настройки, они
+будут записываться в этот набор. Существует возможность создавать
+дополнительные наборы настроек и затем переключаться между наборами настроек, если
+необходимо в разные моменты времени видеть список по разному.<br>
+</div>
+<div style="text-align: justify;">
+<h4><a name="p25"></a>
+Редактирование набора настроек</h4>
+</div>
+
+
+<div style="text-align: justify;">Для доступа к настройкам текущего набора (по умолчанию "Основной") нужно нажать кнопку <img src="../controller/img/optionsButton.png" alt="optionsButton.png">. Появится окно настроек списка.<br>
+</div>
+
+<div style="text-align: justify;">
+<h5><a name="p26"></a>Закладка "Основное"</h5>
+
+</div>
+
+<div style="text-align: center;"><img src="img/listopts1.png" alt="listopts1.png"><br>
+
+</div>
+<br>
+<div style="text-align: justify;">На закладке "<span style="font-weight: bold;">Основное</span>"
+указывается поле, по которому будет упорядочен список и порядок
+сортировки (по возрастанию/по убыванию). Также, если в списке слишком
+много элементов, то он разбивается на страницы. На этой закладке
+указывается количество элементов на странице.<br>
+</div>
+
+<div style="text-align: justify;">
+<h5><a name="p27"></a>Закладка "Поля"</h5>
+
+</div>
+
+<div style="text-align: center;"><img src="img/listopts2.png" alt="listopts2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">На закладке поля указывается, какие
+поля будут отображаться в качестве колонок списка и в какой
+последовательности. Колонки, которые будут отображаться указаны в
+списке "<span style="font-weight: bold;">Поля в списке:</span>". Также, в списке "<span style="font-weight: bold;">Доступные поля:</span>"
+указаны все остальные поля объекта, которые можно добавить. В нем могут
+быть основные поля объекта, а также дополнительные поля, которые
+когда-либо указывались для объектов данного типа на закладке "<span style="font-weight: bold;">Поля</span>". (см. <a onclick='parent.obj.go_to("2.1.1.1",true,event)' href="null">Закладка "Поля"</a>). <br>
+</div>
+<div style="text-align: justify;">Чтобы добавить поле в список, нужно выделить его в "<span style="font-weight: bold;">доступных полях</span>" и нажать стрелку <img src="img/left.png" alt="left.png">. Поле переместится в список "<span style="font-weight: bold;">поля в списке:</span>". Чтобы убрать поле, нужно выделить его в списке "<span style="font-weight: bold;">Поля в списке:</span>" и нажать стрелку <img src="img/right.png" alt="right.png">. Поле переместится в список "<span style="font-weight: bold;">Доступные поля</span>".<br>
+</div>
+<br>
+<div style="text-align: justify;">Также можно определить, в каком порядке будут отображаться колонки, выделив поле и перемещая его вверх/вниз (с помощью кнопок <img src="img/up.png" alt="up.png">и <img src="img/down.png" alt="down.png">) по списку "<span style="font-weight: bold;">Поля в списке:</span>".<br>
+</div>
+<div style="text-align: justify;">
+<h5><a name="p28"></a>
+Закладка "Печатаемые поля"</h5>
+</div>
+
+
+<div style="text-align: center;"><img src="img/listopts3.png" alt="listopts3.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Эта закладка устроена так же как и закладка "<span style="font-weight: bold;">Поля</span>", но на ней указываются поля, которые будут печататься с помощью функции "<span style="font-weight: bold;">Печать списка</span>" (кнопка <img src="img/printButton.png" alt="printButton.png">).<br>
+</div>
+
+
+<div style="text-align: justify;">
+<h5><a name="p29"></a>Закладка "Условия отбора"</h5>
+</div>
+<div style="text-align: justify;">На этой закладке указываются условия, которым должны соответствовать основные поля элементов, отображаемых в списке.<br>
+</div>
+<br>
+<div style="text-align: center;"><img style="width: 642px; height: 450px;" src="img/listopts4.png" alt="listopts4.png"></div>
+<br>
+<div style="text-align: justify;">Чтобы включить фильтры для полей,
+нужно включить флажки напротив их названий, указать вид условия в
+списке и значение поля. Например, на следующем скриншоте фильтры
+настроены таким образом, что в списке будут отображаться только такие
+объекты, у которых поле "<span style="font-weight: bold;">Описание</span>" содержит символы "<span style="font-weight: bold;">тенд</span>" и поле "<span style="font-weight: bold;">Создатель</span>" равно "<span style="font-weight: bold;">admin</span>".<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/listopts5.png" alt="listopts5.png"><br>
+</div>
+<div style="text-align: justify;">
+<h5><a name="p30"></a>Закладка "Доп. условия отбора"</h5>
+</div>
+<div style="text-align: justify;">Если на закладке "<span style="font-weight: bold;">Условия отбора</span>"
+устанавливаются фильтры на значения основных полей, то на закладке
+"<span style="font-weight: bold;">Доп. условия отбора</span>" устанавливаются фильтры на значения
+дополнительных полей (которые создаются на <a onclick='parent.obj.go_to("2.1.1.1",true,event)' href="null">закладке "Поля"</a> в окне объекта).<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/listopts6.png" alt="listopts6.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">В таблицу можно добавить любое
+количество условий. В условии указывается имя дополнительного поля, вид
+условия и значение условия. С помощью панели кнопок над таблицей можно
+добавлять, удалять и редактировать содержимое таблицы условий. Описание
+кнопок приводилось ранее, в теме <a onclick='parent.obj.go_to("2.1.1.1",true,event)' href="null">Закладка "Поля"</a>.<br>
+</div>
+<br>
+<div style="text-align: justify;">Например, можно установить условия на значения дополнительных полей списка <span style="font-style: italic; font-weight: bold;">"</span><span style="font-weight: bold;">Заметки</span><span style="font-style: italic; font-weight: bold;">"</span> следующим образом:<br>
+</div>
+<br>
+<div style="text-align: center;"><img style="width: 642px; height: 449px;" src="img/listopts7.png" alt="listopts7.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">При такой настройке, в списке будут отображаться только такие объекты, у которых в поле "<span style="font-weight: bold;">Вид</span>" указано "<span style="font-weight: bold;">По работе</span>" и в поле "<span style="font-weight: bold;">Важность</span>" указано что угодно, кроме слова "<span style="font-weight: bold;">Средняя</span>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">После установки всех параметров и нажатия кнопки "<span style="font-weight: bold;">ОК</span>" настройки применяются к списку и сохранятся в текущий набор настроек. По умолчанию он называется "<span style="font-weight: bold;">Основной</span>".
+Чтобы настройки сохранились и список использовал их при следующей
+загрузке программы, нужно сохранить набор настроек. Для этого на панели
+кнопок списка используется кнопка&nbsp; <img src="img/saveButton.png" alt="saveButton.png"> ("Сохранить настройки").Она находится рядом с раскрывающимся списком наборов настроек.<br>
+</div>
+<br>
+<div style="text-align: justify;">В этот список можно добавлять другие
+наборы настроек и затем переключаться между ними, чтобы отображать
+список по разному для разных целей. Приемы работы с наборами настроек
+описаны далее.<br>
+</div>
+<div style="text-align: justify;">
+<h4><a name="p31"></a>Работа с наборами настроек</h4>
+</div>
+<div style="text-align: justify;">Для управления наборами настроек, предусмотрена следующая часть панели кнопок:<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/optionsets.png" alt="optionsets.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Из раскрывающегося списка выбирается набор настроек. Настройки из него
+моментально применяются к списку. Далее, при изменении настроек в окне
+"<span style="font-weight: bold;">Настройки списка</span>", которое рассматривалось ранее, эти измененные
+настройки сохраняются в этот текущий набор настроек. Чтобы сохранить
+текущий набор настроек навсегда нужно нажать кнопку <img src="img/saveButton.png" alt="saveButton.png">.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+С помощью кнопки <img src="img/newProfileButton.png" alt="newProfileButton.png">
+("<span style="font-weight: bold;">Новый набор настроек</span>") можно добавить новый набор настроек. При
+добавлении, он автоматически становится текущим и наследует все
+настройки предыдущего текущего набора настроек. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+С помощью кнопки <img src="img/deleteProfileButton.png" alt="deleteProfileButton.png"> ("<span style="font-weight: bold;">Удалить набор настроек</span>")
+можно удалить текущий набор настроек. При удалении, текущий набор
+настроек удаляется из списка и текущим становится набор настроек
+"Основной". Этот набор настроек удалить нельзя.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В качестве примера, сделаем для списка <span style="font-weight: bold;">Заметок</span> два набора настроек.
+Первый набор настроек это "Основной". Сделаем, чтобы в соответствии с
+таким набором настроек, в списке отображалась дополнительное поле
+"<span style="font-weight: bold;">Важность</span>". Второй набор настроек, который мы создадим, будет называться
+"<span style="font-weight: bold;">Важные</span>". При использовании такого набора настроек, в списке будут
+отображаться только такие заметки, у которых значение в поле "<span style="font-weight: bold;">Важность</span>" равно <span style="font-weight: bold;">"Высокая</span>".<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Сначала настроим набор настроек "Основной". Нажимаем кнопку <img src="img/optionsButton.png" alt="optionsButton.png">, в окне "<span style="font-weight: bold;">Настройки списка</span>" переходим на закладку "<span style="font-weight: bold;">Поля</span>" и добавляем в список поле "<span style="font-weight: bold;">Важность</span>":<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/setoptset1.png" alt="setoptset1.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Нажимаем кнопку "<span style="font-weight: bold;">ОК</span>". В списке появляется колонка "<span style="font-weight: bold;">Важность</span>". Сохраняем набор настроек "Основной" кнопкой <img src="img/saveButton.png" alt="saveButton.png">. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Теперь создадим новый набор настроек. Нажимаем кноку <img src="img/newProfileButton.png" alt="newProfileButton.png">. Вводим название нового набора настроек:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/setoptset2.png" alt="setoptset2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+После нажатия "<span style="font-weight: bold;">ОК</span>", набор настроек "<span style="font-weight: bold;">Важные</span>" станет текущим и унаследует все настройки набора настроек "<span style="font-weight: bold;">Основной</span>". <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Изменим настройки набора "<span style="font-weight: bold;">Важные</span>", открыв окно "<span style="font-weight: bold;">Настройки списка</span>" с помощью кнопки <img src="img/optionsButton.png" alt="optionsButton.png">.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+На закладке "<span style="font-weight: bold;">Поля</span>" уберем поле "<span style="font-weight: bold;">Важность</span>", так как оно не имеет смысла для нашей настройки (отображаться будут только заметки "<span style="font-weight: bold;">Высокой</span>" важности).<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/setoptset3.png" alt="setoptset3.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+На закладке "<span style="font-weight: bold;">Доп. условия отбора</span>", добавим условие, которое будет отображать только заметки с полем "<span style="font-weight: bold;">Важность</span>" равно "<span style="font-weight: bold;">Высокая</span>".<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/setoptset4.png" alt="setoptset4.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">После нажатия на кнопку "<span style="font-weight: bold;">ОК</span>", настройки сохранятся в наборе "<span style="font-weight: bold;">Важные</span>" и список перестроится в соответствии с новыми настройками.<br>
+</div>
+<br>
+<div style="text-align: justify;">Чтобы сохранить набор настроек "<span style="font-weight: bold;">Важные</span>" навсегда, нажимаем кнопку <img src="img/saveButton.png" alt="saveButton.png">. <br>
+</div>
+<br>
+<div style="text-align: justify;">Теперь можно переключать режим просмотра списка, изменяя набор настроек. При установке набора "<span style="font-weight: bold;">Важные</span>",
+в списке будут отображаться только важные заметки, а при установке
+набора "Основной", будут отображаться все заметки и дополнительное поле
+"<span style="font-weight: bold;">Важность</span>".<br>
+</div>
+<br>
+<div style="text-align: center;"><img src="img/setoptset5.png" alt="setoptset5.png"><br>
+</div>
+<span style="font-weight: bold;"></span><br>
+<div style="text-align: justify;">Таким образом можно создать для
+каждого списка любое количество наборов настроек, с помощью которых
+можно просматривать данные наиболее удобным способом в различных
+ситуациях. <br>
+</div>
+
+
+<h4><a name="p32"></a>Заключение</h4>
+<div style="text-align: justify;">В этом разделе мы рассмотрели общие
+принципы работы со списками объектов (справочников и документов). Можно
+добавлять в списки новые элементы, можно добавлять их копированием,
+можно вводить их на основании. Можно создавать группы и распределять
+элементы по группам и помечать объекты или группы на удаление.<br>
+</div>
+<br>
+<div style="text-align: justify;">Можно осуществлять поиск элементов в
+списке, а также различными способами фильтровать его содержимое. Можно
+по разному конфигурировать внешний вид списка и сохранять разные
+настройки в разные наборы, что позволяет в разные моменты видеть список
+по разному. В частности, если комбинировать возможность настройки и
+фильтрации списка и права доступа, можно для каждого пользователя
+сделать так, чтобы в списке отображались только такие данные, которые
+нужны именно ему и не было ничего лишнего.<br>
+</div>
+<br>
+<div style="text-align: justify;">С помощью этих общих принципов можно
+делать вполне конкретные вещи. В следующем разделе мы рассмотрим
+различные варианты использования программы. Однако возможности
+программы не ограничивают вас этими вариантами. Набор объектов в
+сочетании с возможностями работы с ними, описанными выше, делают
+программу довольно универсальной и вы самостоятельно можете придумать
+множество других вариантов ее использования. Кроме того, сама платформа
+"ЛВА Управление" позволяет создавать любые справочники, документы и
+отчеты. С помощью встроенных средств администрирования можно
+реализовать любые правила их взаимодействия. У нас уже создано ряд
+специализированных решений для разных отраслей на базе этой платформы.
+Если возможностей, которые будут описаны далее не достаточно для ваших
+задач, мы сможем довольно быстро эти возможности добавить, используя
+гибкую модель этой платформы. Нам интересны интересные идеи. Посмотрите
+наши варианты в следующем разделе и обращайтесь со своими. Мы
+обязательно договоримся.<br>
+</div>
+</body></html>

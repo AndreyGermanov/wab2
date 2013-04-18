@@ -1,0 +1,1 @@
+var MetadataModelGroup = Class.create(MetadataGroup);

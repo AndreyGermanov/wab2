@@ -1,0 +1,1 @@
+var ReferenceIdDocumentTypes = Class.create(Reference);

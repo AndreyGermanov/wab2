@@ -1,0 +1,138 @@
+<!-- block=header -->
+<div id="mailbox_div">
+<table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="main" style="height:100%;display:" width="100%">
+        <td colspan="2" class="inner">
+		   <table width="100%" cellspacing="1" cellpadding="1">
+			   <tr valign="top">
+				   <td class="inner" nowrap="true"> 
+						Поле сортировки: 
+				   </td>
+				   <td class="inner">
+						<Control type="list,{selected_fields_with_titles}" value="{sortField}" id="sortField"></Control>
+					</td>
+					<td class="inner">
+						<Control type="list,ASC~DESC|по возрастанию~по убыванию" value="{sortDirection}" id="sortDirection"></Control>
+					</td>
+				</tr>
+				<tr>
+				   <td class="inner" nowrap="true"> 
+						Количество элементов на странице: 
+				   </td>
+				   <td colspan="2" width="100%" class="inner">
+						<Control type="integer" value="{itemsPerPage}" id="itemsPerPage"></Control>
+					</td>
+			   </tr>
+<!-- block=profile -->
+			   <tr valign="top">
+			    	<td class="inner" colspan="3">
+			    		Роль: <Control type="list,{rolesString}" id="currentRole" value=""></Control><br/><br/>
+			    		<div align="center">
+				    		<input type="button" id="profileEditBtn" value="  Редактировать профиль объекта  "/>    		
+			    		</div>
+			    	</td>
+	    		</tr>
+<!-- block=mainFooter -->	    					   
+		   </table>
+        </td>
+    </tr>
+    <tr valign="top" id="fields" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner"></td>
+                    <td class="inner" nowrap="true">Поля в списке:</td>
+                    <td class="inner"></td>
+                    <td class="inner" nowrap="true">Доступные поля:</td>
+                </tr>
+                <tr style="height:100%">
+                    <td class="inner_middle" align="right" nowrap="true"><input type="image" src="{skinPath}images/Buttons/up.png" id="selectedFieldsMoveUp" value="^"/><br/>
+                                             <input type="image" src="{skinPath}images/Buttons/down.png" id="selectedFieldsMoveDown" value="V"/>
+                    </td>
+                    <td width="50%" class="inner" nowrap="true"><select size="10" class="inner" collection="{selected_fields_with_titles_2}" id="selectedFields"></select></td>
+                    <td class="inner_middle" nowrap="true"><input type="image" src="{skinPath}images/Buttons/left.png" id="selectedFieldsMoveLeft" value=""/><br/>
+                        <input type="image" src="{skinPath}images/Buttons/right.png" id="selectedFieldsMoveRight" value=">"/>
+                    </td>
+                    <td width="50%" class="inner" nowrap="true"><select size="10" class="inner" collection="{not_selected_fields_with_titles}" id="allFields"></select></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="prnFields" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner"></td>
+                    <td class="inner" nowrap="true">Поля в печатной форме:</td>
+                    <td class="inner"></td>
+                    <td class="inner" nowrap="true">Доступные поля:</td>
+                </tr>
+                <tr style="height:100%">
+                    <td class="inner_middle" align="right" nowrap="true"><input type="image" src="{skinPath}images/Buttons/up.png" id="printFieldsMoveUp" value="^"/><br/>
+						<input type="image" src="{skinPath}images/Buttons/down.png" id="printFieldsMoveDown" value="V"/>
+                    </td>
+                    <td width="50%" class="inner" nowrap="true"><select size="10" class="inner" collection="{print_fields_with_titles}" id="printFields"></select></td>
+                    <td class="inner_middle" nowrap="true"><input type="image" src="{skinPath}images/Buttons/left.png" id="printFieldsMoveLeft" value=""/><br/>
+                        <input type="image" src="{skinPath}images/Buttons/right.png" id="printFieldsMoveRight" value=""/>
+                    </td>
+                    <td width="50%" class="inner" nowrap="true"><select size="10" class="inner" collection="{not_printed_fields_with_titles}" id="allPrintFields"></select></td>
+                </tr>
+                <tr valign="top">
+                	<td colspan="4" class="inner">
+                		<CONTROL id="showQRCode" type="boolean" value="{showQRCode}"></CONTROL> Печатать штрихкод
+                	</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="conditions" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">        
+            <table cellpadding="0" id="condtionsTable" cellspacing="1" width="100%" style="height:100%">
+				<tbody>
+<!-- block=row -->				
+					<tr valign="top">
+						<td class="inner">
+							<table width="100%" cellpadding="2" cellspacing="0">
+								<tr valign="top">
+									<td width="10">
+										<Control type="boolean" fieldName="{fieldName}" id="{fieldName}_check" control_type="checkbox" value="{fieldChecked}"></Control>
+									</td>
+									<td width="200"> 
+										{fieldTitle}
+									</td>
+									<td width="200">
+										<Control type="{listType}" id="{fieldName}_select" value="{listValue}"></Control>
+									</td>
+									<td>
+										<Control itemPrototype='{itemPrototype}' type="{fieldType}" initialType="{fieldType}" width="100%" properties='{fieldArgs}' show_delete_button="true" id="{fieldName}_condition" value="{fieldValue}"></Control>										
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+<!-- block=footer -->
+				</tbody>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="tagsConditions" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">
+        	{:include {tagsConditionsTableId},,$object->entityObject="{itemStr}";$object->tagsCondition="{tagsCondition}";$object->window_id="{window_id}";$object->opener_object="{object_id}";$object->parent_object_id="{object_id}"; :}
+        </td>
+    </tr>        
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+	         <div align="right">
+	         	<input class="but" type="button" id="OK" value="  ОК  "/>
+	         	<input class="but" type="button" id="cancel" value=" Отмена "/>
+               	<input class="but" type="button" unchangeable="true" id="help" value=" Помощь " style="display:{helpButtonDisplay}" />
+	        </div>
+        </td>
+    </tr>
+</table>
+</div>

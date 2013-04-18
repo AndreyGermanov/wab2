@@ -1,0 +1,1 @@
+var RegistryMovementsWindow = Class.create(Entity);

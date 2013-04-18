@@ -1,0 +1,1 @@
+var ReferenceDhcpHostInfoCard = Class.create(ReferenceInfoCard);

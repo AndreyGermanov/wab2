@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=Windows-1251" http-equiv="content-type"><title>connect.html</title>
+  
+
+  
+<link rel="stylesheet" href="doc.css" type="text/css"></head><body>
+<h1>Подключение сервера</h1>
+<div style="text-align: justify;">
+
+Сервер подключается с помощью двух кабелей: один для подключения к
+электрической сети (входит в комплект), второй для подключения к сети
+Ethernet. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Так как сервер управляется по сети, с рабочей станции администратора, необходимо чтобы он был доступен по сети.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Изначально сервер имеет следующие параметры сети:<br>
+</div>
+
+
+<br>
+<div style="text-align: justify;">
+
+IP-адрес: <span style="font-weight: bold;">192.168.0.100</span><br>
+
+
+Маска сети: <span style="font-weight: bold;">255.255.255.0</span><br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Следовательно, для получения доступа к серверу необходимо
+сконфигурировать рабочую станцию таким образом, чтобы она входила в
+подсеть с сервером.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Далее, подключиться к серверу можно удаленно в одном из трех режимов: <br>
+
+</div>
+<ul>
+  <li>можно подключиться к панели управления сервером через браузер Mozilla Firefox</li>
+  <li>можно удаленно подключиться к рабочему столу сервера</li>
+  <li>можно удаленно подключиться к командной строке сервера</li></ul>
+<div style="text-align: justify;">Конфигурацией может быть
+предусмотрено несколько интерфейсов для
+подключения к локальной сети, что позволяет выдавать каждой виртуальной
+машине свой сетевой интерфейс. Если в Вашем сервере несколько сетевых
+интерфейсов, то интерфейс с указанным выше IP-адресом это сетевой интерфейс, который расположен ближе к блоку питания.<br>
+ </div>
+<ul>
+
+</ul>
+
+<h2><a name="p1"></a>
+Доступ к панели управления сервером</h2>
+<div style="text-align: justify;">
+
+
+Для доступа к панели управления сервером нужно запустить браузер
+Mozilla Firefox и набрать в адресной строке:<br>
+</div>
+
+
+<br>
+
+https://192.168.0.100/<br>
+
+<br>
+
+Появится предупреждающее окно браузера:<br>
+
+<br>
+
+<div style="text-align: center;"><img alt="Недоверенное соединение" src="img/https.png"><br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+
+Панель управления взаимодействует с рабочей станцией администратора по
+зашифрованному каналу, по протоколу SSL. Такое сообщение появляется при
+первом подключении браузера к защищенному ресурсу. Необходимо нажать "<span style="font-style: italic;">Я
+понимаю риск</span>" и затем кнопку "<span style="font-style: italic;">Добавить исключение</span>". Появится окно
+добавления исключения:<br>
+</div>
+
+
+<br>
+
+<div style="text-align: center;"><img src="img/except.png" alt="except.png"><br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+
+В этом окне нужно поочередно нажать кнопки "<span style="font-style: italic;">Получить сертификат</span>" и
+затем "<span style="font-style: italic;">Подтвердить исключение безопасности</span>".<br>
+</div>
+
+
+<br>
+<div style="text-align: justify;">
+
+После этого появится окно входа в панель управления, в котором будет
+предложено ввести имя пользователя и пароль:<br>
+</div>
+
+
+<br>
+
+<div style="text-align: center;"><img src="img/logon.png" alt="logon.png"><br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Используйте имя пользователя "admin" и пароль "111111". С
+помощью панели управления их в дальнейшем можно изменить.<br>
+</div>
+
+
+<br>
+<div style="text-align: justify;">
+
+После ввода имени и пароля и нажатия кнопки "<span style="font-weight: bold;">ОК</span>", в окне браузера
+отобразится панель управления сервером.<br>
+</div>
+
+
+<br>
+
+<div style="text-align: center;"><img style="border: 1px solid ; width: 546px; height: 543px;" src="img/maincp.png" alt="maincp.png"><br>
+<div style="text-align: left;"><br>
+<div style="text-align: justify;">
+Панель управления является основным средством настройки сервера.
+Описанию панели управления посвящена основная часть этого руководства.
+Для решения некоторых особых задач существуют и другие способы
+подключения.<br>
+
+</div>
+</div>
+
+</div>
+
+<br>
+<h2><a name="p2"></a>
+
+Удаленный доступ к рабочему столу сервера</h2>
+<div style="text-align: justify;">
+Для организации удаленного рабочего стола, на сервере установлен
+терминальный сервер NX Server. Доступ к нему осуществляется с помощью
+клиента FreeNX. Клиент FreeNX должен быть установлен локально на
+рабочей станции администратора. <br>
+
+<br>
+
+Изначально клиент FreeNX находится на сервере в общей папке utils. В
+этой папке расположены версии клиента для Windows и для Linux
+(расширение RPM - для RedHat-потомков, DEB - для Debian-потомков).
+Запустите файл nxclient и следуйте инструкциям программы установки.
+После установки в меню приложений системы появится группа "NX Client". <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Для доступа к удаленному рабочему столу нужно создать новое подключение
+к серверу. Это делается с помощью "NX Connection Wizard". При запуске
+этой программы из меню появится мастер нового подключения.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/nxwizard0.png" alt="nxwizard0.png"><br>
+<div style="text-align: left;"><br>
+После нажатия кнопки "<span style="font-weight: bold;">Next</span>" в следующем окне нужно ввести параметры создаваемого соединения:<br>
+<br>
+<div style="text-align: center;"><img src="img/nxwizard1.png" alt="nxwizard1.png"><br>
+</div>
+<br>
+<ul>
+  <li><span style="font-weight: bold;" class="">Session</span>&nbsp;- имя соединения (произвольная строка)</li>
+  <li><span style="font-weight: bold;">Host</span> - IP-адрес сервера</li>
+  <li><span style="font-weight: bold;">Port</span> - порт сервера (должен быть 22)</li>
+  <li><span style="font-weight: bold;">Select type of your internet connection</span> - тип соединения. Если
+рабочая станция подключается к серверу по локальной сети, выбирается
+"LAN"</li>
+</ul>
+<br>
+<div style="text-align: justify;">
+После ввода параметров соединения и нажатия кнопки "<span style="font-weight: bold;">Next</span>" появятся параметры экрана удаленного рабочего стола:<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/nxwizard2.png" alt="nxwizard2.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">Желательно сделать именно так, как показано на этом
+изображении, потому что на сервере установлена Unix-подобная
+операционная система с графической средой GNOME. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Размер экрана установлен в "<span style="font-weight: bold;">Available area</span>", такая настройка будет
+автоматически использовать всю доступную область экрана для удаленного
+рабочего стола.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+После нажатия кнопки "<span style="font-weight: bold;">Next</span>" произойдет переход к финальной стадии создания подключения.<br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/nxclient3.png" alt="nxclient3.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Если установлен флажок "<span style="font-weight: bold;">Create shortcut on desktop</span>", будет создан ярлык
+соединения на рабочем столе. При включении флажка "<span style="font-weight: bold;">Show the advanced
+Configuration Dialog</span>", после завершения работы мастера откроется окно
+свойств соединения, в котором доступны все его параметры.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+После нажатия кнопки "<span style="font-weight: bold;">Finish</span>" мастер завершит свою работу и отобразит окно установки соединения. <br>
+</div>
+
+<br>
+<div style="text-align: center;"><img src="img/nxclient0.png" alt="nxclient0.png"><br>
+</div>
+<br>
+<div style="text-align: justify;">
+Подключение к удаленному рабочему столу производится от имени любого
+пользователя, заведенного на сервере. Изначально, на сервере заведен
+пользователь root с паролем 111111. После ввода
+имени и пароля в поля "<span style="font-weight: bold;">Login</span>" и "<span style="font-weight: bold;">Password</span>" соответственно, нажмите
+кнопку "Login" и, если все данные введены верно, появится удаленный
+рабочий стол сервера.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+При подключении к рабочему столу сервера может возникнуть ошибка
+"Cannot initialize display device". Она возникает, если вы вошли в
+Windows от имени учетной записи пользователя с именем на русском языке.
+FreeNX-клиент не умеет читать свои настройки, если они находятся в
+папке C:\Documents and Settings\&lt;Имя пользователя с русскими буквами
+в названии&gt;. Пока эту ошибку разработчики не исправили.&nbsp; В
+качестве решения можно завести на компьютере с Windows учетную запись
+с именем на английском языке и входить в систему от имени этой учетной
+записи. Есть и второй, более сложный способ - переименовать находящуюся
+в "C:\Documents and Settings" папку пользователя&nbsp; и в настройках
+учетной записи пользователя указать, чтобы для него использовалась эта
+папка в качестве домашней.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В Linux проблем с подключением замечено не было (потому что учетные
+записи пользователей Linux не могут содержать в своих именах русские
+буквы).<br>
+</div>
+
+<h2><a name="p3"></a>Удаленный доступ к командной строке сервера</h2>
+<div style="text-align: justify;">
+
+Иногда некоторые операции проще выполнить с помощью командной строки,
+без графического интерфейса. Можно подключиться к командной строке
+сервера по протоколу SSH, используя клиент SSH. Клиент SSH для Windows
+находится в общей папке utils на сервере и называется Kitty. Скопируйте
+файл kitty.exe на рабочую станцию администратора и запустите. <br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+В окне программы нужно ввести IP-адрес сервера в поле "hostname" и
+нажать Enter для подключения. Далее система попросит ввести логин и
+пароль для входа. Можно подключаться от имени любого пользователя, заведенного на сервере.<br>
+</div>
+
+<br>
+Чтобы выйти из режима командной строки используется команда exit.<br>
+<br>
+<div style="text-align: justify;">
+Для подключения к командной строке сервера из Linux не нужно
+устанавливать клиент SSH, так как он уже есть в любом дистрибутиве. В
+Linux нужно запустить эмулятор терминала и набрать:<br>
+</div>
+
+<br>
+<span style="font-weight: bold;">ssh</span> <span style="font-style: italic;">root</span><span style="font-weight: bold;">@</span><span style="font-style: italic;">&lt;ip-адрес-сервера&gt;</span><br>
+<br>
+<div style="text-align: justify;">
+Вместо 'root' можно также указать имя любого другого пользователя,
+учетная запись которого заведена на сервере. Далее система попросит
+ввести пароль этого пользователя и после успешного прохождения
+аутентификации подключит терминал к серверу в режиме командной строки.<br>
+</div>
+
+<br>
+<div style="text-align: justify;">
+Для выхода из командной строки сервера используется команда <span style="font-weight: bold;">exit</span>.<br>
+</div>
+
+<br>
+<br>
+</div>
+</div>
+<br>
+</body></html>

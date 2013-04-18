@@ -1,0 +1,1 @@
+var FrameWindow = Class.create(Entity);

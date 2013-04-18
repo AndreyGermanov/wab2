@@ -1,0 +1,35 @@
+<div id="mailbox_div">
+<table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top" id="main" width="100%">
+        <td class="inner">
+		   <table width="100%" cellspacing="1" cellpadding="1">
+			   <tr valign="top">
+				   <td class="inner" nowrap="true"> 
+						Дата начала: 
+				   </td>
+				   <td class="inner">
+						<Control type="date" value="{periodStart}" id="periodStart" show_time="false"/>
+					</td>
+				</tr>
+				<tr>
+				   <td class="inner" nowrap="true"> 
+						Дата окончания: 
+				   </td>
+				   <td class="inner">
+						<Control type="date" value="{periodEnd}" id="periodEnd" show_time="false"/>
+					</td>
+			   </tr>
+		   </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom">
+                <div align="left">
+					<input class="but" type="button" id="clearButton" value="Очистить период"/>
+					<input class="but" type="button" id="OK" value="  ОК  "/>
+					<input class="but" type="button" id="cancel" value=" Отмена "/>
+				</div>
+        </td>
+    </tr>
+</table>
+</div>

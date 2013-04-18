@@ -1,0 +1,1 @@
+var ReferenceFiles = Class.create(Reference);

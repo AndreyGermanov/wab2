@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin,all/allfiles
+MimeType=all/all
+Actions=viewBackups;
+
+[Desktop Action viewBackups]
+Name=View Backups
+Name[ru]=Посмотреть резервные копии
+Exec=xdg-open "http://192.168.0.58:81/?path=%u"

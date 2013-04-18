@@ -1,0 +1,69 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">    
+<table id="mailbox_table" cellpadding="0" cellspacing="1" width="100%" height="100%">
+    <tr valign="top" id="main" style="height:100%;width:100%;display:">
+        <td width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr>
+                    <td nowrap class="inner">Рабочая группа Windows:</td>
+                    <td class="inner" width="100%">
+                    	<Control id="workgroup" value="{workgroup}" properties='{workgroup_properties}'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inner">
+                    	<Control id="domain_controller" value="{domain_controller}" properties='{domain_controller_properties}'></Control>
+                    	Является контроллером домена
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inner">
+                    	<Control id="smbAutoRestart" value="{smbAutoRestart}" properties='{smbAutoRestart_properties}'></Control>
+                    	Автоматически перезапускать службы файлового сервера
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inner">
+                    	<Control id="smbDenyUnknownHosts" value="{smbDenyUnknownHosts}" properties='{smbDenyUnknownHosts_properties}'></Control>
+                    	Запретить доступ неизвестных хостов к службам файлового сервера
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" class="inner">Дисковое пространство:</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inner_small">
+                        <table>
+                            <tr>
+                                <td>Системный диск:
+                                </td>
+                                <td>Всего: <b>{system_total_space} Гб</b>
+                                </td>
+                                <td>Свободно: <b>{system_free_space} Гб</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Диск данных:
+                                </td>
+                                <td>Всего: <b>{data_total_space} Гб</b>
+                                </td>
+                                <td>Свободно: <b>{data_free_space} Гб</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+                <input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="help" value=" Помощь "></div>
+        </td>
+    </tr>
+</table>
+</div>

@@ -1,0 +1,1 @@
+var BlockingObjectsTable = Class.create(EntityDataTable);

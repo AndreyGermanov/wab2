@@ -1,0 +1,80 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF">
+<div>
+<table cellpadding="0" cellspacing="1" width="100%" height="100%">
+<!-- block=tabset -->
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+<!-- block=messages -->
+    <tr valign="top" id="messages" style="height:100%;width:100%;display:">
+	    <td class="inner">
+	    	<table width="100%" style="height:100%" cellpadding="0" cellspacing="0">
+	    		<tr valign="top">
+			    	<td width="100%">
+			    		<table width="100%" cellpadding="0" cellspacing="0">
+			    			<tr valign="top">
+			    				<td class="inner_small">
+						    		Показывать: 
+			    				</td>
+			    				<td class="inner_small" width="30%">
+									<Control type="list,info~error~user~all|Информацию~Ошибки~От пользователей~Все" value="all" id="showMessagesList"><div></div></Control>     				
+			    				</td>
+			    				<td class="inner_small" width="70%">
+									<input type="button" id="clearMessages" value="Очистить"/>
+			    				</td>
+			    			</tr>
+			    		</table>
+			    	</td>    		
+	    		</tr>
+	    		<tr valign="top" style="height:100%">
+			        <td width="100%" class="inner" style="height:100%">
+			        	<iframe frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" src="?object_id=InfoPanelMessages&hook=show"></iframe>
+					</td>
+	    		</tr>
+	    	</table>
+	    </td>
+	</tr>
+<!-- block=events -->
+    <tr valign="top" id="events" style="height:100%;width:100%;display:none">
+	    <td class="inner">
+	    	<table width="100%" style="height:100%" cellpadding="0" cellspacing="0">
+	    		<tr valign="top">
+			    	<td width="100%">
+			    		<table width="100%" cellpadding="0" cellspacing="0">
+			    			<tr valign="top">
+			    				<td nowrap="true" class="inner_small">
+						    		Пользователь: 
+			    				</td>
+			    				<td class="inner_small" width="30%">
+									<Control type="list,{userNames}~all|{userNames}~Все" value="all" id="usersList"><div></div></Control>     				
+			    				</td>
+			    				<td nowrap="true" class="inner_small">
+						    		Тип события: 
+			    				</td>
+			    				<td class="inner_small" width="30%">
+									<Control type="list,{eventNames}~all|{eventTitles}~Все" value="all" id="eventsList"></Control>     				
+			    				</td>
+			    				<td class="inner_small">
+									<input type="button" id="clearEvents" value="Очистить"/>
+			    				</td>
+			    				<td class="inner_small" width="70%">
+									<input type="button" id="showEventLog" value="Показать журнал событий"/>
+			    				</td>
+			    			</tr>
+			    		</table>
+			    	</td>    		
+	    		</tr>
+	    		<tr valign="top" style="height:100%">
+			        <td width="100%" class="inner" style="height:100%">
+			        	<iframe frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" src="?object_id=InfoPanelEvents&hook=show"></iframe>
+					</td>
+	    		</tr>
+	    	</table>
+	    </td>
+	</tr>
+<!-- block=footer -->
+</table>
+</div>

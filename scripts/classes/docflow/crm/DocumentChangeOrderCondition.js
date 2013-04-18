@@ -1,0 +1,1 @@
+var DocumentChangeOrderCondition = Class.create(Document);

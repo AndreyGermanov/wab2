@@ -1,0 +1,1 @@
+var ReferenceUserInfoCard = Class.create(ReferenceInfoCard);

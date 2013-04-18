@@ -1,0 +1,27 @@
+.#menu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    background-color: #ecf0f4;
+    border-width: 0px;
+    z-index: 5
+}
+
+.#menu_table {
+    background-color: #ecf0f4;
+    filter: alpha(opacity=90);
+}
+
+.#menu_item {
+    font-family: Verdana; 
+    font-size: 15px; 
+}
+
+.#menu_item:hover {
+    font-family: Verdana; 
+    font-size: 15px;   
+    background-color: #0033cc;
+    color: #ffff00;
+    cursor: pointer;
+}

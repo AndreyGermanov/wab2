@@ -1,0 +1,41 @@
+#!/bin/sh
+. /etc/gateway_interfaces
+
+# Помечаем трафик, идущий из Интернет в эту локальную сеть (входящий)
+iptables -t mangle -A FORWARD -i $eth1 -o $eth0 -d {name}/255.255.255.0 -j MARK --set-mark 1{class_number}
+iptables -t mangle -A OUTPUT  -o $eth0 -d {name}/255.255.255.0 -p tcp --sport $http_proxy_port -j MARK --set-mark 1{class_number}
+iptables -t mangle -A OUTPUT  -o $eth0 -d {name}/255.255.255.0 -p tcp --sport $smtp_proxy_port -j MARK --set-mark 1{class_number}
+
+# Помечаем трафик, идущий из этой локальной сети в Интернет (исходящий)
+iptables -t mangle -A FORWARD -i $eth0 -o $eth1 -d {name}/255.255.255.0 -j MARK --set-mark 2{class_number}
+iptables -t mangle -A OUTPUT  -o $eth1 -d {name}/255.255.255.0 -p tcp --sport $http_proxy_port -j MARK --set-mark 2{class_number}
+iptables -t mangle -A OUTPUT  -o $eth1 -d {name}/255.255.255.0 -p tcp --sport $smtp_proxy_port -j MARK --set-mark 2{class_number}
+
+# Удаляем параметры входящей очереди, назначенные по умолчанию
+tc qdisc del dev $eth0 parent 1:10
+tc class replace dev $eth0 classid 1:10
+
+# Создаем очередь для входящего в эту сеть трафика с указанием гарантированной и максимальной скорости всего канала,
+# а также, гарантированной и максимальной скорости узлов по умолчанию
+tc class add dev $eth0 parent 1: classid 1:1{class_number} htb rate {in_rate} ceil {in_ceil}
+tc qdisc add dev $eth0 parent 1:1{class_number} handle 1{class_number}: htb default 999
+tc class add dev $eth0 parent 1{class_number}: classid 1{class_number}:999 htb rate {default_host_in_rate} ceil {default_host_in_ceil}
+tc qdisc add dev $eth0 parent 1{class_number}:999 handle 1{class_number}999: sfq
+
+# Удаляем параметры исходящей очереди, назначенные по умолчанию
+tc qdisc del dev $eth1 parent 2:20
+tc class replace dev $eth1 classid 2:20
+
+# Создаем очередь для исходящего из этой сети трафика с указанием гарантированной и максимальной скорости всего канала,
+# а также, гарантированной и максимальной скорости узлов по умолчанию
+tc class add dev $eth1 parent 2: classid 2:2{class_number} htb rate {out_rate} ceil {out_ceil}
+tc qdisc add dev $eth1 parent 2:2{class_number} handle 2{class_number}: htb default 999
+tc class add dev $eth1 parent 2{class_number}: classid 2{class_number}:999 htb rate {default_host_out_rate} ceil {default_host_out_ceil}
+tc qdisc add dev $eth1 parent 2{class_number}:999 handle 2{class_number}999: sfq
+
+# Создаем фильтры, направляющие помеченный трафик этой сети в очередь,
+# созданную для этой сети
+tc filter add dev $eth0 parent 1: protocol ip prio 1 handle 1{class_number} fw flowid 1:1{class_number}
+tc filter change dev $eth0 parent 1: protocol ip prio 1 handle 1{class_number} fw flowid 1:1{class_number}
+tc filter add dev $eth1 protocol ip prio 1 parent 2: handle 2{class_number} fw flowid 2:2{class_number}
+tc filter change dev $eth1 protocol ip prio 1 parent 2: handle 2{class_number} fw flowid 2:2{class_number}

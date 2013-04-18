@@ -1,0 +1,1 @@
+var DocFlowApplication = Class.create(Entity);

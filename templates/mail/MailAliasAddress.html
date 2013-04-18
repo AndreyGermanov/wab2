@@ -1,0 +1,30 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+<table id="mailbox_table" cellpadding="0" cellspacing="1" width="100%" height="100%">
+    <tr>
+        <td class="inner">Адресат:</td>
+        <td class="inner" width="100%">
+            <input class="wide" type="name" id="address" value="{address}">
+            <input type="hidden" id="old_address" value="{address}">
+        </td>
+    </tr>
+    <tr>
+        <td class="inner">Список рассылки:</td><td class="inner">
+            <select class="wide" id="owner" value="{name}@{domain}" collection="{aliases_list}"></select>
+                <input id="old_owner" type="hidden" value="{name}@{domain}">
+        </td>
+    </tr>
+    <tr class="inner">
+        <td class="inner" colspan="2">
+            <input type="checkbox" id="editAddress">Редактировать запись в адресной книге
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="button" id="AddressOK" value="  OK  ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="help" value=" Помощь "></div>
+        </td>
+    </tr>
+</table>
+</div>

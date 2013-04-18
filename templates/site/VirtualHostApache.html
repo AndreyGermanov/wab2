@@ -1,0 +1,14 @@
+<VirtualHost *:{port}>
+    ServerName {title}
+    ServerAlias {alias}
+    DocumentRoot "{document_root}"
+    DirectoryIndex index.html index.htm index.php
+    <Directory "{document_root}">
+        Options -Indexes FollowSymLinks
+        Order Allow,Deny
+        Allow from all
+        {auth}
+    </Directory>
+    {ssl}
+    SetEnv MODULE_ID {webapp_module_id}
+</VirtualHost>

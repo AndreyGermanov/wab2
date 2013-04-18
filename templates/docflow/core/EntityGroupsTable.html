@@ -1,0 +1,23 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>  
+    <tr valign="top">      
+    	<td class="inner" style="display:none">
+			<Control id="showLinksWindow" type="boolean" value="0" title="Показывать таблицу связей"/>		
+    	</td>
+        <td  class="inner" width="100%">
+            {:include {tabset_id}_up,,{tabsetCode} :}
+        </td>
+    </tr>
+<!-- block=tab -->
+    <tr valign="top" id="{tab}" style="height:100%;width:100%;display:{display}">
+	    <td class="inner" colspan="2" width="100%">
+            {:include {tabTableId},,{tabCode}:}	
+	    </td>
+	</tr>    
+<!-- block=footer -->
+    </tbody>
+</table>
+</form>

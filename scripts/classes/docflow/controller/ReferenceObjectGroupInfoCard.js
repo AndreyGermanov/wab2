@@ -1,0 +1,1 @@
+var ReferenceObjectGroupInfoCard = Class.create(ReferenceInfoCard);

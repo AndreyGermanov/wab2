@@ -1,0 +1,37 @@
+<!-- block=header -->
+<style>
+	.analyzeTable:hover {
+		background-color: #CCCCCC;
+	}
+</style>
+<div align="center"><font face="Arial" style="font-size:18px;font-weight:bold">АНАЛИЗ ПОКАЗАТЕЛЯ КРОВИ ЗА ПЕРИОД С {periodStart_presentation} ПО {periodEnd_presentation}</font><br/><br/></b></div>
+<table cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td><font face="Arial" style="font-size:15px;"><b>ПАЦИЕНТ: </b></td>
+		<td><font face="Arial" style="font-size:15px;">{patientTitle}</font></td>
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td><font face="Arial" style="font-size:15px;"><b>ПОКАЗАТЕЛЬ: </b></td>
+		<td><font face="Arial" style="font-size:15px;">{defTitle}</font></td>
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td><font face="Arial" style="font-size:15px;"><b>ЕДИНИЦА ИЗМЕРЕНИЯ: </b></td>
+		<td><font face="Arial" style="font-size:15px;">{defDimensionTitle}</font></td>
+	</tr>
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td><font face="Arial" style="font-size:15px;"><b>ПРЕДЕЛЬНЫЕ НОРМАЛЬНЫЕ ЗНАЧЕНИЯ: </b></td>
+		<td><font face="Arial" style="font-size:15px;">{normas}</font></td>
+	</tr>
+</table>
+<br/><br/>
+<table width="100%" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+<!-- block=rowstart -->
+	<tr bgcolor="#FFFFFF" valign="top">
+<!-- block=cell -->
+		<td class="analyzeTable" align="center" onclick='getWindowManager().show_window("{windowDocument}","{document}")' style="cursor:pointer">
+			<font face="Arial" style="font-size:15px" style="cursor:pointer">{date}<br/><b>{value}</b></font>
+		</td>
+<!-- block=rowend -->
+</tr>
+<!-- block=footer -->
+</table>

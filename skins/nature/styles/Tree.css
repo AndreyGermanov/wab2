@@ -1,0 +1,26 @@
+.tree_item
+{    
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.tree_item_hover
+{
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    background-color: #ffff66;
+}
+
+.tree_item_selected
+{
+    font-weight: bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #FFFF00;
+}
+
+body {
+    background-image: url('skins/nature/images/Window/mainbg.png');
+}

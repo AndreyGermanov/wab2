@@ -1,0 +1,30 @@
+<!-- block=headerText -->
+<h3>ДВИЖЕНИЯ ПО РЕГИСТРУ '{classTitle}'</h3>
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<table width="100%" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse;border-style:solid;border-color:#000000;border-width:1px">
+	<tr bgcolor="#CCCCCC" valign="top">
+<!-- block=titleCell -->
+		<td {cellWidth} align="center">
+			<font face="Arial" style="font-size:15px"><b>{fieldName}</b></font>
+		</td>
+<!-- block=endStr -->
+	</tr>
+<!-- block=str -->
+	<tr bgcolor="#FFFFFF" valign="top">
+<!-- block=groupRow -->
+	<tr bgcolor="#FFFFFF" valign="top">
+		<td colspan="{cellsCount}" style="background-color:{bgColor}">
+			<font face="{fontFace}" style="font-size:{fontSize}px;font-weight:{fontWeight}" color="{fontColor}">{fieldValue}</font>			
+		</td>
+	</tr>
+<!-- block=groupCell -->
+		<td nowrap colspan="{cellsCount}" style="background-color:{bgColor}" {addon}>
+			<font face="{fontFace}" style="font-size:{fontSize}px;font-weight:{fontWeight}" color="{fontColor}">{fieldValue}</font>			
+		</td>
+<!-- block=cell -->
+		<td align="left" {addon}>
+			<font face="Arial" style="font-size:15px">{fieldValue}</font>
+		</td>
+<!-- block=footer -->
+</table>

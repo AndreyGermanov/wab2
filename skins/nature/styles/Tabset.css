@@ -1,0 +1,16 @@
+.active_tab {
+    font-size: 11px;
+    font-family: Arial;
+    background-color: orange;
+}
+
+.tab {
+    font-size: 11px;
+    font-family: Arial;
+}
+
+.tab_hover {
+    font-size: 11px;
+    font-family: Arial;
+    background-color:#ffffcc;
+}

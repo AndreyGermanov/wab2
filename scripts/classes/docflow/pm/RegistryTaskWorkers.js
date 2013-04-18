@@ -1,0 +1,1 @@
+var RegistryTaskWorkers = Class.create(Registry);

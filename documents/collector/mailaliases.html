@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>mailaliases</title></head><body>
+<h1>Работа со списками рассылки</h1>
+<br />
+<div style="text-align: justify;">Технически, список рассылки это
+почтовый адрес без почтового ящика. Вместо почтового ящика с ним связан
+список других почтовых адресов (которые могут быть расположены как
+локально, так и в Интернет). При поступлении письма на адрес списка
+рассылки, почтовый сервер не сохраняет его, а пересылает по всем
+адресам этого списка.<br />
+</div>
+<br />
+<h2><a name="p1">Создание списка рассылки</a></h2>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">1. Найдите в дереве домен, внутри которого хотите создать список рассылки.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">2. Нажмите на нем правой кнопкой мыши и выполните команду "<span style="font-weight: bold;">Новый список рассылки</span>" из контекстного меню.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/newmailaliasmenu.png" alt="newmailaliasmenu.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">3. Заполните форму параметров списка рассылки<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/mailaliaswindow.png" alt="mailaliaswindow.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">В поле "<span style="font-weight: bold;">Имя</span>" указывается первая часть адреса списка рассылки (вторая часть это имя домена, в котором он создается).<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">В поле "<span style="font-weight: bold;">Яшик для спама</span>"
+указывается почтовый ящик, в который будут пересылаться письма, которые
+почтовый сервер классифицирует как спам. Это обычный почтовый ящик на
+сервере, который предварительно должен быть создан.<br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">4. Нажмите кнопку "<span style="font-weight: bold;">ОК</span>"<br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: justify;">
+<a name="p1">Список рассылки будет создан и появится в дереве. Внутри списка рассылки автоматически создаются два раздела: "<span style="font-weight: bold;">Адресаты</span>" и "<span style="font-weight: bold;">Ящики в Интернет</span>":<br />
+</a></div>
+
+<a name="p1"><br />
+</a><div style="text-align: center;"><a name="p1"><img src="img/maillist.png" alt="maillist.png" /><br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">В разделе "<span style="font-weight: bold;">Адресаты</span>"
+создаются почтовые адреса, на которые будут пересылаться все письма,
+отправляемые на адрес списка рассылки (в данном примере на адрес
+all@mydomain.ru).&nbsp;Читайте далее о работе с ними. <br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;"><a name="p1">В разделе "<span style="font-weight: bold;">Ящики в Интернет</span>" создаются почтовые ящики Интернет, привязанные к этому списку рассылки. <br />
+</a></div>
+<a name="p1"><br />
+</a><div style="text-align: justify;">Почтовые ящики Интернет в основном
+используются в связке с локальными почтовыми ящиками, о чем описано в
+разделе "<a onclick='parent.obj.go_to("7",true,event)' href="null">Работа с почтовыми ящиками Интернет</a>". Однако можно привязать
+несколько почтовых ящиков Интернет и к списку рассылки. В этом случае
+почтовый сервер будет скачивать всю почту из этих ящиков и сразу же
+рассылать по всем адресам, которые заведены в разделе "<span style="font-weight: bold;">Адресаты</span>".<br />
+
+</div>
+<a name="p1"><br />
+</a><h2><a name="p2">Работа с адресатами списка рассылки</a></h2>
+<a name="p2"><br />
+</a><div style="text-align: justify;"><a name="p2">В списке рассылки можно создать любое
+количество адресов. Все письма, отправляемые на адрес списка рассылки
+будут автоматически пересылаться по всем адресам, заведенным в разделе "<span style="font-weight: bold;">Адресаты</span>" этого списка.<br />
+</a></div>
+<a name="p2"><br />
+</a><h3><a name="p3">Создание нового адресата списка рассылки</a></h3>
+<a name="p3"><br />
+</a><div style="text-align: justify;"><a name="p3">1. Нажмите правой кнопкой мыши по значку или наименованию раздела "<span style="font-weight: bold;">Адресаты</span>" списка рассылки и выполните команду "<span style="font-weight: bold;">Новый адресат</span>" из контекстного меню.<br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: center;"><a name="p3"><img src="img/newmaillistaddressmenu.png" alt="newmaillistaddressmenu.png" /><br />
+</a></div>
+<a name="p3"><br />
+2. Заполните поля в форме нового адресата<br />
+<br />
+</a><div style="text-align: center;"><a name="p3"><img src="img/maillistaddresswindow.png" alt="maillistaddresswindow.png" /><br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: justify;"><a name="p3">В поле "<span style="font-weight: bold;">Адресат</span>"
+указывается почтовый адрес. Это может быть как адрес почтового ящика,
+заведенного на данном сервере, так и любой другой адрес в Интернет.<br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: justify;"><a name="p3">В поле "<span style="font-weight: bold;">Список рассылки</span>"
+указывается адрес списка рассылки, к которому относится этот адресат.
+Изначально в этом поле находится адрес списка рассылки, в котором этот
+адресат создавался. Однако можно изменить его на другой. В этом случае
+адресат переместится в этот другой список рассылки.<br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: justify;">Если включить флажок "<span style="font-weight: bold;">Редактировать запись в адресной книге</span>", то после нажатия на кнопку "<span style="font-weight: bold;">ОК</span>"
+появится окно, с помощью которого можно будет создать запись в адресной
+книге для этого адреса. Подробнее о работе с адресной книгой читайте в
+разделе "<a onclick='parent.obj.go_to("9",true,event)' href="null">Работа с адресной книгой</a>".<br />
+
+</div>
+<a name="p3"><br />
+</a><div style="text-align: justify;"><a name="p3">3. Нажмите кнопку "<span style="font-weight: bold;">ОК</span>". Адресат будет добавлен в список адресатов этого списка рассылки.<br />
+</a></div>
+<a name="p3"><br />
+</a><div style="text-align: justify;">
+<h3><a name="p4">Изменение параметров адресата списка рассылки</a></h3>
+</div>
+<a name="p4"><br />
+</a><div style="text-align: justify;"><a name="p4">Для изменения адреса в списке
+рассылки или для переноса адресата в другой список рассылки, нажмите
+левой кнопкой мыши по значку или наименованию этого адресата или
+нажмите правой кнопкой мыши и выполните команду "<span style="font-weight: bold;">Изменить</span>" из контекстного меню:<br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: center;"><a name="p4"><img src="img/changemailaliasaddressmenu.png" alt="changemailaliasaddressmenu.png" /><br />
+</a></div>
+<a name="p4"><br />
+</a><div style="text-align: justify;">
+<a name="p4">Измените имя адресата (его адрес) и/или список рассылки, в который он входит и нажмите "<span style="font-weight: bold;">ОК</span>".<br />
+</a></div>
+
+<a name="p4"><br />
+</a><h3><a name="p5">Удаление адресата из списка рассылки</a></h3>
+<a name="p5"><br />
+</a><div style="text-align: justify;">
+<a name="p5">Для удаления адресата из списка рассылки нажмите правой кнопкой мыши по
+его значку или наименованию в дереве и выполните команду "<span style="font-weight: bold;">Удалить</span>" из контекстного меню.<br />
+</a></div>
+
+<a name="p5"><br />
+</a><div style="text-align: center;"><a name="p5"><img src="img/deletemailaliasaddressmenu.png" alt="deletemailaliasaddressmenu.png" /><br />
+</a></div>
+<a name="p5"><br />
+</a><div style="text-align: justify;">
+<a name="p5">Далее нужно подтвердить намерение удалить этого адресата и он будет удален из списка рассылки.<br />
+</a></div>
+
+<a name="p5"><br />
+</a><h2><a name="p6">Изменение параметров списка рассылки</a></h2>
+<a name="p6"><br />
+</a><div style="text-align: justify;">
+<a name="p6">Можно изменить адрес списка рассылки или почтовый ящик, в который будут
+попадать письма, которые будут оцениваться почтовым сервером как спам
+при отправке по этому списку. Для этого нужно нажать левой кнопкой мыши
+по значку или имени нужного списка рассылки или нажать правой кнопкой
+мыши и выполнить команду "<span style="font-weight: bold;">Изменить</span>" из контекстного меню.<br />
+</a></div>
+
+<a name="p6"><br />
+</a><div style="text-align: center;"><a name="p6"><img src="img/changemaillistmenu.png" alt="changemaillistmenu.png" /><br />
+</a></div>
+<a name="p6"><br />
+</a><div style="text-align: justify;">
+<a name="p6">Далее в появившемся окне измените адрес списка рассылки и/или почтовый ящик для спама и нажмите "<span style="font-weight: bold;">ОК</span>".<br />
+</a></div>
+
+<a name="p6"><br />
+</a><h2><a name="p7">Удаление списка рассылки</a></h2>
+<a name="p7"><br />
+</a><div style="text-align: justify;">
+<a name="p7">Для удаления списка рассылки нажмите на его значке в дереве или в наименовании правой кнопкой&nbsp; мыши и выполните команду "<span style="font-weight: bold;">Удалить</span>" из контекстного меню.<br />
+</a></div>
+
+<a name="p7"><br />
+</a><div style="text-align: center;"><a name="p7"><img src="img/deletemaillistmenu.png" alt="deletemaillistmenu.png" /><br />
+</a></div>
+<a name="p7"><br />
+</a><div style="text-align: justify;">
+<a name="p7">После этого нужно подтвердить свое намерение удалить список, после чего список будет удален вместе со всеми его адресатами.<br />
+
+</a></div>
+</body></html>

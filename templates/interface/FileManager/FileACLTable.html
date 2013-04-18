@@ -1,0 +1,42 @@
+<!-- block=header -->
+<link rel="stylesheet" type="text/css" href="{skinPath}/styles/Table.css"/>
+<input type="hidden" id="old_{object_type}_owner_name" value="{owner_name}"/>
+Владелец: <Control type="list,{objects_list}" id="{object_type}_owner_name" value="{owner_name}"></Control><br/><br/>
+<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#BBBBBB" id="{object_type}_tbl">
+    <tr valign="middle">
+        <td align="center" width="100%" class="header" colspan="2" style="text-align:center">
+            {ACL_object_name}
+        </td>       
+        <td class="header" colspan="3" align="center" style="text-align:center">
+            Права текущие
+        </td>        
+<!-- block=defaultrights -->        
+        <td class="header" colspan="3" align="center" style="text-align:center">
+            Права наследуемые
+        </td>
+<!-- block=endrow -->
+    </tr>
+<!-- block=empty_column -->
+<td class="inner">&nbsp;</td>
+<!-- block=empty_selected_column -->
+<td colspan="2" class="expandable_cell2">&nbsp;</td>
+<!-- block=rwxheaderrow -->
+    <td align="center" class="expandable_cell2" nowrap="true">
+        <Control type="boolean" control_type="checkbox" value="{all_read_checked}" id="{all_read_id}"></Control> r
+    </td>
+    <td align="center" class="expandable_cell2" nowrap="true">
+        <Control type="boolean" control_type="checkbox" value="{all_write_checked}" id="{all_write_id}"></Control> w
+    </td>
+    <td align="center" class="expandable_cell2" nowrap="true">
+        <Control type="boolean" control_type="checkbox" value="{all_execute_checked}" id="{all_execute_id}"></Control> x
+    </td>    
+<!-- block=startrow -->
+<tr valign="top">
+<!-- block=ACLImageColumn -->
+        <td class="cell"><img src="{img_src}"/></td>
+<!-- block=ACLObjectColumn -->
+        <td class="cell" width="100%">{title}</td>
+<!-- block=ACLRightColumn -->
+        <td class="cell" align="center"><Control type="boolean" id="{id}" control_type="checkbox" value="{checked}"></td>
+<!-- block=endtable -->
+</table>

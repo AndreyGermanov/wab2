@@ -1,0 +1,1 @@
+var WebServerApplication = Class.create(Mailbox);

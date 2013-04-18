@@ -1,0 +1,40 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+<table id="mailbox_table" cellpadding="0" cellspacing="1" width="100%" height="100%">
+    <tr>
+        <td colspan="2">
+            <table width="100%" height="100%" cellspacing="0" cellpadding="2">
+                <tr>
+                    <td class="inner">
+                        <img width="50" id="home" class="pointer" src="{skinPath}images/help/gohome.png" title="В начало" alt="В начало">
+                    </td>
+                    <td class="inner">
+                        <img width="50" id="up" class="pointer" src="{skinPath}images/help/1uparrow.png" title="Вверх" alt="Вверх">
+                    </td>
+                    <td class="inner">
+                        <img width="50" id="prev" class="pointer" src="{skinPath}images/help/1leftarrow.png" title="Предыдущий раздел" alt="Предыдущий раздел">
+                    </td>
+                    <td class="inner">
+                        <img width="50" id="next" class="pointer" src="{skinPath}images/help/1rightarrow.png" title="Следующий раздел" alt="Следующий раздел">
+                    </td>
+                    <td class="inner">
+                        <img width="50" id="back" class="pointer" src="{skinPath}images/help/reload.png" title="Назад" alt="Назад">
+                    </td>
+                    <td class="inner" width="100%">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="inner">Оглавление:</td>
+        <td class="inner" width="100%">
+            <select class="wide" id="current_id" collection="{toc_list}" value="{current_id}"></select>
+        </td>
+    </tr>
+    <tr style="height:100%">
+        <td colspan="2" width="100%">
+            <iframe id="contentframe" src="{frame_src}" style="width:99%;height:99%" src=""></iframe>
+        </td>
+    </tr>
+</table>
+</div>

@@ -1,0 +1,60 @@
+<!-- block=header -->
+<body bgcolor="#FFFFFF"/>
+<div>
+    <table id="tbl" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    	<tr valign="top">
+    		<td class="inner">
+    			Системное имя
+    		</td>
+    		<td class="inner">
+				<Control type="string" value="{name}" id="name" width="100%"/>
+			</td>
+		</tr>    		
+    	<tr valign="top">
+    		<td class="inner">
+    			Базовое поле
+    		</td>
+    		<td class="inner">
+				<Control type="string" value="{base}" id="base" selectClass="MetadataTree" selectOptions="metadataArray=fields~forSelect=1~groupSelect=0~itemSelect=1~loaded=1" width="100%"/>
+			</td>
+		</tr>    		
+    	<tr valign="top">
+    		<td class="inner">
+    			Тип
+    		</td>
+    		<td class="inner">
+				<Control type="string" value="{type}" id="type" width="100%"/>
+			</td>
+		</tr>    		
+    	<tr valign="top">
+    		<td class="inner">
+    			Описание
+    		</td>
+    		<td class="inner">
+				<Control type="string" value="{title}" id="title" width="100%"/>
+			</td>
+		</tr>    		
+    	<tr valign="top">
+    		<td class="inner">
+    			Файл
+    		</td>
+    		<td class="inner">
+				<Control type="file" control_type="fileManager" value="{file}" id="file" width="100%"/>
+			</td>
+		</tr>    		
+		<tr valign="top">
+			<td class="inner" colspan="2" style="height:100%">
+					Параметры:<br/>
+		            {:include {fieldParamsTable},,$object->parent_object_id='{object_id}';$object->opener_object='{object_id}';$object->window_id='{window_id}';$object->fieldName='{name}';:}			
+			</td>
+		</tr>
+	    <tr valign="bottom">
+    	    <td class="inner" valign="bottom" colspan="2">
+        	        <div align="right">
+        	        	<input class="but" type="button" id="OK" value="Сохранить">&nbsp;&nbsp;
+            	    	<input class="but" type="button" id="cancel" value=" Отмена ">
+                    </div>
+        	</td>
+    	</tr>
+	</table>
+</div>

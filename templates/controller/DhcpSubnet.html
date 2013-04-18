@@ -1,0 +1,245 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">
+<table id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tr valign="top">
+        <td class="inner" nowrap>Название:</td>
+        <td class="inner" width="100%">
+            <input id="title" class="wide" type="text" value="{title}">
+            <input id="old_title" type="hidden" value="{title}">
+        </td>
+    </tr>
+    <tr valign="top">
+        <td class="inner" nowrap>Адрес сети:</td>
+        <td class="inner" width="100%">
+            <input id="name" class="wide" type="text" value="{name}">
+            <input id="old_name" type="hidden" value="{name}">
+        </td>
+    </tr>
+    <tr valign="top">
+        <td colspan="2" class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="net" style="height:100%;display:" width="100%">
+        <td colspan="2" width="100%" class="inner">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td rowspan="2" class="inner" nowrap>Диапазон адресов:</td>
+                    <td class="inner" width="100%">
+                        <input id="range_start" class="wide" type="text" value="{range_start}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" width="100%">
+                        <input id="range_end" class="wide" type="text" value="{range_end}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Маска сети:</td>
+                    <td class="inner" width="100%">
+                        <input id="subnet_mask" class="wide" type="text" value="{subnet_mask}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Шлюз по умолчанию:</td>
+                    <td class="inner" width="100%">
+                        <input id="routers" class="wide" type="text" value="{routers}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Серверы DNS:</td>
+                    <td class="inner" width="100%">
+                        <input id="domain_name_servers" class="wide" type="text" value="{domain_name_servers}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Серверы WINS:</td>
+                    <td class="inner" width="100%">
+                        <input id="netbios_name_servers" class="wide" type="text" value="{netbios_name_servers}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" class="inner">
+                        <input type="checkbox" {allow_unknown_clients_checked} id="allow_unknown_clients" value="allow_unknown_clients">
+                        Выдавать информацию неизвестным хостам
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" class="inner">
+                        <Control type="boolean" control_type="checkbox" id="denyFileAccess" value="{denyFileAccess}"></Control>
+                        Запретить доступ к файловым ресурсам
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="host" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner">&nbsp;
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner" nowrap>TFTP-сервер:</td>
+                    <td class="inner" width="100%">
+                        <input id="next_server" class="wide" type="text" value="{next_server}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Путь к файлу загрузчика на TFTP-сервере:</td>
+                    <td class="inner" width="100%">
+                        <input id="filename" class="wide" type="text" value="{filename}">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap>Путь к корневой файловой системе:</td>
+                    <td class="inner" width="100%">
+                        <input id="root_path" class="wide" type="text" value="{root_path}">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="custom" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td class="inner">
+                        Дополнительные настройки:
+                    </td>
+                </tr>
+                <tr style="height:100%">
+                    <td>
+                        <textarea id="custom_options" class="wide" style="height:98%">{custom_options}</textarea>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="scan" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td>
+                        <input type="button" id="scanHosts" value="Сканировать сеть"><br>
+                    </td>
+                </tr>
+                <tr style="height:100%">
+                    <td>
+                        <iframe class="wide" style="height:99%" id="scanframe"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" id="internet" style="height:100%;display:none" width="100%">
+        <td colspan="2" width="100%" class="inner" style="height:100%">
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valign="top">
+                    <td colspan="3" class="inner">
+                        <Control type="boolean" control_type="checkbox" name="dropInternet" id="dropInternet" value="{dropInternet}"></Control>
+                            Запретить доступ к Интернет
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Минимальная входящая скорость сети
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{inRate}" name="inRate" id="inRate"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="inRateDim" value="{inRateDim}"></Control> 
+                    </td>                        
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Максимальная входящая скорость сети
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{inCeil}" name="inCeil" id="inCeil"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="inCeilDim" value="{inCeilDim}"></Control> 
+                    </td>                        
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Минимальная исходящая скорость сети
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{outRate}" name="outRate" id="outRate"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="outRateDim" value="{outRateDim}"></Control> 
+                    </td>                        
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Максимальная исходящая скорость сети
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{outCeil}" name="outCeil" id="outCeil"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="outCeilDim" value="{outCeilDim}"></Control> 
+                    </td>                        
+                </tr>
+
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Минимальная входящая скорость хоста
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{defaultHostInRate}" name="defaultHostInRate" id="defaultHostInRate"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="defaultHostInRateDim" value="{defaultHostInRateDim}"></Control> 
+                    </td>                        
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Максимальная входящая скорость хоста
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{defaultHostInCeil}" name="defaultHostInCeil" id="defaultHostInCeil"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="defaultHostInCeilDim" value="{defaultHostInCeilDim}"></Control> 
+                    </td>                        
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Минимальная исходящая скорость хоста
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{defaultHostOutRate}" name="defaultHostOutRate" id="defaultHostOutRate"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="defaultHostOutRateDim" value="{defaultHostOutRateDim}"></Control> 
+                    </td>                        
+                </tr>
+                <tr valign="top">
+                    <td class="inner" nowrap="true">
+                        Максимальная исходящая скорость хоста
+                    </td>
+                    <td class="inner">
+                        <Control type="integer" value="{defaultHostOutCeil}" name="defaultHostOutCeil" id="defaultHostOutCeil"></Control>
+                    </td>
+                    <td class="inner">
+                        <Control type="list,b~kbit~mbit|бит/c~кБит/c~мБит/c" id="defaultHostOutCeilDim" value="{defaultHostOutCeilDim}"></Control> 
+                    </td>                        
+                </tr>
+                
+            </table>
+        </td>
+    </tr>
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="4">
+        	<div align="right">
+        		{|referenceCode}
+            	<input class="but" type="button" id="OK" value="  OK  ">&nbsp;&nbsp;
+                <input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                <input class="but" type="button" id="help" value=" Помощь ">
+           </div>
+        </td>
+    </tr>
+</table>
+</div>

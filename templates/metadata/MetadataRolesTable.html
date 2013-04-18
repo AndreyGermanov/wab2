@@ -1,0 +1,12 @@
+<body bgcolor="#FFFFFF"/>
+<form method="post" action="index.php" target="{object_id}_innerFrame">
+<table border="0" id="website_table" cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+    <tbody>
+    <tr valign="top" style="height:100%;display:" width="100%">
+        <td class="inner" colspan="2" width="100%" style="height:100%">
+            {:include EntityDataTable_{module_id}_{objectid},,$object->className="{tableClass}";$object->itemsPerPage={itemsPerPage};$object->collection='{clientClass}_{module_id}_objects';$object->collectionGetMethod='{collectionGetMethod}';$object->window_id='{window_id}';$object->parent_object_id='{object_id}';$object->parentEntity=$object->collection;$object->defaultClassName='{tableClass}';$object->fieldList='{fieldList}';$object->sortOrder='{sortOrder}'; :}
+        </td>
+    </tr>    
+    </tbody>
+</table>
+</form>

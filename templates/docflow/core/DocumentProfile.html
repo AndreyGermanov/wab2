@@ -1,0 +1,18 @@
+<!-- block=documentHeader -->
+    <tr valign="top" id="document" style="height:100%;width:100%;display:none">
+	    <td class="inner" width="100%" style="height:100%">
+	    	<table cellpadding="0" cellspacing="0">
+<!-- block=documentRulesRow -->				
+				<tr valign="top">
+					<td class="inner">{documentRuleHeader}</td>
+					<td class="inner">
+						<Control id='{documentRuleName}' type='{documentRuleType}' properties='{documentRuleProperties}' value='{documentRuleValue}'/>
+					</td>
+					<td class="inner">
+						<Control id='{documentRuleName}Code' style="display:{codeDisplayStyle}" type="string" selectClass='MetadataTree' selectOptions='metadataArray=codes~forSelect=1~groupSelect=0~itemSelect=1~loaded=1' value="{documentRuleCodeName}"/>
+					</td>
+				</tr>
+<!-- block=documentFooter -->
+	    	</table>
+	    </td>
+	</tr>

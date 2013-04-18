@@ -1,0 +1,36 @@
+#table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    position: absolute;
+    z-index: 200;
+    background-color: #ecf0f4;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+span.context_menu
+{    
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+}
+
+td.context_menu:hover
+{
+    
+    background-color: #993333;
+    color: #ffff00;
+}
+
+span.context_menu:hover
+{
+    background-color: #993333;
+    color: #ffff00;
+}

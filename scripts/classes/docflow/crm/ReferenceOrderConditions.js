@@ -1,0 +1,1 @@
+var ReferenceOrderConditions = Class.create(Reference);

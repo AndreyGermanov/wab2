@@ -1,0 +1,35 @@
+#!/bin/sh
+. /etc/gateway_interfaces
+# Помечаем трафик, идущий из Интернет на этот хост (входящий Интернет-трафик)
+iptables -t mangle -A FORWARD -i $eth1 -o $eth0 -d {fixed_address} -j MARK --set-mark 1{net_class_number}{class_number}
+iptables -t mangle -A OUTPUT  -o $eth0 -d {fixed_address} -p tcp --sport $http_proxy_port -j MARK --set-mark 1{net_class_number}{class_number}
+iptables -t mangle -A OUTPUT  -o $eth0 -d {fixed_address} -p tcp --sport $smtp_proxy_port -j MARK --set-mark 1{net_class_number}{class_number}
+
+# Помечаем трафик, идущий с этого хоста в локальную сеть (исходящий Интернет-трафик)
+iptables -t mangle -A FORWARD -i $eth0 -o $eth1 -d {fixed_address} -j MARK --set-mark 2{net_class_number}{class_number}
+iptables -t mangle -A OUTPUT  -o $eth1 -d {fixed_address} -p tcp --sport $http_proxy_port -j MARK --set-mark 2{net_class_number}{class_number}
+iptables -t mangle -A OUTPUT  -o $eth1 -d {fixed_address} -p tcp --sport $smtp_proxy_port -j MARK --set-mark 2{net_class_number}{class_number}
+
+# Создаем очередь для входящего на этот хост трафика внутри очереди,
+# созданной для входящего трафика локальной сети, в которую он входит
+# и указываем гарантированную и максимальную скорость для него
+tc class add dev $eth0 parent 1{net_class_number}: classid 1{net_class_number}:{class_number} htb rate {in_rate} ceil {in_ceil}
+tc qdisc add dev $eth0 parent 1{net_class_number}:{class_number} handle 1{net_class_number}{class_number}: sfq
+
+# Создаем очередь для исходящего с этого хоста трафика внутри очереди,
+# созданной для исходящего трафика локальной сети, в которую он входит
+# и указываем гарантированную и максимальную скорость для него
+tc class add dev $eth1 parent 2{net_class_number}: classid 2{net_class_number}:{class_number} htb rate {out_rate} ceil {out_ceil}
+tc qdisc add dev $eth1 parent 2{net_class_number}:{class_number} handle 2{net_class_number}{class_number}: sfq
+
+# Создаем фильтры, направляющие помеченный трафик этого хоста
+
+# Сначала направляем его в очередь локальной сети, в которую входит этот хост
+tc filter add dev $eth0 parent 1: protocol ip prio 1 handle 1{net_class_number}{class_number} fw flowid 1:1{net_class_number}
+tc filter change dev $eth0 parent 1: protocol ip prio 1 handle 1{net_class_number}{class_number} fw flowid 1:1{net_class_number}
+tc filter add dev $eth1 protocol ip prio 1 parent 2: handle 2{net_class_number}{class_number} fw flowid 2:2{net_class_number}
+tc filter change dev $eth1 protocol ip prio 1 parent 2: handle 2{net_class_number}{class_number} fw flowid 2:2{net_class_number}
+
+# А затем в очередь, созданную для этого хоста
+tc filter add dev $eth0 parent 1{net_class_number}: protocol ip prio 1 handle 1{net_class_number}{class_number} fw flowid 1{net_class_number}:{class_number}
+tc filter add dev $eth1 parent 2{net_class_number}: protocol ip prio 1 handle 2{net_class_number}{class_number} fw flowid 2{net_class_number}:{class_number}

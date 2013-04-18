@@ -1,0 +1,93 @@
+<body bgcolor="#FFFFFF">
+<div id="mailbox_div">    
+<table id="mailbox_table" cellpadding="0" cellspacing="1" width="100%" height="100%">
+    <tr valign="top" id="switch">
+        <td class="inner">
+            <Control type="boolean" control_type="checkbox" id="enableShadowCopy" value="{enableShadowCopy}"></Control>
+            Включить теневое копирование данных
+        </td>
+    </tr>
+    <tr valign="top" style="display:none" id="tabset">
+        <td class="inner">
+            {:include {tabset_id}_up,,$object->module_id='{module_id}';$object->item='{object_id}';$object->window_id="{window_id}";$object->tabs_string='{tabs_string}';$object->active_tab='{active_tab}'; :}
+        </td>
+    </tr>
+    <tr valign="top" id="snapshots" style="height:100%;width:100%;display:none">
+        <td width="100%" class="inner">
+            {:include LVMSnapshotsDataTable_{objectid},,$object->parentEntity='{object_id}';$object->window_id='{window_id}';$object->parent_object_id='{object_id}';$object->itemsPerPage=0;$object->currentPage=1;$object->itemsPerPage=0;$object->sortOrder='time';$object->adapterId='';$object->condition=''; :}                    
+        </td>
+    </tr>
+    <tr valign="top" id="settings" style="height:100%;width:100%;display:none">
+        <td width="100%" class="inner">            
+            <table cellpadding="0" cellspacing="1" width="100%" style="height:100%">
+                <tr valignt="top">
+                    <td nowrap class="inner">Группа разделов данных</td>
+                    <td width="100%"> <Control type="string" width="100%" id="shadowCopyVgName" value="{shadowCopyVgName}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td nowrap class="inner">Раздел даных</td>
+                    <td> <Control type="string" width="100%" id="shadowCopyLvName" value="{shadowCopyLvName}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td nowrap class="inner">Хранилище снимков</td>
+                    <td> <Control type="path" width="100%" id="snapshotsFolder" value="{snapshotsFolder}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" nowrap class="inner">Критический процент заполненности снимка (%):<br//>
+                    <Control width="100%" type="decimal" id="shadowCopyResizeLimit" value="{shadowCopyResizeLimit}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" nowrap class="inner">Размер приращения снимка при достижении критической заполненности (Гб):<br/>
+                    <Control width="100%" type="decimal" id="shadowCopyResizeSize" value="{shadowCopyResizeSize}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" nowrap class="inner">Сбрасывать снимок в каталог при автоматическом удалении:<br/>
+                    <Control width="100%" type="path" id="expiredSnapshotsBackupFolder" value="{expiredSnapshotsBackupFolder}"></Control></td>
+                </tr>
+                <tr valign="top" style="height:100%">
+                    <td colspan="2" nowrap class="inner">Адрес интерфейса для просмотра резервных копий:<br/>
+                    <Control width="100%" type="string" id="backupViewerAddress" value="{backupViewerAddress}"></Control></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr valign="top" style="height:100%;width:100%;display:none" id="rotation">
+        <td class="inner" colspan="2">
+            <Control type="boolean" control_type="checkbox" id="enableAutoSnapshotsRotation" value="{enableAutoSnapshotsRotation}"></Control>
+            Включить ротацию снимков<br/>
+            <table id="snapshotsRotation" style="width:100%;height:100%;display:">
+                <tr>
+                    <td nowrap class="inner">Размер нового снимка (Гб)</td>
+                    <td width="100%"><Control type="integer" id="snapshotSize" value="{snapshotSize}"></Control></td>
+                </tr>
+                <tr>
+                    <td nowrap class="inner">Количество снимков в ротации</td>
+                    <td><Control type="integer" id="snapshotsCount" value="{snapshotsCount}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2" nowrap class="inner">Периодичность ротации снимков
+                </tr>
+                <tr valign="top">
+                    <td nowrap class="inner">Дни:</td>
+                    <td><Control type="string" id="shadowCopyPeriodDays" value="{shadowCopyPeriodDays}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td nowrap class="inner">Часы:</td>
+                    <td><Control type="string" id="shadowCopyPeriodHours" value="{shadowCopyPeriodHours}"></Control></td>
+                </tr>
+                <tr valign="top">
+                    <td nowrap class="inner">Минуты:</td>
+                    <td><Control type="string" id="shadowCopyPeriodMinutes" value="{shadowCopyPeriodMinutes}"></Control></td>
+                </tr>                            
+            </table>
+        </td>                
+    </tr>    
+    <tr valign="bottom">
+        <td class="inner" valign="bottom" colspan="2">
+                <div align="right"><input class="but" type="button" id="OK" value="Сохранить">&nbsp;&nbsp;
+                <input class="but" type="button" id="cancel" value=" Отмена ">&nbsp;&nbsp;
+                    <input class="but" type="button" id="help" value=" Помощь "></div>
+        </td>
+    </tr>
+</table>
+</div>

@@ -1,0 +1,1 @@
+BloodAnalyzeWorkplace = Class.create(Entity);

@@ -1,0 +1,1 @@
+var DocFlowApplicationModuleConfig = Class.create(ModuleModelConfig);

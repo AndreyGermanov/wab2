@@ -1,0 +1,33 @@
+<form style="height:100%" action="index.php" method="post" target="{object_id}_innerFrame">
+<table style='height:100%'>
+	<tbody>
+		<tr valign="middle">
+			<td class="header_text">
+				логин:
+			</td>
+			<td class="menuitem">
+				<input name="login" id="login" type="text" class="input" style="width:100px"/>
+			</td>
+			<td class="header_text">
+				пароль:
+			</td>
+			<td class="menuitem">
+				<input name="password" id="password" type="password" class="input" style="width:100px"/>
+			</td>
+			<td class="header_text">
+				<input type="submit" value="Вход" class="input"/>
+				<input type="hidden" name="action" object="{object_id}" id="action" value="submit">
+				<input type="hidden" name="object_id" object="{object_id}" id="object_id" value="{object_id}">
+				<input type="hidden" name="hook" object="{object_id}" id="hook" value="3">				
+				<input type="hidden" name="ajax" object="{object_id}" id="ajax" value="true">				
+        		<iframe src="" name="{object_id}_innerFrame" id="innerFrame" style="display:none" width="100%"></iframe>
+			</td>
+			<td class="menuitem">
+				<a href="?i=register" class="header_link">
+					регистрация
+				</a>
+			</td>
+	</tr>
+	</tbody>	
+</table>	
+</form>
